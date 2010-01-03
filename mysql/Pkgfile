@@ -35,6 +35,7 @@ build () {
   find $PKG/usr/share/mysql/* -type d ! -name english ! -name charsets | xargs rm -rf {} \;
 
   install -d -m 700 -o mysql -g mysql $PKG/var/{lib,log,run}/mysql
+  install -d -m 700 -o mysql -g mysql $PKG/var/lib/mysql-files
   install -D -m 755 $SRC/mysqld $PKG/etc/rc.d/mysqld
   install -m 600 $SRC/my.cnf $PKG/etc
 }
