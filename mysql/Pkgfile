@@ -5,7 +5,7 @@
 # Depends on: ncurses zlib openssl cmake libaio
 
 name=mysql
-version=5.6.29
+version=5.6.30
 release=1
 source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.6/$name-$version.tar.gz \
         my.cnf mysqld valist.patch)
@@ -15,9 +15,6 @@ build () {
 
   patch -p1 -i $SRC/valist.patch
   
-  # fix for openssl 1.0.2
-  sed -i 's/REGEX "^#define/REGEX "^# *define/' cmake/ssl.cmake
-
   cmake . \
         -DBUILD_CONFIG=mysql_release \
         -DINSTALL_LAYOUT=RPM \
