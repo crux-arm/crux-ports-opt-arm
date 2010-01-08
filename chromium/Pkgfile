@@ -6,7 +6,7 @@
 # Depends on: ninja dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage yasm xorg-libxt gperf speech-dispatcher libdrm libexif pciutils
 
 name=chromium
-version=49.0.2623.75
+version=49.0.2623.112
 
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
@@ -84,7 +84,7 @@ build() {
   install -d $PKG/usr/lib/$name/locales
   install -m 0644 out/Release/locales/en-US.pak $PKG/usr/lib/$name/locales
   cp -a out/Release/resources $PKG/usr/lib/$name
-  install -m 0644 -D out/Release/chrome.1 $PKG/usr/man/man1/$name.1
+  install -m 0644 -D out/Release/chrome.1 $PKG/usr/share/man/man1/$name.1
 
   # fix v8 natives
   cp -a out/Release/{natives,snapshot}_blob.bin $PKG/usr/lib/$name
