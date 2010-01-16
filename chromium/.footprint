@@ -76,8 +76,6 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/Images/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/resourcePlainIcon.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/resourcePlainIconSmall.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/resourcesTimeGraphIcon.png
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/responsiveDesign.png
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/responsiveDesign_2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/searchNext.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/searchPrev.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityPropertyInfo.svg
@@ -141,7 +139,6 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/emulated_devices/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5x-vertical-navigation-2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices_module.js (EMPTY)
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/heap_snapshot_worker_module.js
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/inspector.css
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/inspector.html
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/inspector.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/layers_module.js
@@ -159,7 +156,6 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/emulated_devices/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/sources_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/temp_storage_shared_worker_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/timeline_module.js
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/toolbox.css
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/toolbox.html
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/toolbox.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/ui_lazy_module.js
