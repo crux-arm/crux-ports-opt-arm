@@ -6,7 +6,7 @@
 # Depends on: ninja dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage yasm xorg-libxt gperf speech-dispatcher libdrm libexif pciutils
 
 name=chromium
-version=49.0.2623.112
+version=50.0.2661.86
 
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
@@ -63,6 +63,7 @@ build() {
         -Duse_system_libevent=1 \
         -Duse_system_sqlite=0 \
         -Duse_system_ssl=0 \
+        -Duse_system_icu=0 \
         -Dremove_webcore_debug_symbols=1 \
         -Duse_gconf=0 \
         -Duse_cups=0 \
@@ -74,7 +75,7 @@ build() {
         -Dlinux_link_libspeechd=1 \
         -Denable_webrtc=1 \
         -Ddisable_nacl=1 \
-        -Dicu_use_data_file_flag=0
+        -Dicu_use_data_file_flag=1
 
   ninja -C out/Release chrome chrome_sandbox
 
