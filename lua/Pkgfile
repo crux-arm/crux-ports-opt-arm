@@ -1,6 +1,7 @@
 # Description: A programming language designed for extending applications
 # URL: http://www.lua.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on:
 
 name=lua
