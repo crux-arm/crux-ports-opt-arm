@@ -1,0 +1,45 @@
+# Description: The Mozilla Firefox browser
+# URL: http://www.mozilla.com/firefox/
+# Maintainer: Fredrik Rinnestam, fredrik at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: libidl nss gtk perl python alsa-lib yasm mesa3d
+
+name=firefox
+version=5.0.1
+release=1
+source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2
+        mozconfig)
+    
+build() {
+  export MOZ_CO_PROJECT=browser
+  export BUILD_OFFICIAL=1
+  export MOZILLA_OFFICIAL=1
+  export MOZILLA_FIVE_HOME=/usr/lib/firefox
+  # We avoid thumb instructions over CFLAGS
+  export CFLAGS="$(echo $CFLAGS | sed -e 's/-mthumb//')"
+
+  cd mozilla-release
+  sed -e "s/#CFLAGS#/$CFLAGS/" $SRC/mozconfig > .mozconfig
+  # Disabling elf-hacks in ARM
+  ./configure --disable-elf-hack
+  make
+
+  install -d \
+    $PKG$MOZILLA_FIVE_HOME \
+    $PKG/usr/bin \
+    $PKG/usr/share/idl/firefox \
+    $PKG/usr/include/firefox
+
+  cp -rL dist/bin/* $PKG$MOZILLA_FIVE_HOME
+  ln -s /usr/lib/firefox/firefox $PKG/usr/bin/firefox
+
+  # devel stuff
+  cp -frL dist/idl/* $PKG/usr/share/idl/firefox/
+  cp -frL dist/include/* $PKG/usr/include/firefox/
+
+  install -d $PKG/etc/ld.so.conf.d
+  echo "/usr/lib/$name" > $PKG/etc/ld.so.conf.d/$name.conf
+
+  # cleanup
+  rm $PKG/usr/lib/firefox/README.txt
+}
