@@ -1,7 +1,8 @@
 # Description: SQL database server
-# URL:         http://www.mysql.com
-# Maintainer:  Juergen Daubert, jue at crux dot nu
-# Depends on:  tcp_wrappers ncurses zlib openssl cmake libaio
+# URL: http://www.mysql.com
+# Maintainer: Juergen Daubert, jue at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: tcp_wrappers ncurses zlib openssl cmake libaio
 
 name=mysql
 version=5.5.16
