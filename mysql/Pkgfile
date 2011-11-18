@@ -5,7 +5,7 @@
 # Depends on: tcp_wrappers ncurses zlib openssl cmake libaio
 
 name=mysql
-version=5.5.16
+version=5.5.17
 release=1
 source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.5/$name-$version.tar.gz \
         my.cnf mysqld $name-${version}_valist.patch)
