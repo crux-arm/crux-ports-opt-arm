@@ -5,9 +5,9 @@
 # Nice to have: tk
 
 name=git
-version=1.7.6
-release=2
-source=(http://www.kernel.org/pub/software/scm/$name/$name-{,manpages-}$version.tar.bz2)
+version=1.7.7.3
+release=1
+source=(https://git-core.googlecode.com/files/$name-{,manpages-}$version.tar.gz)
 
 build() {
 	cd $name-$version
@@ -18,7 +18,7 @@ build() {
 
 	make CFLAGS="$CFLAGS" prefix=/usr gitexecdir=/usr/lib/git-core \
 	     DESTDIR=$PKG install
-	
+
 	cd $SRC
 
 	for i in man*; do
@@ -27,7 +27,7 @@ build() {
 	done
 
 	install -d $PKG/usr/man/man3
-	mv $PKG/usr/share/man/man3/{Git,private-Error}.* \
+	mv $PKG/usr/share/man/man3/{Git,private-Error}.3pm \
 		$PKG/usr/man/man3/
 	rmdir $PKG/usr/share/{man/man3,man}
 
