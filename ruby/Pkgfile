@@ -1,7 +1,8 @@
-# Maintainer:  Juergen Daubert, jue at crux dot nu
 # Description: Ruby interpreter
-# URL:         http://www.ruby-lang.org
-# Depends on:  db, gdbm, ncurses, openssl, readline, zlib
+# URL: http://www.ruby-lang.org
+# Maintainer: Juergen Daubert, jue at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: db gdbm ncurses openssl readline zlib
 
 name=ruby
 version=1.9.3-p194

@@ -1,6 +1,7 @@
 # Description: Directory content manager
 # URL: http://www.kernel.org/pub/software/scm/git/docs
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: expat, curl, python
 # Nice to have: tk
 
