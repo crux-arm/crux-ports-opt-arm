@@ -2,25 +2,25 @@
 # URL: http://www.mozilla.com/firefox/
 # Maintainer: Fredrik Rinnestam, fredrik at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: libidl nss gtk perl python alsa-lib yasm mesa3d
+# Depends on: nss, libidl, gtk, python, alsa-lib, yasm, mesa3d
 
 name=firefox
-version=6.0
+version=15.0.1
 release=1
-source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2
+source=(ftp://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.bz2
         mozconfig)
-    
+
 build() {
   export MOZ_CO_PROJECT=browser
   export BUILD_OFFICIAL=1
   export MOZILLA_OFFICIAL=1
   export MOZILLA_FIVE_HOME=/usr/lib/firefox
-  # We avoid thumb instructions over CFLAGS
-  export CFLAGS="$(echo $CFLAGS | sed -e 's/\-mthumb//')"
 
   cd mozilla-release
+  # We avoid thumb instructions over CFLAGS
+  export CFLAGS="$(echo $CFLAGS | sed -e 's/\-mthumb//')"
+  export CXXFLAGS=$CFLAGS
   sed -e "s/#CFLAGS#/$CFLAGS/" $SRC/mozconfig > .mozconfig
-  # Disabling elf-hacks in ARM
   ./configure --disable-elf-hack
   make
 
@@ -39,7 +39,4 @@ build() {
 
   install -d $PKG/etc/ld.so.conf.d
   echo "/usr/lib/$name" > $PKG/etc/ld.so.conf.d/$name.conf
-
-  # cleanup
-  rm $PKG/usr/lib/firefox/README.txt
 }
