@@ -1,37 +1,45 @@
 # Description: Qt Free Edition
 # URL: http://www.trolltech.com
-# Packager: Johannes Winkelmann, jw at smts dot ch
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Packager: Johannes Winkelmann, jw at smts dot ch
 # Depends on: fontconfig glib libmng libpng mesa3d xorg-libxcursor xorg-libxi xorg-libxinerama xorg-libxrandr dbus
 
 name=qt4
-version=4.7.3
-release=1
-source=(ftp://ftp.trolltech.com/pub/qt/source/qt-everywhere-opensource-src-$version.tar.gz)
+version=4.8.1
+release=2
+source=(http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-$version.tar.gz \
+	http://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-4.8.2-glib_fix-1.patch)
 
 build () {
   cd qt-everywhere-opensource-src-$version
-  # We avoid thumb instructions over CFLAGS
-  export CFLAGS="$(echo $CFLAGS | sed -e 's/\-mthumb//')"
-  sed -i -e 's|X11R6/||g' -e "s/\-mthumb//" mkspecs/*/*.conf
-  export CXXFLAGS="$CFLAGS"
+
+  patch -p1 -i $SRC/qt-everywhere-opensource-src-4.8.2-glib_fix-1.patch
+  export CFLAGS="$(echo $CFLAGS | sed -e 's/\-mthumb//' -e's/\-O2/\-O1/')"
+  export CXXFLAGS="$CFLAGS -fno-strict-volatile-bitfields"
+  sed -i 's|X11R6/||g' mkspecs/*/*.conf
   sed -i "s|-O2|$CXXFLAGS|" mkspecs/common/g++.conf
   sed -i "s|INSTALLS += translations||" projects.pro
+  sed -i 's|"$COMPILER" -c|$COMPILER -c|' config.tests/unix/fvisibility.test
+
+  find . -name Makefile -exec sed -i 's|-O2|-O1|g' {} \;
+  find . -name gcc-base.conf -exec sed -i 's|-O2|-O1|g' {} \;
+  find . -name g++-base.conf -exec sed -i 's|-O2|-O1|g' {} \;
+
   ./configure -prefix /usr/share/qt4 \
               -bindir /usr/share/qt4/bin \
               -headerdir /usr/share/qt4/include \
               -libdir /usr/share/qt4/lib \
               -plugindir /usr/share/qt4/plugins \
               -platform linux-g++ -release -shared -sm \
-              -nis -verbose -qt-gif -system-zlib \
+              -nis -verbose -system-zlib \
               -system-lib{png,jpeg} -xmlpatterns \
               -no-{cups,fast,nas-sound,phonon} \
               -x{cursor,inerama,kb,randr,render} \
               -nomake demos -nomake examples -nomake docs \
               -no-separate-debug-info -opensource -confirm-license
 
-  make
+  LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$PWD/lib" make
   make INSTALL_ROOT=$PKG install
 
   rm -rf `find $PKG/usr/share/qt4/mkspecs/* | \
@@ -55,7 +63,7 @@ build () {
     $PKG/usr/lib/pkgconfig/*.pc
 
   for f in assistant designer linguist lrelease lupdate moc qmake qtconfig uic \
-    pixeltool qdbus qdbuscpp2xml qdbusxml2cpp qt3to4 rcc uic3; do
+      pixeltool qdbus qdbuscpp2xml qdbusxml2cpp qt3to4 rcc uic3; do
     ln -s ../share/qt4/bin/$f $PKG/usr/bin/$f
   done
 }
