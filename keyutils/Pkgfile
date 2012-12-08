@@ -4,14 +4,14 @@
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 
 name=keyutils
-version=1.5.3
+version=1.5.5
 release=1
 source=(http://people.redhat.com/~dhowells/$name/$name-$version.tar.bz2)
 
 build () {
   cd $name-$version
   # We remove -m32 flag
-  sed "59d" -i Makefile
+  sed "61d" -i Makefile
   sed -i "/^MAN[1-9]/s|share/||;/^CFLAGS/s/-g/$CFLAGS/;s|/lib64|/lib|" Makefile
   make -j1
   make DESTDIR=$PKG install
