@@ -1,0 +1,36 @@
+# Description: Java 2 Software Development Kit
+# URL: http://java.sun.com
+# Packager: Simone Rota, sip at crux dot nu
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on:
+
+name=jdk
+version=1.7.0_10
+release=1
+source=(file:///$name-7u${version##*_}-linux-arm-sfp.tar.gz)
+
+build(){
+	rm -rf $SRC/jdk*/{man/ja,jre/lib/javaws/messages_,demo,sample}*
+	rm -rf $SRC/jdk*/jre/lib/fontconfig.{RedHat,SuSE,Sun,Turbo}.*
+	rm -rf $SRC/jdk*/jre/plugin/i386/ns7-gcc29
+	rm -rf $SRC/jdk*/jre/.systemPrefs
+	rm -rf $SRC/jdk*/{,jre/}[A-Z]*
+
+	install -d $PKG/usr/lib
+	mv $SRC/jdk* $PKG/usr/lib
+	mv $PKG/usr/lib/jdk*/man $PKG/usr
+
+	cd $PKG/usr/lib
+	export GLOBIGNORE="*/src.zip"
+	for i in jdk*/* jdk*/jre/*; do
+	  test -f $i && rm -rf $i;
+	done
+	
+	ln -s jdk* $PKG/usr/lib/java
+
+	mkdir -p $PKG/usr/bin && cd $PKG/usr/bin
+	for j in java javac javah javap javaws jar keytool; do
+		ln -s ../lib/java/bin/$j
+	done
+}

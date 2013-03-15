@@ -1,0 +1,21 @@
+README for Java SE Development Kit 7
+
+REQUIREMENTS
+
+   Download the Java SE Development Kit (JDK) from
+   - http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+   (For now the last JDK release available for ARM is version 7u10, so
+   look for 'Java SE Development Kit 7u10' section in that page)
+
+   and put the file
+   -  jdk-7u10-linux-arm-sfp.tar.gz
+
+   into the directory defined by PKGMK_SOURCE_DIR. See pkgmk.conf(5).
+
+NOTES
+
+   If you noticed some issues related to client/server classes, please
+   see this http://crux.nu/bugs/index.php?do=details&task_id=369&project=1
+   and contact to CRUX-ARM System Team for reports
+
