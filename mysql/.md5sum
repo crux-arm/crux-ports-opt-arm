@@ -1,4 +1,4 @@
 6de62cde6cc212b5cd1f87e0df848b1d  my.cnf
-38b65815249f3bcacf3b0ee85171c486  mysql-5.5.18.tar.gz
-6ca8f727d4e04fbdbe200cb5abfffee5  mysql-5.5.18_valist.patch
+e6b9f9cb82e990bd8f0474df7462904e  mysql-5.5.29.tar.gz
 642a596f13ebd7e459c5ff2fd382f06b  mysqld
+6ca8f727d4e04fbdbe200cb5abfffee5  valist.patch

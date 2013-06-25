@@ -5,14 +5,16 @@
 # Depends on: tcp_wrappers ncurses zlib openssl cmake libaio
 
 name=mysql
-version=5.5.18
+version=5.5.29
 release=1
-source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.5/$name-$version.tar.gz \
-        my.cnf mysqld $name-${version}_valist.patch)
+source=(http://downloads.mysql.com/archives/$name-${version%.*}/$name-$version.tar.gz \
+        my.cnf mysqld valist.patch)
 
 build () {
     cd $name-$version
-    patch -p1 -i $SRC/$name-${version}_valist.patch
+
+    patch -p1 -i $SRC/valist.patch
+
     cmake . \
         -DBUILD_CONFIG=mysql_release \
         -DINSTALL_LAYOUT=RPM \
