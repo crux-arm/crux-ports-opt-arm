@@ -1,8 +1,8 @@
 # Description: Python interpreter, version 2.7
 # URL: http://www.python.org
 # Maintainer: Juergen Daubert, jue at crux dot nu
-# Depends on: db gdbm openssl bzip2 zlib sqlite3
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: db gdbm openssl bzip2 zlib sqlite3
 
 name=python
 version=2.7.5
