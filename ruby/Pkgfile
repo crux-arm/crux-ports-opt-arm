@@ -2,10 +2,10 @@
 # URL: http://www.ruby-lang.org
 # Maintainer: Juergen Daubert, jue at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: db gdbm ncurses openssl readline zlib
+# Depends on: gdbm ncurses openssl readline zlib libffi libyaml
 
 name=ruby
-version=1.9.3-p194
+version=1.9.3-p448
 release=1
 source=(ftp://ftp.ruby-lang.org/pub/$name/1.9/$name-$version.tar.bz2 \
         $name-arch.patch)
