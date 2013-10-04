@@ -19,6 +19,7 @@ drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/keyctl.1.gz
 drwxr-xr-x	root/root	usr/man/man3/
+-rw-r--r--	root/root	usr/man/man3/keyctl.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/keyctl_assume_authority.3.gz -> keyctl_instantiate.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_chown.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_clear.3.gz
@@ -29,6 +30,7 @@ lrwxrwxrwx	root/root	usr/man/man3/keyctl_describe_alloc.3.gz -> keyctl_describe.
 lrwxrwxrwx	root/root	usr/man/man3/keyctl_get_security_alloc.3.gz -> keyctl_get_security.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_instantiate.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/keyctl_instantiate_iov.3.gz -> keyctl_instantiate.3.gz
+-rw-r--r--	root/root	usr/man/man3/keyctl_invalidate.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_join_session_keyring.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_link.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/keyctl_negate.3.gz -> keyctl_instantiate.3.gz
@@ -37,6 +39,7 @@ lrwxrwxrwx	root/root	usr/man/man3/keyctl_read_alloc.3.gz -> keyctl_read.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/keyctl_reject.3.gz -> keyctl_instantiate.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_revoke.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_search.3.gz
+-rw-r--r--	root/root	usr/man/man3/keyctl_session_to_parent.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_set_reqkey_keyring.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_set_timeout.3.gz
 -rw-r--r--	root/root	usr/man/man3/keyctl_setperm.3.gz
