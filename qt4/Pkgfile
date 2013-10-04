@@ -6,7 +6,7 @@
 # Depends on: fontconfig glib libmng libpng mesa3d xorg-libxcursor xorg-libxi xorg-libxinerama xorg-libxrandr dbus
 
 name=qt4
-version=4.8.4
+version=4.8.5
 release=1
 source=(http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-$version.tar.gz)
 
@@ -14,6 +14,7 @@ build () {
   cd qt-everywhere-opensource-src-$version
 
   sed -i 's|X11R6/||g' mkspecs/*/*.conf
+
   sed -i "s|-O2|$CXXFLAGS|" mkspecs/common/g++.conf
   sed -i "s|INSTALLS += translations||" projects.pro
   sed -i 's|"$COMPILER" -c|$COMPILER -c|' config.tests/unix/fvisibility.test
