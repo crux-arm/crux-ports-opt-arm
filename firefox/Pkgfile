@@ -18,7 +18,7 @@ build() {
 
   cd mozilla-release
   sed -e "s/#CFLAGS#/$CFLAGS/" $SRC/mozconfig > .mozconfig
-  ./configure --disable-webrtc
+  ./configure
 
   #mozilla sucks: BZ #824381
   mkdir $SRC/mozilla-release/js/src/.deps
