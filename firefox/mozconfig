@@ -47,3 +47,4 @@ ac_add_options --disable-mailnews
 ac_add_options --disable-crashreporter
 ac_add_options --disable-necko-wifi
 ac_add_options --disable-libnotify
+ac_add_options --disable-elf-hack
