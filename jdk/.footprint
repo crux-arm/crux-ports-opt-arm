@@ -710,6 +710,9 @@ drwxr-xr-x	root/root	usr/lib/jdk/jre/lib/zi/SystemV/
 -rw-r--r--	root/root	usr/lib/jdk/jre/lib/zi/WET
 -rw-r--r--	root/root	usr/lib/jdk/jre/lib/zi/ZoneInfoMappings
 drwxr-xr-x	root/root	usr/lib/jdk/lib/
+drwxr-xr-x	root/root	usr/lib/jdk/lib/arm/
+drwxr-xr-x	root/root	usr/lib/jdk/lib/arm/jli/
+-rwxr-xr-x	root/root	usr/lib/jdk/lib/arm/jli/libjli.so
 -rw-r--r--	root/root	usr/lib/jdk/lib/ct.sym
 -rw-r--r--	root/root	usr/lib/jdk/lib/dt.jar
 -rw-r--r--	root/root	usr/lib/jdk/lib/ir.idl
