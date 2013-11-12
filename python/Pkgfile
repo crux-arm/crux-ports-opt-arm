@@ -5,7 +5,7 @@
 # Depends on: db gdbm openssl bzip2 zlib sqlite3
 
 name=python
-version=2.7.5
+version=2.7.6
 release=1
 source=(http://www.python.org/ftp/$name/$version/Python-$version.tar.xz \
         pyconfig.h)
@@ -40,5 +40,5 @@ build () {
   rm $PKG/usr/lib/python/ctypes/macholib/README.ctypes
 
   mv $PKG/usr/include/python2.7/pyconfig{,-32}.h
-  cp $SRC/pyconfig.h $PKG/usr/include/python2.7/
+  install -m 0644 $SRC/pyconfig.h $PKG/usr/include/python2.7/
 }
