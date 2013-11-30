@@ -5,22 +5,22 @@
 # Depends on: gdbm ncurses openssl readline zlib libffi libyaml
 
 name=ruby
-version=1.9.3-p448
+version=1.9.3-p484
 release=1
 source=(ftp://ftp.ruby-lang.org/pub/$name/1.9/$name-$version.tar.bz2 \
         $name-arch.patch)
 
 build () {
-    cd $name-$version
+  cd $name-$version
 
-    patch -p0 -i $SRC/$name-arch.patch
+  patch -p0 -i $SRC/$name-arch.patch
 
-    ./configure --prefix=/usr \
-                --mandir=/usr/man \
-                --enable-shared \
-                --disable-install-doc \
-                --with-ruby-version=minor 
+  ./configure --prefix=/usr \
+              --mandir=/usr/man \
+              --enable-shared \
+              --disable-install-doc \
+              --with-ruby-version=minor 
 
-    make
-    make DESTDIR=$PKG install
+  make
+  make DESTDIR=$PKG install
 }
