@@ -5,10 +5,10 @@
 # Depends on: nss, libidl, gtk, python, alsa-lib, yasm, mesa3d
 
 name=firefox
-version=18.0.1
+version=25.0.1
 release=1
 source=(ftp://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.bz2
-        mozconfig)
+        mozconfig firefox.desktop)
 
 build() {
   export MOZ_CO_PROJECT=browser
@@ -17,10 +17,10 @@ build() {
   export MOZILLA_FIVE_HOME=/usr/lib/firefox
 
   cd mozilla-release
+
   sed -e "s/#CFLAGS#/$CFLAGS/" $SRC/mozconfig > .mozconfig
   ./configure
 
-  #mozilla sucks: BZ #824381
   mkdir $SRC/mozilla-release/js/src/.deps
 
   make
@@ -40,4 +40,12 @@ build() {
 
   install -d $PKG/etc/ld.so.conf.d
   echo "/usr/lib/$name" > $PKG/etc/ld.so.conf.d/$name.conf
+
+  # cleanup
+  #find $PKG -name .mkdir.done -delete
+  find $PKG -type f -empty -delete
+  # desktop stuff
+  mkdir -p $PKG/usr/share/pixmaps
+  ln -s /usr/lib/firefox/browser/chrome/browser/content/branding/icon48.png $PKG/usr/share/pixmaps/firefox_default48.png
+  install -D -m 0644 $SRC/firefox.desktop $PKG/usr/share/applications/firefox.desktop
 }
