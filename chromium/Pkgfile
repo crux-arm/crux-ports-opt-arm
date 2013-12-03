@@ -6,10 +6,10 @@
 # Depends on: dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage xorg-libxt gperf speech-dispatcher
 
 name=chromium
-version=30.0.1599.114
+version=31.0.1650.57
 release=1
 source=(http://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz \
-        $name.sh icu-native-arm.patch ffmpeg-native-arm.patch webrtc-arm_neon.patch)
+        $name.sh icu-native-arm.patch ffmpeg-native-arm.patch)
 
 build() {
   cd $name-$version
@@ -18,8 +18,6 @@ build() {
   patch -p1 -i $SRC/icu-native-arm.patch
   # https://chromium.googlesource.com/chromium/third_party/ffmpeg/+/8a08a6d1dea934cf6507693a7f5285241b5c435b
   patch -p1 -i $SRC/ffmpeg-native-arm.patch
-  # based on: https://code.google.com/p/chromium/issues/detail?id=154107
-  patch -p1 -i $SRC/webrtc-arm_neon.patch
 
   # fix for speech-dispatcher >= 0.8
   sed -e 's|<<(libspeechd_h_prefix)libspeechd.h>|<speech-dispatcher/libspeechd.h>|' \
