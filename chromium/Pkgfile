@@ -6,18 +6,16 @@
 # Depends on: dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage xorg-libxt gperf speech-dispatcher
 
 name=chromium
-version=31.0.1650.57
+version=32.0.1700.102
 release=1
 source=(http://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz \
-        $name.sh icu-native-arm.patch ffmpeg-native-arm.patch)
+        $name.sh icu-native-arm.patch)
 
 build() {
   cd $name-$version
 
   # avoid 32-bit flags (g++: error: unrecognized command line option '-m32')
   patch -p1 -i $SRC/icu-native-arm.patch
-  # https://chromium.googlesource.com/chromium/third_party/ffmpeg/+/8a08a6d1dea934cf6507693a7f5285241b5c435b
-  patch -p1 -i $SRC/ffmpeg-native-arm.patch
 
   # fix for speech-dispatcher >= 0.8
   sed -e 's|<<(libspeechd_h_prefix)libspeechd.h>|<speech-dispatcher/libspeechd.h>|' \
@@ -38,7 +36,7 @@ build() {
   done
 
   build/gyp_chromium -f make build/all.gyp --depth=. \
-	-Dtarget_arch=arm \
+        -Dtarget_arch=arm \
         -Darm_float_abi=hard \
         -Darmv7=$USE_ARMV7 \
         -Darm_thumb=$USE_ARM_THUMB \
@@ -46,42 +44,43 @@ build() {
         -Dv8_target_arch=arm \
         -Dv8_use_arm_eabi_hardfloat=1 \
         -Dsysroot= \
-	-Dno_strict_aliasing=1 \
-	-Dwerror= \
-	-Dlinux_sandbox_path=/usr/lib/chromium/chrome-sandbox \
-	-Dlinux_strip_binary=1 \
+        -Dpython_ver="2.7" \
+        -Dno_strict_aliasing=1 \
+        -Dwerror= \
+        -Dlinux_sandbox_path=/usr/lib/chromium/chrome-sandbox \
+        -Dlinux_strip_binary=1 \
         -Dlinux_use_gold_binary=0 \
         -Dlinux_use_gold_flags=0 \
         -Dlinux_use_tmalloc=0 \
         -Drelease_extra_cflags="$CFLAGS" \
         -Dproprietary_codecs=1 \
         -Dffmpeg_branding=Chrome \
-	-Duse_system_libjpeg=1 \
-	-Duse_system_libxslt=1 \
-	-Duse_system_libxml=1 \
-	-Duse_system_bzip2=1 \
-	-Duse_system_zlib=0 \
-	-Duse_system_libpng=0 \
-	-Duse_system_ffmpeg=0 \
-	-Duse_system_yasm=0 \
-	-Duse_system_libevent=1 \
-	-Duse_system_sqlite=0 \
-	-Dremove_webcore_debug_symbols=1 \
-	-Duse_gconf=0 \
-	-Duse_cups=0 \
-	-Duse_gnome_keyring=0 \
+        -Duse_system_libjpeg=1 \
+        -Duse_system_libxslt=1 \
+        -Duse_system_libxml=1 \
+        -Duse_system_bzip2=1 \
+        -Duse_system_zlib=0 \
+        -Duse_system_libpng=0 \
+        -Duse_system_ffmpeg=0 \
+        -Duse_system_yasm=0 \
+        -Duse_system_libevent=1 \
+        -Duse_system_sqlite=0 \
+        -Dremove_webcore_debug_symbols=1 \
+        -Duse_gconf=0 \
+        -Duse_cups=0 \
+        -Duse_gnome_keyring=0 \
         -Duse_kerberos=0 \
         -Duse_pulseaudio=0 \
-	-Dlinux_link_gnome_keyring=0 \
+        -Dlinux_link_gnome_keyring=0 \
         -Dlinux_link_libpci=1 \
         -Dlinux_link_libspeechd=1 \
-	-Denable_webrtc=1 \
-	-Ddisable_nacl=1
+        -Denable_webrtc=1 \
+        -Ddisable_nacl=1
 
   # fix issue with nspr libs
   sed -e "s|LIBS := |LIBS := $LDFLAGS |" -i chrome/chrome.target.mk
 
-  make V=1 chrome chrome_sandbox BUILDTYPE=Release
+  make chrome chrome_sandbox BUILDTYPE=Release
 
   install -m 0755 -D out/Release/chrome $PKG/usr/lib/chromium/chromium
   install -m 4755 -o root -g root -D out/Release/chrome_sandbox $PKG/usr/lib/chromium/chrome-sandbox
