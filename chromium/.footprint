@@ -79,10 +79,6 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/Images/
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/resourcesTimeGraphIcon.png
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/searchNext.png
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/searchPrev.png
--rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/searchSmallBlue.png
--rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/searchSmallBrightBlue.png
--rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/searchSmallGray.png
--rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/searchSmallWhite.png
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/sessionStorage.png
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/settingsListRemove.png
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/Images/settingsListRemove_2x.png
@@ -125,6 +121,7 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/Images/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/ScriptFormatterWorker.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/SourcesPanel.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/TimelinePanel.js
+-rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/accelerometer.css
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/auditsPanel.css
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/breadcrumbList.css
 -rw-rw-r--	root/root	usr/lib/chromium/resources/inspector/breakpointsList.css

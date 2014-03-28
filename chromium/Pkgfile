@@ -6,16 +6,19 @@
 # Depends on: dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage xorg-libxt gperf speech-dispatcher
 
 name=chromium
-version=32.0.1700.107
+version=33.0.1750.152
 release=1
 source=(http://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz \
-        $name.sh icu-native-arm.patch)
+        $name.sh icu-native-arm.patch rungn.patch)
 
 build() {
   cd $name-$version
 
   # avoid 32-bit flags (g++: error: unrecognized command line option '-m32')
   patch -p1 -i $SRC/icu-native-arm.patch
+
+  # patch for supplemental_includes
+  patch -p0 -i $SRC/rungn.patch
 
   # fix for speech-dispatcher >= 0.8
   sed -e 's|<<(libspeechd_h_prefix)libspeechd.h>|<speech-dispatcher/libspeechd.h>|' \
