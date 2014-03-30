@@ -110,8 +110,8 @@ lrwxrwxrwx	root/root	usr/lib/libmysqlclient.so.18 -> libmysqlclient.so.18.0.0
 -rwxr-xr-x	root/root	usr/lib/libmysqlclient.so.18.0.0
 lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.a -> libmysqlclient.a
 lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so -> libmysqlclient.so
-lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so.18 -> libmysqlclient.so
-lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so.18.0.0 -> libmysqlclient.so
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so.18 -> libmysqlclient.so.18
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so.18.0.0 -> libmysqlclient.so.18.0.0
 -rw-r--r--	root/root	usr/lib/libmysqld.a
 -rw-r--r--	root/root	usr/lib/libmysqlservices.a
 drwxr-xr-x	root/root	usr/lib/mysql/
