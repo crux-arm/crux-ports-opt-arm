@@ -1294,6 +1294,12 @@ drwxr-xr-x	root/root	usr/lib/python2.7/idlelib/idle_test/
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/mock_tk.py
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/mock_tk.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/mock_tk.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_autocomplete.py
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_autocomplete.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_autocomplete.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_autoexpand.py
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_autoexpand.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_autoexpand.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_calltips.py
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_calltips.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_calltips.pyo
@@ -1309,9 +1315,15 @@ drwxr-xr-x	root/root	usr/lib/python2.7/idlelib/idle_test/
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_grep.py
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_grep.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_grep.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_hyperparser.py
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_hyperparser.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_hyperparser.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_idlehistory.py
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_idlehistory.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_idlehistory.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_parenmatch.py
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_parenmatch.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_parenmatch.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_pathbrowser.py
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_pathbrowser.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_pathbrowser.pyo
@@ -1324,6 +1336,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/idlelib/idle_test/
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_text.py
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_text.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_text.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_textview.py
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_textview.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_textview.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_warning.py
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_warning.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/idlelib/idle_test/test_warning.pyo
@@ -1393,7 +1408,7 @@ drwxr-xr-x	root/root	usr/lib/python2.7/json/
 -rw-r--r--	root/root	usr/lib/python2.7/keyword.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/keyword.pyo
 drwxr-xr-x	root/root	usr/lib/python2.7/lib-dynload/
--rw-r--r--	root/root	usr/lib/python2.7/lib-dynload/Python-2.7.7-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/lib-dynload/Python-2.7.8-py2.7.egg-info
 -rwxr-xr-x	root/root	usr/lib/python2.7/lib-dynload/_bisect.so
 -rwxr-xr-x	root/root	usr/lib/python2.7/lib-dynload/_bsddb.so
 -rwxr-xr-x	root/root	usr/lib/python2.7/lib-dynload/_codecs_cn.so
@@ -1500,6 +1515,12 @@ drwxr-xr-x	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/
 -rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/__init__.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_geometry_managers.py
+-rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_geometry_managers.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_geometry_managers.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_images.py
+-rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_images.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_images.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_loadtk.py
 -rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_loadtk.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/lib-tk/test/test_tkinter/test_loadtk.pyo
@@ -1560,9 +1581,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/lib-tk/test/test_ttk/
 -rw-r--r--	root/root	usr/lib/python2.7/lib-tk/turtle.pyo
 drwxr-xr-x	root/root	usr/lib/python2.7/lib2to3/
 -rw-r--r--	root/root	usr/lib/python2.7/lib2to3/Grammar.txt
--rw-r--r--	root/root	usr/lib/python2.7/lib2to3/Grammar2.7.7.final.0.pickle
+-rw-r--r--	root/root	usr/lib/python2.7/lib2to3/Grammar2.7.8.final.0.pickle
 -rw-r--r--	root/root	usr/lib/python2.7/lib2to3/PatternGrammar.txt
--rw-r--r--	root/root	usr/lib/python2.7/lib2to3/PatternGrammar2.7.7.final.0.pickle
+-rw-r--r--	root/root	usr/lib/python2.7/lib2to3/PatternGrammar2.7.8.final.0.pickle
 -rw-r--r--	root/root	usr/lib/python2.7/lib2to3/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.7/lib2to3/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/lib2to3/__init__.pyo
@@ -3400,6 +3421,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/test/subprocessdata/
 -rw-r--r--	root/root	usr/lib/python2.7/test/test_sort.py
 -rw-r--r--	root/root	usr/lib/python2.7/test/test_sort.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/test/test_sort.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/test/test_spwd.py
+-rw-r--r--	root/root	usr/lib/python2.7/test/test_spwd.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/test/test_spwd.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/test/test_sqlite.py
 -rw-r--r--	root/root	usr/lib/python2.7/test/test_sqlite.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/test/test_sqlite.pyo
