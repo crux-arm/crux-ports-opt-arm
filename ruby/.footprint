@@ -104,6 +104,10 @@ drwxr-xr-x	root/root	usr/lib/ruby/1.9/drb/
 -rw-r--r--	root/root	usr/lib/ruby/1.9/e2mmap.rb
 -rw-r--r--	root/root	usr/lib/ruby/1.9/erb.rb
 -rw-r--r--	root/root	usr/lib/ruby/1.9/expect.rb
+-rw-r--r--	root/root	usr/lib/ruby/1.9/fiddle.rb
+drwxr-xr-x	root/root	usr/lib/ruby/1.9/fiddle/
+-rw-r--r--	root/root	usr/lib/ruby/1.9/fiddle/closure.rb
+-rw-r--r--	root/root	usr/lib/ruby/1.9/fiddle/function.rb
 -rw-r--r--	root/root	usr/lib/ruby/1.9/fileutils.rb
 -rw-r--r--	root/root	usr/lib/ruby/1.9/find.rb
 -rw-r--r--	root/root	usr/lib/ruby/1.9/forwardable.rb
@@ -244,6 +248,7 @@ drwxr-xr-x	root/root	usr/lib/ruby/1.9/linux-eabi/enc/trans/
 -rwxr-xr-x	root/root	usr/lib/ruby/1.9/linux-eabi/etc.so
 -rwxr-xr-x	root/root	usr/lib/ruby/1.9/linux-eabi/fcntl.so
 -rwxr-xr-x	root/root	usr/lib/ruby/1.9/linux-eabi/fiber.so
+-rwxr-xr-x	root/root	usr/lib/ruby/1.9/linux-eabi/fiddle.so
 -rwxr-xr-x	root/root	usr/lib/ruby/1.9/linux-eabi/gdbm.so
 -rwxr-xr-x	root/root	usr/lib/ruby/1.9/linux-eabi/iconv.so
 drwxr-xr-x	root/root	usr/lib/ruby/1.9/linux-eabi/io/
