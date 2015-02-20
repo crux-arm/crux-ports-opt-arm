@@ -5,7 +5,7 @@
 # Depends on: db gdbm openssl bzip2 zlib sqlite3
 
 name=python
-version=2.7.8
+version=2.7.9
 release=1
 source=(http://www.python.org/ftp/$name/$version/Python-$version.tar.xz \
         pyconfig.h)
@@ -20,7 +20,7 @@ build () {
               --mandir=/usr/man \
               --enable-shared \
               --with-threads \
-              --enable-ipv6 
+              --enable-ipv6
 
   make
   make -j1 DESTDIR=$PKG install
