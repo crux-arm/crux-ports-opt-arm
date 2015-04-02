@@ -1,8 +1,6 @@
-Based on Arnaud Patard patch for mysql 5.5.8
-===================================================================
---- mysql-5.5.16/sql-common/client_plugin.c	2011-09-30 13:09:10.709154000 +0200
-+++ mysql-5.5.16/sql-common/client_plugin_new.c	2011-09-30 13:11:53.753154000 +0200
-@@ -228,6 +228,7 @@
+--- mysql-5.6.23/sql-common/client_plugin.c.orig	2015-04-02 13:08:28.255818357 +0200
++++ mysql-5.6.23/sql-common/client_plugin.c	2015-04-02 13:11:57.325709613 +0200
+@@ -259,6 +259,7 @@
  {
    MYSQL mysql;
    struct st_mysql_client_plugin **builtin;
@@ -10,16 +8,16 @@ Based on Arnaud Patard patch for mysql 5.5.8
  
    if (initialized)
      return 0;
-@@ -244,7 +245,7 @@
-   pthread_mutex_lock(&LOCK_load_client_plugin);
+@@ -275,7 +276,7 @@
+   mysql_mutex_lock(&LOCK_load_client_plugin);
  
    for (builtin= mysql_client_builtins; *builtin; builtin++)
--    add_plugin(&mysql, *builtin, 0, 0, 0);
-+    add_plugin(&mysql, *builtin, 0, 0, dummy);
+-    add_plugin_noargs(&mysql, *builtin, 0, 0);
++    add_plugin_noargs(&mysql, *builtin, 0, 0, dummy);
  
-   pthread_mutex_unlock(&LOCK_load_client_plugin);
+   mysql_mutex_unlock(&LOCK_load_client_plugin);
  
-@@ -288,6 +289,7 @@
+@@ -319,6 +320,7 @@
  mysql_client_register_plugin(MYSQL *mysql,
                               struct st_mysql_client_plugin *plugin)
  {
@@ -27,12 +25,12 @@ Based on Arnaud Patard patch for mysql 5.5.8
    if (is_not_initialized(mysql, plugin->name))
      return NULL;
  
-@@ -302,7 +304,7 @@
+@@ -333,7 +335,7 @@
      plugin= NULL;
    }
    else
--    plugin= add_plugin(mysql, plugin, 0, 0, 0);
-+    plugin= add_plugin(mysql, plugin, 0, 0, dummy);
+-    plugin= add_plugin_noargs(mysql, plugin, 0, 0);
++    plugin= add_plugin_noargs(mysql, plugin, 0, 0, dummy);
  
-   pthread_mutex_unlock(&LOCK_load_client_plugin);
+   mysql_mutex_unlock(&LOCK_load_client_plugin);
    return plugin;
