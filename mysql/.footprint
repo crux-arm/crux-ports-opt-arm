@@ -144,6 +144,7 @@ drwxr-xr-x	root/root	usr/lib/mysql/plugin/
 -rw-r--r--	root/root	usr/lib/mysql/plugin/daemon_example.ini
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/libdaemon_example.so
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/mypluglib.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/mysql_no_login.so
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/qa_auth_client.so
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/qa_auth_interface.so
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/qa_auth_server.so
