@@ -6,23 +6,16 @@
 # Depends on: dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage xorg-libxt gperf speech-dispatcher
 
 name=chromium
-version=33.0.1750.152
+version=42.0.2311.90
 release=1
-source=(http://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz \
-        $name.sh icu-native-arm.patch rungn.patch)
+source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
+        $name.sh $name.desktop)
 
 build() {
   cd $name-$version
 
   # avoid 32-bit flags (g++: error: unrecognized command line option '-m32')
-  patch -p1 -i $SRC/icu-native-arm.patch
-
-  # patch for supplemental_includes
-  patch -p0 -i $SRC/rungn.patch
-
-  # fix for speech-dispatcher >= 0.8
-  sed -e 's|<<(libspeechd_h_prefix)libspeechd.h>|<speech-dispatcher/libspeechd.h>|' \
-      -i build/linux/system.gyp
+#  patch -p1 -i $SRC/icu-native-arm.patch
 
   export CFLAGS="$CFLAGS $(pkg-config --cflags nspr)"
   export LDFLAGS="$LDFLAGS $(pkg-config --libs nspr)"
@@ -38,7 +31,7 @@ build() {
     esac
   done
 
-  build/gyp_chromium -f make build/all.gyp --depth=. \
+  build/gyp_chromium build/all.gyp --depth=. \
         -Dtarget_arch=arm \
         -Darm_float_abi=hard \
         -Darmv7=$USE_ARMV7 \
@@ -47,17 +40,18 @@ build() {
         -Dv8_target_arch=arm \
         -Dv8_use_arm_eabi_hardfloat=1 \
         -Dsysroot= \
+        -Dclang=0 \
         -Dpython_ver="2.7" \
         -Dno_strict_aliasing=1 \
         -Dwerror= \
-        -Dlinux_sandbox_path=/usr/lib/chromium/chrome-sandbox \
+        -Dlinux_sandbox_path=/usr/lib/$name/chrome-sandbox \
         -Dlinux_strip_binary=1 \
         -Dlinux_use_gold_binary=0 \
         -Dlinux_use_gold_flags=0 \
-        -Dlinux_use_tmalloc=0 \
         -Drelease_extra_cflags="$CFLAGS" \
         -Dproprietary_codecs=1 \
         -Dffmpeg_branding=Chrome \
+        -Dlibspeechd_h_prefix=speech-dispatcher/ \
         -Duse_system_libjpeg=1 \
         -Duse_system_libxslt=1 \
         -Duse_system_libxml=1 \
@@ -65,9 +59,10 @@ build() {
         -Duse_system_zlib=0 \
         -Duse_system_libpng=0 \
         -Duse_system_ffmpeg=0 \
-        -Duse_system_yasm=0 \
+        -Duse_system_yasm=1 \
         -Duse_system_libevent=1 \
         -Duse_system_sqlite=0 \
+        -Duse_system_ssl=0 \
         -Dremove_webcore_debug_symbols=1 \
         -Duse_gconf=0 \
         -Duse_cups=0 \
@@ -78,26 +73,30 @@ build() {
         -Dlinux_link_libpci=1 \
         -Dlinux_link_libspeechd=1 \
         -Denable_webrtc=1 \
-        -Ddisable_nacl=1
+        -Ddisable_nacl=1 \
+        -Dicu_use_data_file_flag=0
 
-  # fix issue with nspr libs
-  sed -e "s|LIBS := |LIBS := $LDFLAGS |" -i chrome/chrome.target.mk
+  ninja -C out/Release chrome chrome_sandbox
 
-  make chrome chrome_sandbox BUILDTYPE=Release
+  install -m 0755 -D out/Release/chrome $PKG/usr/lib/$name/$name
+  install -m 4755 -o root -g root -D out/Release/chrome_sandbox $PKG/usr/lib/$name/chrome-sandbox
+  install -m 0644 -D out/Release/*.pak $PKG/usr/lib/$name
+  install -m 0755 -D out/Release/libffmpegsumo.so $PKG/usr/lib/$name
+  install -d $PKG/usr/lib/$name/locales
+  install -m 0644 out/Release/locales/en-US.pak $PKG/usr/lib/$name/locales
+  cp -a out/Release/resources $PKG/usr/lib/$name
+  install -m 0644 -D out/Release/chrome.1 $PKG/usr/man/man1/$name.1
 
-  install -m 0755 -D out/Release/chrome $PKG/usr/lib/chromium/chromium
-  install -m 4755 -o root -g root -D out/Release/chrome_sandbox $PKG/usr/lib/chromium/chrome-sandbox
-  install -m 0644 -D out/Release/*.pak $PKG/usr/lib/chromium
-  install -m 0755 -D out/Release/libffmpegsumo.so $PKG/usr/lib/chromium
-  install -d $PKG/usr/lib/chromium/locales
-  install -m 0644 out/Release/locales/en-US.pak $PKG/usr/lib/chromium/locales
-  cp -a out/Release/resources $PKG/usr/lib/chromium
-  install -m 0644 -D out/Release/chrome.1 $PKG/usr/man/man1/chromium.1
+  # fix v8 natives
+  cp -a out/Release/{natives,snapshot}_blob.bin $PKG/usr/lib/$name
 
   for size in 22 24 48 128 256; do
-    install -m 0644 -D chrome/app/theme/chromium/product_logo_${size}.png \
-      $PKG/usr/share/icons/hicolor/${size}x${size}/apps/chromium.png
+    install -m 0644 -D chrome/app/theme/$name/product_logo_${size}.png \
+      $PKG/usr/share/icons/hicolor/${size}x${size}/apps/$name.png
   done
 
-  install -m 0755 -D $SRC/chromium.sh $PKG/usr/bin/chromium
+  install -d $PKG/usr/share/pixmaps
+  ln -sf /usr/share/icons/hicolor/48x48/apps/$name.png $PKG/usr/share/pixmaps/$name.png
+  install -m 0644 -D $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
+  install -m 0755 -D $SRC/$name.sh $PKG/usr/bin/$name
 }
