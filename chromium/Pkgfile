@@ -14,9 +14,6 @@ source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$ve
 build() {
   cd $name-$version
 
-  # avoid 32-bit flags (g++: error: unrecognized command line option '-m32')
-#  patch -p1 -i $SRC/icu-native-arm.patch
-
   export CFLAGS="$CFLAGS $(pkg-config --cflags nspr)"
   export LDFLAGS="$LDFLAGS $(pkg-config --libs nspr)"
 
