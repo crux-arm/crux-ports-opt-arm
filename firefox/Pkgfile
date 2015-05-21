@@ -16,37 +16,6 @@ build() {
   patch -p1 -i $SRC/firefox-install-dir.patch
   patch -p1 -i $SRC/0001-Fix-build-with-USE_SKIA_GPU.patch
 
-  # determine some flags depending on SOC
-  FPU=vfp; ARCH=armv6; THUMB=no
-  case $(uname -m) in
-      armv7*) ARCH=armv7; THUMB=yes;;
-  esac
-  for flag in $CFLAGS; do
-    case $flag in
-      -mfpu=neon*) FPU=neon;;
-    esac
-  done
-
-  #ac_add_options --with-thumb-interwork=$THUMB
-  #ac_add_options --with-soft-float=no
-  #ac_add_options --with-thumb=$THUMB
-
-#  mk_add_options MOZ_ALIGN=no
-#  ac_add_options --with-arch=$ARCH
-#  ac_add_options --with-fpu=$FPU
-#  ac_add_options --with-float-abi=hard
-#  ac_add_options --with-thumb-interwork=no
-#  ac_add_options --with-thumb=no
-
-
-#  export MOZ_THUMB="no"
-#  export MOZ_ARCH="$ARCH"
-#  export MOZ_FPU="$FPU"
-#  export MOZ_FLOAT_ABI="hard"
-#  export MOZ_ALIGN="no"
-#  export VPX_ASFLAGS="$CFLAGS"
-#  export LIBJPEG_TURBO_ASFLAGS="$CFLAGS"
-
   cat <<- EOF > .mozconfig
   mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-shared
   mk_add_options MOZ_MAKE_FLAGS="$MAKEFLAGS -s"
@@ -97,12 +66,6 @@ build() {
   ac_add_options --disable-skia-gpu
 EOF
 
-  #sed "s|-march=armv7-a -mfpu=neon||g" -i configure
-#  sed "s|VPX_ASFLAGS.*|VPX_ASFLAGS=\"\"|g" -i configure
-#  sed "s|LIBJPEG_TURBO_ASFLAGS.*|LIBJPEG_TURBO_ASFLAGS=\"\"|g" -i configure
-  #make -f client.mk build VPX_ASFLAGS="$CFLAGS" LIBJPEG_TURBO_ASFLAGS="$CFLAGS"
-#  sed "s|VPX_ASFLAGS = -march=armv7-a -mfpu=neon|VPX_ASFLAGS = |g" -i firefox-shared/config/autoconf.mk
-#  sed -e "s|-march=armv7-a||g" -e "s|-mthumb||g" -e "s|-mfloat-abi=softfp||g" -e "s|-mfpu=neon||g" -i mozilla-release/firefox-shared/media/libvpx/backend.mk
   sed "s|\['-march=armv7-a', '-mthumb', '-mfloat-abi=softfp', '-mfpu=neon'\]|\[\]|g" -i media/libvpx/moz.build
   make -f client.mk build
   make -f client.mk DESTDIR=$PKG install
