@@ -19,8 +19,6 @@ build() {
   cat <<- EOF > .mozconfig
   mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-shared
   mk_add_options MOZ_MAKE_FLAGS="$MAKEFLAGS -s"
-  export VPX_ASFLAGS="$CFLAGS"
-  export LIBJPEG_TURBO_ASFLAGS="$CFLAGS"
   ac_add_options --prefix=/usr
   ac_add_options --with-system-jpeg
   ac_add_options --with-system-zlib
@@ -63,7 +61,6 @@ build() {
   ac_add_options --disable-libnotify
   ac_add_options --disable-gstreamer
   ac_add_options --disable-pulseaudio
-  ac_add_options --disable-skia-gpu
 EOF
 
   sed "s|\['-march=armv7-a', '-mthumb', '-mfloat-abi=softfp', '-mfpu=neon'\]|\[\]|g" -i media/libvpx/moz.build
