@@ -5,8 +5,8 @@
 # Depends on: nss, libidl, gtk, python, alsa-lib, yasm, mesa3d
 
 name=firefox
-version=38.0.5
-release=2
+version=39.0
+release=1
 source=(ftp://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.bz2
         firefox-install-dir.patch 0001-Fix-build-with-USE_SKIA_GPU.patch firefox.desktop)
 
@@ -44,7 +44,6 @@ build() {
   ac_add_options --enable-places_bookmarks
   ac_add_options --enable-image-encoder=all
   ac_add_options --enable-xft
-  ac_add_options --enable-tree-freetype
   ac_add_options --disable-static
   ac_add_options --disable-tests
   ac_add_options --disable-mochitest
@@ -62,6 +61,7 @@ build() {
   ac_add_options --disable-libnotify
   ac_add_options --disable-gstreamer
   ac_add_options --disable-pulseaudio
+  ac_add_options --enable-pic
 EOF
 
   sed "s|\['-march=armv7-a', '-mthumb', '-mfloat-abi=softfp', '-mfpu=neon'\]|\[\]|g" -i media/libvpx/moz.build
