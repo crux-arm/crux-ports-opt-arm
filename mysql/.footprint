@@ -254,4 +254,6 @@ drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwx------	mysql/mysql	var/lib/mysql/
 drwxr-xr-x	root/root	var/log/
--rw-------	mysql/mysql	var/log/mysqld.log (EMPTY)
+drwx------	mysql/mysql	var/log/mysql/
+drwxr-xr-x	root/root	var/run/
+drwx------	mysql/mysql	var/run/mysql/
