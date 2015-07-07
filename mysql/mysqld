@@ -6,13 +6,12 @@
 SSD=/sbin/start-stop-daemon
 PROG=/usr/sbin/mysqld
 MYSQL_CFG=/etc/my.cnf
-PID=$(sed -n 's/^pid-file[ \t]*=[ \t]*//p' $MYSQL_CFG)
-USR=$(sed -n 's/^user[ \t]*=[ \t]*//p' $MYSQL_CFG)
+PID=/var/run/mysql/mysqld.pid
+LOG=/var/log/mysqld.log
 
 case $1 in
 start)
-	touch $PID && chown $USR:$USR $PID
-	$SSD --start --background --pidfile $PID --exec $PROG
+	$SSD --start -bC --pidfile $PID --exec $PROG >> $LOG 2>&1
 	;;
 stop)
 	$SSD --stop --remove-pidfile --retry 10 --pidfile $PID
