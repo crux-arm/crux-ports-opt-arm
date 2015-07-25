@@ -2,7 +2,7 @@
 # URL: http://www.mozilla.com/firefox/
 # Maintainer: Fredrik Rinnestam, fredrik at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: nss, libidl, gtk, python, alsa-lib, xorg-libxt, yasm, mesa3d, gst-plugins-basey
+# Depends on: nss, libidl, gtk, python, alsa-lib, xorg-libxt, yasm, mesa3d, gst-plugins-base
 
 name=firefox
 version=39.0
