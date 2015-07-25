@@ -143,6 +143,10 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/GMPVideoHost.h
 -rw-r--r--	root/root	usr/include/firefox/GMPVideoPlaneImpl.h
 -rw-r--r--	root/root	usr/include/firefox/GMPVideoi420FrameImpl.h
+-rw-r--r--	root/root	usr/include/firefox/GStreamerDecoder.h
+-rw-r--r--	root/root	usr/include/firefox/GStreamerFormatHelper.h
+-rw-r--r--	root/root	usr/include/firefox/GStreamerLoader.h
+-rw-r--r--	root/root	usr/include/firefox/GStreamerReader.h
 -rw-r--r--	root/root	usr/include/firefox/GeckoProfiler.h
 -rw-r--r--	root/root	usr/include/firefox/GfxDriverInfo.h
 -rw-r--r--	root/root	usr/include/firefox/GfxInfoBase.h
