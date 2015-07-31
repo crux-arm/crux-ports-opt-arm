@@ -6,7 +6,7 @@
 # Depends on: dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage xorg-libxt gperf speech-dispatcher
 
 name=chromium
-version=43.0.2357.134
+version=44.0.2403.125
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
         $name.sh $name.desktop)
@@ -78,7 +78,6 @@ build() {
   install -m 0755 -D out/Release/chrome $PKG/usr/lib/$name/$name
   install -m 4755 -o root -g root -D out/Release/chrome_sandbox $PKG/usr/lib/$name/chrome-sandbox
   install -m 0644 -D out/Release/*.pak $PKG/usr/lib/$name
-  install -m 0755 -D out/Release/libffmpegsumo.so $PKG/usr/lib/$name
   install -d $PKG/usr/lib/$name/locales
   install -m 0644 out/Release/locales/en-US.pak $PKG/usr/lib/$name/locales
   cp -a out/Release/resources $PKG/usr/lib/$name
