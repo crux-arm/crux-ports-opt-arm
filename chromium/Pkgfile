@@ -6,7 +6,7 @@
 # Depends on: dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage xorg-libxt gperf speech-dispatcher
 
 name=chromium
-version=44.0.2403.125
+version=44.0.2403.130
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
         $name.sh $name.desktop)
