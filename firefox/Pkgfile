@@ -5,9 +5,9 @@
 # Depends on: nss, libidl, gtk, python, alsa-lib, xorg-libxt, yasm, mesa3d, gst-plugins-base
 
 name=firefox
-version=39.0
-release=2
-source=(ftp://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.bz2
+version=39.0.3
+release=1
+source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.bz2
         firefox-install-dir.patch 0001-Fix-build-with-USE_SKIA_GPU.patch firefox.desktop)
 
 build() {
