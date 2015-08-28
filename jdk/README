@@ -5,6 +5,6 @@ REQUIREMENTS
    Download the Java SE Development Kit (JDK) from
    - http://www.oracle.com/technetwork/java/javase/downloads/index.html
    and put the file
-   -  jdk-7u*-linux-arm-vfp-hflt.tar.gz
+   -  jdk-8u*-linux-arm32-vfp-hflt.tar.gz
 
    into the directory defined by PKGMK_SOURCE_DIR. See pkgmk.conf(5).

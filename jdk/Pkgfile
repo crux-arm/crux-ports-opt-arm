@@ -5,9 +5,9 @@
 # Packager: Simone Rota, sip at crux dot nu
 
 name=jdk
-version=1.7.0_51
+version=1.8.0_60
 release=1
-source=(file:///$name-7u${version##*_}-linux-arm-vfp-hflt.tar.gz)
+source=(file:///$name-8u${version##*_}-linux-arm32-vfp-hflt.tar.gz)
 
 build(){
 	rm -rf $SRC/jdk*/{man/ja,jre/lib/{locale,deploy/messages_},db/lib/derbyLocale*}*
