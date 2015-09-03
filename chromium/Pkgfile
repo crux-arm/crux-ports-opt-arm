@@ -3,10 +3,10 @@
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: Tadeusz Sosnierz, tadzikes gmail com
-# Depends on: dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage xorg-libxt gperf speech-dispatcher
+# Depends on: ninja dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage yasm xorg-libxt gperf speech-dispatcher libdrm libexif pciutils
 
 name=chromium
-version=44.0.2403.130
+version=44.0.2403.157
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
         $name.sh $name.desktop)
