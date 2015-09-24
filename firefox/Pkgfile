@@ -5,9 +5,9 @@
 # Depends on: nss, libidl, gtk, python, alsa-lib, xorg-libxt, yasm, mesa3d, gst-plugins-base
 
 name=firefox
-version=40.0.3
+version=41.0
 release=1
-source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.bz2
+source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
         firefox-install-dir.patch firefox.desktop)
 
 build() {
@@ -62,6 +62,7 @@ build() {
   ac_add_options --disable-necko-wifi
   ac_add_options --disable-libnotify
   ac_add_options --disable-pulseaudio
+  ac_add_options --disable-gconf
 EOF
 
   sed "s|\['-march=armv7-a', '-mthumb', '-mfloat-abi=softfp', '-mfpu=neon'\]|\[\]|g" -i media/libvpx/moz.build
