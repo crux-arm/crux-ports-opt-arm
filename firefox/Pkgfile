@@ -5,14 +5,15 @@
 # Depends on: nss, libidl, gtk, python, alsa-lib, xorg-libxt, yasm, mesa3d, gst-plugins-base
 
 name=firefox
-version=41.0
+version=42.0
 release=1
 source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
         firefox-install-dir.patch firefox.desktop)
 
 build() {
-  cd mozilla-release
+  cd $name-$version
 
+  sed -i '/^ftfntfmt.h/ i freetype/ftfntfmt.h' config/system-headers
   patch -p1 -i $SRC/firefox-install-dir.patch
 
   cat <<- EOF > .mozconfig
@@ -46,7 +47,7 @@ build() {
   ac_add_options --enable-xft
   ac_add_options --enable-gstreamer=1.0
   ac_add_options --enable-pic
-  ac_add_options --disable-static
+  #ac_add_options --disable-static
   ac_add_options --disable-tests
   ac_add_options --disable-mochitest
   ac_add_options --disable-dbus
