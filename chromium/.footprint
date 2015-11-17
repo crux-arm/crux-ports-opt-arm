@@ -72,10 +72,10 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/Images/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/responsiveDesign_2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/searchNext.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/searchPrev.png
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateHttp.png
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateHttp_2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateInsecure.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateInsecure_2x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateNeutral.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateNeutral_2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateSecure.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateSecure_2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/securityStateWarning.png
@@ -85,7 +85,6 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/Images/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/settingsListRemove.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/settingsListRemove_2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/speech.png
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/spinner.svg
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/thumbActiveHoriz.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/thumbActiveVert.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/thumbHoriz.png
@@ -111,6 +110,19 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/Images/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/devtools.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/devtools_extension_api.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/elements_module.js
+drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/emulated_devices/
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-horizontal-default-1x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-horizontal-default-2x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-horizontal-keyboard-1x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-horizontal-keyboard-2x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-horizontal-navigation-1x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-horizontal-navigation-2x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-vertical-default-1x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-vertical-default-2x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-vertical-keyboard-1x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-vertical-keyboard-2x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-vertical-navigation-1x.png
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5-vertical-navigation-2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices_module.js (EMPTY)
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/heap_snapshot_worker_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/inspector.css
