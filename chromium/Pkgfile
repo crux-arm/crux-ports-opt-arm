@@ -6,13 +6,16 @@
 # Depends on: ninja dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage yasm xorg-libxt gperf speech-dispatcher libdrm libexif pciutils
 
 name=chromium
-version=45.0.2454.85
+version=46.0.2490.86
+
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
         $name.sh $name.desktop)
 
 build() {
   cd $name-$version
+
+	touch chrome/test/data/webui/i18n_process_css_test.html
 
   export CFLAGS="$CFLAGS $(pkg-config --cflags nspr)"
   export LDFLAGS="$LDFLAGS $(pkg-config --libs nspr)"
