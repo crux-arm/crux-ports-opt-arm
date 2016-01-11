@@ -2,10 +2,10 @@
 # URL: http://www.mysql.com
 # Maintainer: Juergen Daubert, jue at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: tcp_wrappers ncurses zlib openssl cmake libaio
+# Depends on: ncurses zlib openssl cmake libaio
 
 name=mysql
-version=5.6.27
+version=5.6.28
 release=1
 source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.6/$name-$version.tar.gz \
         my.cnf mysqld valist.patch)
@@ -26,7 +26,7 @@ build () {
         -DINSTALL_LIBDIR=lib \
         -DINSTALL_PLUGINDIR=lib/mysql/plugin \
         -DINSTALL_MANDIR=man \
-        -DWITH_LIBWRAP=1 \
+        -DWITH_LIBWRAP=0 \
         -DWITH_SSL=system \
         -DWITH_ZLIB=system
 
