@@ -1,11 +1,11 @@
---- configure.orig	2012-04-20 08:49:31.987472765 +0200
-+++ configure	2012-04-20 08:49:12.771503821 +0200
-@@ -17549,7 +17549,7 @@
+--- configure.orig	2016-01-25 13:26:06.560006183 +0100
++++ configure	2016-01-25 13:26:19.590006189 +0100
+@@ -24785,7 +24785,7 @@
  _ACEOF
  
  else
 -    arch="${target_cpu}-${target_os}"
 +    arch="${target_os}"
-     cat >>confdefs.h <<_ACEOF
- #define RUBY_PLATFORM "${arch}"
- _ACEOF
+     case "$arch" in #(
+   le32-nacl) :
+     arch="pnacl" ;; #(
