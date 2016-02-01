@@ -5,18 +5,18 @@
 # Packager: Simone Rota, sip at crux dot nu
 
 name=jdk
-version=1.8.0_60
+version=1.8.0_71
 release=1
-source=(file:///$name-8u${version##*_}-linux-arm32-vfp-hflt.tar.gz)
+source=($name-8u${version##*_}-linux-arm32-vfp-hflt.tar.gz)
 
 build(){
 	rm -rf $SRC/jdk*/{man/ja,jre/lib/{locale,deploy/messages_},db/lib/derbyLocale*}*
 	rm -rf $SRC/jdk*/jre/lib/fontconfig.{RedHat,SuSE,Sun,Turbo}.*
 	rm -rf $SRC/jdk*/{,jre/}[A-Z]*
 
-	install -d $PKG/usr/lib
+	install -d $PKG/usr/{lib,share}
 	mv $SRC/jdk* $PKG/usr/lib/$name
-	mv $PKG/usr/lib/jdk*/man $PKG/usr
+	mv $PKG/usr/lib/jdk*/man $PKG/usr/share/
 
 	cd $PKG/usr/lib
 	export GLOBIGNORE="*/src.zip"
