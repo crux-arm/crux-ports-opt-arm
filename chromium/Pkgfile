@@ -6,7 +6,7 @@
 # Depends on: ninja dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage yasm xorg-libxt gperf speech-dispatcher libdrm libexif pciutils
 
 name=chromium
-version=46.0.2490.86
+version=48.0.2564.97
 
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
@@ -17,7 +17,7 @@ build() {
 
 	touch chrome/test/data/webui/i18n_process_css_test.html
 
-  export CFLAGS="$CFLAGS $(pkg-config --cflags nspr)"
+  export CFLAGS="$CFLAGS $(pkg-config --cflags nspr) -lpthread"
   export LDFLAGS="$LDFLAGS $(pkg-config --libs nspr)"
 
   # determine some flags depending on SOC
