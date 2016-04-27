@@ -3,6 +3,8 @@ drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/firefox -> /usr/lib/firefox/firefox
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/firefox/
+-rw-r--r--	root/root	usr/include/firefox/ADTSDecoder.h
+-rw-r--r--	root/root	usr/include/firefox/ADTSDemuxer.h
 -rw-r--r--	root/root	usr/include/firefox/AbstractMediaDecoder.h
 -rw-r--r--	root/root	usr/include/firefox/AccEvent.h
 -rw-r--r--	root/root	usr/include/firefox/ActiveLayerTracker.h
@@ -57,6 +59,7 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/CompositableHost.h
 -rw-r--r--	root/root	usr/include/firefox/CompositorTypes.h
 -rw-r--r--	root/root	usr/include/firefox/ContainerWriter.h
+-rw-r--r--	root/root	usr/include/firefox/ContentHandlerService.h
 -rw-r--r--	root/root	usr/include/firefox/ContentHelper.h
 -rw-r--r--	root/root	usr/include/firefox/ContextStateTracker.h
 -rw-r--r--	root/root	usr/include/firefox/CopyableCanvasLayer.h
@@ -73,6 +76,7 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/DeviceStorageFileDescriptor.h
 -rw-r--r--	root/root	usr/include/firefox/DiskSpaceWatcher.h
 -rw-r--r--	root/root	usr/include/firefox/DisplayItemClip.h
+-rw-r--r--	root/root	usr/include/firefox/DisplayItemScrollClip.h
 -rw-r--r--	root/root	usr/include/firefox/DisplayListClipState.h
 -rw-r--r--	root/root	usr/include/firefox/DrawMode.h
 -rw-r--r--	root/root	usr/include/firefox/DrawResult.h
@@ -250,6 +254,7 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/OggDecoder.h
 -rw-r--r--	root/root	usr/include/firefox/OggReader.h
 -rw-r--r--	root/root	usr/include/firefox/OggWriter.h
+-rw-r--r--	root/root	usr/include/firefox/OmxDecoderModule.h
 -rw-r--r--	root/root	usr/include/firefox/OpusDecoder.h
 -rw-r--r--	root/root	usr/include/firefox/OpusParser.h
 -rw-r--r--	root/root	usr/include/firefox/OpusTrackEncoder.h
@@ -267,6 +272,7 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/RtspMediaResource.h
 -rw-r--r--	root/root	usr/include/firefox/RubyUtils.h
 -rw-r--r--	root/root	usr/include/firefox/SVGAttrValueWrapper.h
+-rw-r--r--	root/root	usr/include/firefox/SVGContentUtils.h
 -rw-r--r--	root/root	usr/include/firefox/SVGImageContext.h
 -rw-r--r--	root/root	usr/include/firefox/SVGPreserveAspectRatio.h
 -rw-r--r--	root/root	usr/include/firefox/SVGStringList.h
@@ -285,7 +291,6 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/SharedSurfaceGLX.h
 -rwxr-xr-x	root/root	usr/include/firefox/SkiaGLGlue.h
 -rw-r--r--	root/root	usr/include/firefox/SoftwareVsyncSource.h
--rw-r--r--	root/root	usr/include/firefox/SoftwareWebMVideoDecoder.h
 -rw-r--r--	root/root	usr/include/firefox/SourceBufferContentManager.h
 -rw-r--r--	root/root	usr/include/firefox/SpecialSystemDirectory.h
 -rw-r--r--	root/root	usr/include/firefox/StackArena.h
@@ -306,6 +311,11 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/UnitTransforms.h
 -rw-r--r--	root/root	usr/include/firefox/Units.h
 -rw-r--r--	root/root	usr/include/firefox/VPXDecoder.h
+-rw-r--r--	root/root	usr/include/firefox/VRDeviceProxy.h
+-rw-r--r--	root/root	usr/include/firefox/VRManager.h
+-rw-r--r--	root/root	usr/include/firefox/VRManagerChild.h
+-rw-r--r--	root/root	usr/include/firefox/VRManagerParent.h
+-rw-r--r--	root/root	usr/include/firefox/VRMessageUtils.h
 -rw-r--r--	root/root	usr/include/firefox/VideoFrameContainer.h
 -rw-r--r--	root/root	usr/include/firefox/VideoSegment.h
 -rw-r--r--	root/root	usr/include/firefox/VideoUtils.h
@@ -318,7 +328,6 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/WebMBufferedParser.h
 -rw-r--r--	root/root	usr/include/firefox/WebMDecoder.h
 -rw-r--r--	root/root	usr/include/firefox/WebMDemuxer.h
--rw-r--r--	root/root	usr/include/firefox/WebMReader.h
 -rw-r--r--	root/root	usr/include/firefox/WordMovementType.h
 -rw-r--r--	root/root	usr/include/firefox/WrapperFactory.h
 -rw-r--r--	root/root	usr/include/firefox/XPCJSMemoryReporter.h
@@ -381,6 +390,7 @@ drwxr-xr-x	root/root	usr/include/firefox/dl/sp/api/
 -rw-r--r--	root/root	usr/include/firefox/gfxContext.h
 -rw-r--r--	root/root	usr/include/firefox/gfxCrashReporterUtils.h
 -rw-r--r--	root/root	usr/include/firefox/gfxDrawable.h
+-rw-r--r--	root/root	usr/include/firefox/gfxEnv.h
 -rw-r--r--	root/root	usr/include/firefox/gfxFT2FontBase.h
 -rw-r--r--	root/root	usr/include/firefox/gfxFailure.h
 -rw-r--r--	root/root	usr/include/firefox/gfxFont.h
@@ -550,6 +560,7 @@ drwxr-xr-x	root/root	usr/include/firefox/harfbuzz/
 -rw-r--r--	root/root	usr/include/firefox/inISearchObserver.h
 -rw-r--r--	root/root	usr/include/firefox/inISearchProcess.h
 drwxr-xr-x	root/root	usr/include/firefox/ipc/
+-rw-r--r--	root/root	usr/include/firefox/ipc/DataStorageIPCUtils.h
 -rw-r--r--	root/root	usr/include/firefox/ipc/ErrorIPCUtils.h
 -rw-r--r--	root/root	usr/include/firefox/ipc/IPCMessageUtils.h
 -rw-r--r--	root/root	usr/include/firefox/ipc/nsGUIEventIPC.h
@@ -566,9 +577,12 @@ drwxr-xr-x	root/root	usr/include/firefox/js/
 -rw-r--r--	root/root	usr/include/firefox/js/Date.h
 -rw-r--r--	root/root	usr/include/firefox/js/Debug.h
 -rw-r--r--	root/root	usr/include/firefox/js/GCAPI.h
+-rw-r--r--	root/root	usr/include/firefox/js/GCHashTable.h
+-rw-r--r--	root/root	usr/include/firefox/js/GCVector.h
 -rw-r--r--	root/root	usr/include/firefox/js/HashTable.h
 -rw-r--r--	root/root	usr/include/firefox/js/HeapAPI.h
 -rw-r--r--	root/root	usr/include/firefox/js/Id.h
+-rw-r--r--	root/root	usr/include/firefox/js/Initialization.h
 -rw-r--r--	root/root	usr/include/firefox/js/LegacyIntTypes.h
 -rw-r--r--	root/root	usr/include/firefox/js/MemoryMetrics.h
 -rw-r--r--	root/root	usr/include/firefox/js/Principals.h
@@ -580,15 +594,15 @@ drwxr-xr-x	root/root	usr/include/firefox/js/
 -rw-r--r--	root/root	usr/include/firefox/js/SliceBudget.h
 -rw-r--r--	root/root	usr/include/firefox/js/StructuredClone.h
 -rw-r--r--	root/root	usr/include/firefox/js/TraceKind.h
--rw-r--r--	root/root	usr/include/firefox/js/TraceableHashTable.h
--rw-r--r--	root/root	usr/include/firefox/js/TraceableVector.h
 -rw-r--r--	root/root	usr/include/firefox/js/TracingAPI.h
 -rw-r--r--	root/root	usr/include/firefox/js/TrackedOptimizationInfo.h
 -rw-r--r--	root/root	usr/include/firefox/js/TypeDecls.h
 -rw-r--r--	root/root	usr/include/firefox/js/UbiNode.h
 -rw-r--r--	root/root	usr/include/firefox/js/UbiNodeBreadthFirst.h
 -rw-r--r--	root/root	usr/include/firefox/js/UbiNodeCensus.h
+-rw-r--r--	root/root	usr/include/firefox/js/UbiNodeDominatorTree.h
 -rw-r--r--	root/root	usr/include/firefox/js/UbiNodePostOrder.h
+-rw-r--r--	root/root	usr/include/firefox/js/UniquePtr.h
 -rw-r--r--	root/root	usr/include/firefox/js/Utility.h
 -rw-r--r--	root/root	usr/include/firefox/js/Value.h
 -rw-r--r--	root/root	usr/include/firefox/js/Vector.h
@@ -656,10 +670,14 @@ drwxr-xr-x	root/root	usr/include/firefox/kiss_fft/
 drwxr-xr-x	root/root	usr/include/firefox/mozilla/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/AbstractThread.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/AbstractTimelineMarker.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/AddonContentPolicy.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/AddonPathService.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/AlertNotification.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/AlertNotificationIPCSerializer.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Alignment.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/AllocPolicy.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/AlreadyAddRefed.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/AnimValuesStyleRule.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/AnimationComparator.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/AnimationUtils.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/AppData.h
@@ -703,14 +721,15 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Compiler.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/CompositeTimelineMarker.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Compression.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/ComputedTimingFunction.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/CondVar.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ConsoleReportCollector.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ConsoleTimelineMarker.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/Constants.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ContentCache.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ContentEvents.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/CountingAllocatorBase.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/CycleCollectedJSRuntime.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/D3DMessageUtils.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/DOMEventTargetHelper.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/DataStorage.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/DeadlockDetector.h
@@ -720,7 +739,10 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Decimal.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/DeferredFinalize.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/DetailedPromise.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/DocLoadingTimelineMarker.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/EMEUtils.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/EffectCompositor.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/EffectSet.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Endian.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/EnumSet.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/EnumeratedArray.h
@@ -767,6 +789,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/IOInterposer.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/IncrementalClearCOMRuleArray.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/IndexSequence.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/InitializerList.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/IntegerPrintfMacros.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/IntegerRange.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/IntegerTypeTraits.h
@@ -786,6 +809,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/LinuxSignal.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/LinuxUtils.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/LoadContext.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/LoadContextInfo.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/LoadInfo.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/LoadTainting.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Logging.h
@@ -816,6 +840,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ObservedDocShell.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Observer.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Omnijar.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/Opaque.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/OwningNonNull.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/PaintTracker.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Pair.h
@@ -833,6 +858,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ProcessHangMonitorIPC.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ProcessPriorityManager.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ProcessedStack.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/PseudoElementHashEntry.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/PublicSSL.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/Range.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/RangedArray.h
@@ -961,6 +987,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/devtools/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/devtools/AutoMemMap.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/devtools/CoreDump.pb.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/devtools/DeserializedNode.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/devtools/DominatorTree.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/devtools/FileDescriptorOutputStream.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/devtools/HeapSnapshot.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/devtools/HeapSnapshotTempFileHelperChild.h
@@ -973,8 +1000,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/APZTestDataBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AVInputPort.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AVInputPortBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AbortablePromise.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AbortablePromiseBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AbstractWorkerBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/Activity.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ActivityRequestHandlerBinding.h
@@ -986,6 +1011,8 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AnimationBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AnimationEffectReadOnly.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AnimationEffectReadOnlyBinding.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AnimationEffectTimingReadOnly.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AnimationEffectTimingReadOnlyBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AnimationEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AnimationEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/AnimationPlaybackEvent.h
@@ -1118,6 +1145,8 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ChannelSplitterNode.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ChannelSplitterNodeBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/CharacterDataBinding.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/CheckerboardReportService.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/CheckerboardReportServiceBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ChildIterator.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ChildNodeBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ChromeNodeList.h
@@ -1243,6 +1272,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DocumentTimelineBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DocumentType.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DocumentTypeBinding.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DominatorTreeBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DownloadEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DownloadEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DownloadsBinding.h
@@ -1277,7 +1307,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ExternalHelperAppParent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FakePluginTagInitBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FakeSpeechRecognitionService.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FakeTVService.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FallbackEncoding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FeatureList.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/Fetch.h
@@ -1294,6 +1323,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileListBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileModeBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FilePickerParent.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileReader.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileReaderBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileReaderSyncBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileRequestBase.h
@@ -1311,11 +1341,11 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FontFaceSetLoadEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FontFaceSetLoadEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FontFaceSourceBinding.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FormData.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FormDataBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FragmentOrElement.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FromParser.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FunctionBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/GMPVideoDecoderTrialCreator.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/GainNode.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/GainNodeBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/Gamepad.h
@@ -1391,6 +1421,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/HTMLHeadingElement.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/HTMLHeadingElementBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/HTMLHtmlElementBinding.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/HTMLHyperlinkElementUtilsBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/HTMLIFrameElement.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/HTMLIFrameElementBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/HTMLImageElement.h
@@ -1511,6 +1542,8 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/IccManager.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ImageBitmap.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ImageBitmapBinding.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ImageBitmapRenderingContext.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ImageBitmapRenderingContextBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ImageBitmapSource.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ImageCapture.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ImageCaptureBinding.h
@@ -1621,12 +1654,14 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MimeTypeArrayBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MimeTypeBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MmsMessage.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MmsMessageBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MobileCellInfo.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MobileConnection.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MobileConnectionArray.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MobileConnectionInfo.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MobileMessageManager.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MobileMessageThread.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MobileMessageThreadBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MobileNetworkInfo.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MouseEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MouseEventBinding.h
@@ -1655,7 +1690,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MozMessageDeletedEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MozMmsEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MozMmsEventBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MozMmsMessageBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MozMobileCellInfoBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MozMobileConnectionArrayBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/MozMobileConnectionBinding.h
@@ -1810,7 +1844,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PromiseBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PromiseDebugging.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PromiseDebuggingBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PromiseNativeAbortCallback.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PromiseNativeHandler.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PromiseWorkerProxy.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PropertyIndexedKeyframesBinding.h
@@ -1819,6 +1852,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PushManager.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PushManagerBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PushMessageDataBinding.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PushNotifier.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PushSubscriptionBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RGBColorBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RTCCertificate.h
@@ -1838,6 +1872,8 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RTCRtpSenderBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RTCSessionDescriptionBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RTCStatsReportBinding.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RTCTrackEvent.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RTCTrackEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RadioNodeList.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RadioNodeListBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/RangeBinding.h
@@ -2067,8 +2103,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SecureElementManagerBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/Selection.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SelectionBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SelectionStateChangedEvent.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SelectionStateChangedEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ServiceWorkerBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ServiceWorkerCommon.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ServiceWorkerContainer.h
@@ -2089,6 +2123,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SimpleGestureEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SimpleGestureEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SmsMessage.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SmsMessageBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SocketCommonBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SourceBuffer.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/SourceBufferBinding.h
@@ -2239,8 +2274,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/URLBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/URLSearchParams.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/URLSearchParamsBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/URLUtilsBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/URLUtilsReadOnlyBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/USSDReceivedEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/USSDReceivedEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/USSDSession.h
@@ -2279,6 +2312,8 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/WebGL2RenderingContextBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/WebGLRenderingContextBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/WebGLVertexArrayObject.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/WebKitCSSMatrix.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/WebKitCSSMatrixBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/WebSocket.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/WebSocketBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/WebrtcDeprecatedBinding.h
@@ -2349,6 +2384,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/bluetooth/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/bluetooth/BluetoothLeDeviceEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/bluetooth/BluetoothManager.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/bluetooth/BluetoothMapRequestHandle.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/bluetooth/BluetoothObexAuthHandle.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/bluetooth/BluetoothPairingHandle.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/bluetooth/BluetoothPairingListener.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/bluetooth/BluetoothPbapRequestHandle.h
@@ -2466,14 +2502,16 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/power/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/power/PowerManagerService.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/power/Types.h
 drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/quota/
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/ActorsParent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/Client.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/FileStreams.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/PersistenceType.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/QuotaCommon.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/QuotaManager.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/QuotaManagerService.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/QuotaObject.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/SerializationHelpers.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/UsageInfo.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/quota/Utilities.h
 drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/telephony/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/telephony/TelephonyCallInfo.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/telephony/TelephonyCallback.h
@@ -2493,7 +2531,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/voicemail/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/voicemail/VoicemailParent.h
 drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/workers/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/workers/ServiceWorkerManager.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/workers/ServiceWorkerPeriodicUpdater.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/workers/WorkerDebuggerManager.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/workers/Workers.h
 drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/workers/bindings/
@@ -2531,6 +2568,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/gfx/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Coord.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/CriticalSection.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/DataSurfaceHelpers.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/DrawEventRecorder.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/DrawTargetTiled.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Filters.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Helpers.h
@@ -2542,19 +2580,23 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/gfx/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/JobScheduler_win32.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Logging.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Matrix.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/MatrixFwd.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/NumericTools.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/PathHelpers.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/PatternHelpers.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Point.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Preferences.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Quaternion.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/RecordedEvent.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/RecordingTypes.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Rect.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/RefPtrSkia.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/RegionTyped.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Scale.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/ScaleFactor.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/ScaleFactors2D.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/SharedDIB.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/SourceSurfaceCairo.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/SourceSurfaceRawData.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/StackArray.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Tools.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Types.h
@@ -2612,6 +2654,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/layers/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/AxisPhysicsMSDModel.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/AxisPhysicsModel.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/BasicCompositor.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/layers/BufferTexture.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/CanvasClient.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/CanvasLayerComposite.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/ChromeProcessController.h
@@ -2636,6 +2679,8 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/layers/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/FenceUtils.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/FrameUniformityData.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/GeckoContentController.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/layers/GonkNativeHandle.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/layers/GonkNativeHandleUtils.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/GrallocTextureClient.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/GrallocTextureHost.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/ISurfaceAllocator.h
@@ -2658,6 +2703,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/layers/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/PaintedLayerComposite.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/PersistentBufferProvider.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/RenderTrace.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/layers/ScrollLinkedEffectDetector.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/ShadowLayerChild.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/ShadowLayerUtilsX11.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/ShadowLayers.h
@@ -2676,6 +2722,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/layers/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/TextureHost.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/TextureHostBasic.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/TextureHostOGL.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/layers/TextureWrapperImage.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/TiledContentClient.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/TiledContentHost.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/TouchCounter.h
@@ -2683,9 +2730,10 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/layers/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/X11TextureHost.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/X11TextureSourceBasic.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layers/X11TextureSourceOGL.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/layers/YCbCrImageDataSerializer.h
 drwxr-xr-x	root/root	usr/include/firefox/mozilla/layout/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layout/FrameChildList.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/layout/RemotePrintJobChild.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/layout/RemotePrintJobParent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layout/RenderFrameChild.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layout/RenderFrameParent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/layout/VsyncChild.h
@@ -2998,6 +3046,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsDeque.h
 -rw-r--r--	root/root	usr/include/firefox/nsDetectionConfident.h
 -rw-r--r--	root/root	usr/include/firefox/nsDeviceContext.h
+-rw-r--r--	root/root	usr/include/firefox/nsDeviceContextSpecProxy.h
 -rw-r--r--	root/root	usr/include/firefox/nsDeviceSensors.h
 -rw-r--r--	root/root	usr/include/firefox/nsDeviceStorage.h
 -rw-r--r--	root/root	usr/include/firefox/nsDirection.h
@@ -3032,7 +3081,6 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsFontFace.h
 -rw-r--r--	root/root	usr/include/firefox/nsFontFaceList.h
 -rw-r--r--	root/root	usr/include/firefox/nsFontMetrics.h
--rw-r--r--	root/root	usr/include/firefox/nsFormData.h
 -rw-r--r--	root/root	usr/include/firefox/nsFormSubmission.h
 -rw-r--r--	root/root	usr/include/firefox/nsFrame.h
 -rw-r--r--	root/root	usr/include/firefox/nsFrameIdList.h
@@ -3161,6 +3209,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIApplicationCacheChannel.h
 -rw-r--r--	root/root	usr/include/firefox/nsIApplicationCacheContainer.h
 -rw-r--r--	root/root	usr/include/firefox/nsIApplicationCacheService.h
+-rw-r--r--	root/root	usr/include/firefox/nsIApplicationChooser.h
 -rw-r--r--	root/root	usr/include/firefox/nsIApplicationReputation.h
 -rw-r--r--	root/root	usr/include/firefox/nsIAppsService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIArray.h
@@ -3228,6 +3277,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsICacheStorage.h
 -rw-r--r--	root/root	usr/include/firefox/nsICacheStorageService.h
 -rw-r--r--	root/root	usr/include/firefox/nsICacheStorageVisitor.h
+-rw-r--r--	root/root	usr/include/firefox/nsICacheTesting.h
 -rw-r--r--	root/root	usr/include/firefox/nsICacheVisitor.h
 -rw-r--r--	root/root	usr/include/firefox/nsICachedFileDescriptorListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsICachingChannel.h
@@ -3275,6 +3325,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsICommandParams.h
 -rw-r--r--	root/root	usr/include/firefox/nsIComponentManager.h
 -rw-r--r--	root/root	usr/include/firefox/nsIComponentRegistrar.h
+-rw-r--r--	root/root	usr/include/firefox/nsICompressConvStats.h
 -rw-r--r--	root/root	usr/include/firefox/nsIConsoleAPIStorage.h
 -rw-r--r--	root/root	usr/include/firefox/nsIConsoleListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsIConsoleMessage.h
@@ -3324,7 +3375,6 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsICryptoFIPSInfo.h
 -rw-r--r--	root/root	usr/include/firefox/nsICryptoHMAC.h
 -rw-r--r--	root/root	usr/include/firefox/nsICryptoHash.h
--rw-r--r--	root/root	usr/include/firefox/nsICurrentCharsetListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsICycleCollectorListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsID.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDNSListener.h
@@ -3388,7 +3438,6 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMEventListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMEventTarget.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMFileList.h
--rw-r--r--	root/root	usr/include/firefox/nsIDOMFileReader.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMFocusEvent.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMFontFace.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMFontFaceList.h
@@ -3458,10 +3507,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMMozBrowserFrame.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMMozCSSKeyframeRule.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMMozCSSKeyframesRule.h
--rw-r--r--	root/root	usr/include/firefox/nsIDOMMozMmsMessage.h
--rw-r--r--	root/root	usr/include/firefox/nsIDOMMozMobileMessageThread.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMMozNamedAttrMap.h
--rw-r--r--	root/root	usr/include/firefox/nsIDOMMozSmsMessage.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMMutationEvent.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMNSEditableElement.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDOMNSEvent.h
@@ -3570,7 +3616,6 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIDragService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDragSession.h
 -rw-r--r--	root/root	usr/include/firefox/nsIDroppedLinkHandler.h
--rw-r--r--	root/root	usr/include/firefox/nsIEdgeReadingListExtractor.h
 -rw-r--r--	root/root	usr/include/firefox/nsIEditActionListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsIEditingSession.h
 -rw-r--r--	root/root	usr/include/firefox/nsIEditor.h
@@ -3644,6 +3689,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIFxAccountsUIGlue.h
 -rw-r--r--	root/root	usr/include/firefox/nsIGConfService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIGIOService.h
+-rw-r--r--	root/root	usr/include/firefox/nsIGNOMEShellService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIGSettingsService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIGZFileWriter.h
 -rw-r--r--	root/root	usr/include/firefox/nsIGamepadServiceTest.h
@@ -3704,6 +3750,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIImageLoadingContent.h
 -rw-r--r--	root/root	usr/include/firefox/nsIImageToPixbuf.h
 -rw-r--r--	root/root	usr/include/firefox/nsIIncrementalDownload.h
+-rw-r--r--	root/root	usr/include/firefox/nsIIncrementalStreamLoader.h
 -rw-r--r--	root/root	usr/include/firefox/nsIInlineSpellChecker.h
 -rw-r--r--	root/root	usr/include/firefox/nsIInputListAutoComplete.h
 -rw-r--r--	root/root	usr/include/firefox/nsIInputPortService.h
@@ -3764,15 +3811,18 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIMenuBuilder.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMessageLoop.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMessageManager.h
+-rw-r--r--	root/root	usr/include/firefox/nsIMmsMessage.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMmsService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileCallForwardingOptions.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileCellInfo.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileConnectionInfo.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileConnectionService.h
+-rw-r--r--	root/root	usr/include/firefox/nsIMobileDeviceIdentities.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileMessageCallback.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileMessageCursorCallback.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileMessageDatabaseService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileMessageService.h
+-rw-r--r--	root/root	usr/include/firefox/nsIMobileMessageThread.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMobileNetworkInfo.h
 -rw-r--r--	root/root	usr/include/firefox/nsIModule.h
 -rw-r--r--	root/root	usr/include/firefox/nsIMozBrowserFrame.h
@@ -3906,12 +3956,12 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIProxiedChannel.h
 -rw-r--r--	root/root	usr/include/firefox/nsIProxiedProtocolHandler.h
 -rw-r--r--	root/root	usr/include/firefox/nsIProxyInfo.h
--rw-r--r--	root/root	usr/include/firefox/nsIPushClient.h
--rw-r--r--	root/root	usr/include/firefox/nsIPushNotificationService.h
--rw-r--r--	root/root	usr/include/firefox/nsIPushObserverNotification.h
+-rw-r--r--	root/root	usr/include/firefox/nsIPushNotifier.h
+-rw-r--r--	root/root	usr/include/firefox/nsIPushService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIQueryContentEventResult.h
--rw-r--r--	root/root	usr/include/firefox/nsIQuotaManager.h
--rw-r--r--	root/root	usr/include/firefox/nsIQuotaRequest.h
+-rw-r--r--	root/root	usr/include/firefox/nsIQuotaCallbacks.h
+-rw-r--r--	root/root	usr/include/firefox/nsIQuotaManagerService.h
+-rw-r--r--	root/root	usr/include/firefox/nsIQuotaRequests.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRDFCompositeDataSource.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRDFContainer.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRDFContainerUtils.h
@@ -3947,6 +3997,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIRemoteOpenFileListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRemoteService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRemoteTagService.h
+-rw-r--r--	root/root	usr/include/firefox/nsIRemoteWindowContext.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRequest.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRequestObserver.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRequestObserverProxy.h
@@ -4037,6 +4088,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsISizeOf.h
 -rw-r--r--	root/root	usr/include/firefox/nsISliderListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsISlowScriptDebug.h
+-rw-r--r--	root/root	usr/include/firefox/nsISmsMessage.h
 -rw-r--r--	root/root	usr/include/firefox/nsISmsService.h
 -rw-r--r--	root/root	usr/include/firefox/nsISocketProvider.h
 -rw-r--r--	root/root	usr/include/firefox/nsISocketProviderService.h
@@ -4071,7 +4123,6 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIStructuredCloneContainer.h
 -rw-r--r--	root/root	usr/include/firefox/nsIStyleRule.h
 -rw-r--r--	root/root	usr/include/firefox/nsIStyleRuleProcessor.h
--rw-r--r--	root/root	usr/include/firefox/nsIStyleSheet.h
 -rw-r--r--	root/root	usr/include/firefox/nsIStyleSheetLinkingElement.h
 -rw-r--r--	root/root	usr/include/firefox/nsIStyleSheetService.h
 -rw-r--r--	root/root	usr/include/firefox/nsISubstitutingProtocolHandler.h
@@ -4153,7 +4204,6 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIUDPSocketFilter.h
 -rw-r--r--	root/root	usr/include/firefox/nsIUGenCategory.h
 -rw-r--r--	root/root	usr/include/firefox/nsIURI.h
--rw-r--r--	root/root	usr/include/firefox/nsIURIChecker.h
 -rw-r--r--	root/root	usr/include/firefox/nsIURIClassifier.h
 -rw-r--r--	root/root	usr/include/firefox/nsIURIContentListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsIURIFixup.h
@@ -4181,7 +4231,6 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIUrlClassifierStreamUpdater.h
 -rw-r--r--	root/root	usr/include/firefox/nsIUrlClassifierUtils.h
 -rw-r--r--	root/root	usr/include/firefox/nsIUrlListManager.h
--rw-r--r--	root/root	usr/include/firefox/nsIUsageCallback.h
 -rw-r--r--	root/root	usr/include/firefox/nsIUserCertPicker.h
 -rw-r--r--	root/root	usr/include/firefox/nsIUserInfo.h
 -rw-r--r--	root/root	usr/include/firefox/nsIVariant.h
@@ -4228,6 +4277,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIWindowMediatorListener.h
 -rw-r--r--	root/root	usr/include/firefox/nsIWindowProvider.h
 -rw-r--r--	root/root	usr/include/firefox/nsIWindowWatcher.h
+-rw-r--r--	root/root	usr/include/firefox/nsIWindowlessBrowser.h
 -rw-r--r--	root/root	usr/include/firefox/nsIWordBreaker.h
 -rw-r--r--	root/root	usr/include/firefox/nsIWorkerDebugger.h
 -rw-r--r--	root/root	usr/include/firefox/nsIWorkerDebuggerManager.h
@@ -4367,6 +4417,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsReferencedElement.h
 -rw-r--r--	root/root	usr/include/firefox/nsRefreshDriver.h
 -rw-r--r--	root/root	usr/include/firefox/nsRegion.h
+-rw-r--r--	root/root	usr/include/firefox/nsRegionFwd.h
 -rw-r--r--	root/root	usr/include/firefox/nsRenderingContext.h
 -rw-r--r--	root/root	usr/include/firefox/nsRubyBaseContainerFrame.h
 -rw-r--r--	root/root	usr/include/firefox/nsRubyBaseFrame.h
@@ -4573,7 +4624,6 @@ drwxr-xr-x	root/root	usr/include/firefox/soundtouch/
 drwxr-xr-x	root/root	usr/include/firefox/speex/
 -rw-r--r--	root/root	usr/include/firefox/speex/speex_resampler.h
 -rw-r--r--	root/root	usr/include/firefox/state.h
--rw-r--r--	root/root	usr/include/firefox/streams.h
 -rw-r--r--	root/root	usr/include/firefox/string-template-def-char.h
 -rw-r--r--	root/root	usr/include/firefox/string-template-def-unichar.h
 -rw-r--r--	root/root	usr/include/firefox/string-template-undef.h
@@ -4592,6 +4642,7 @@ drwxr-xr-x	root/root	usr/include/firefox/tremor/
 drwxr-xr-x	root/root	usr/include/firefox/vpx/
 -rw-r--r--	root/root	usr/include/firefox/vpx/arm.h
 -rw-r--r--	root/root	usr/include/firefox/vpx/mem.h
+-rw-r--r--	root/root	usr/include/firefox/vpx/svc_context.h
 -rw-r--r--	root/root	usr/include/firefox/vpx/vp8.h
 -rw-r--r--	root/root	usr/include/firefox/vpx/vp8cx.h
 -rw-r--r--	root/root	usr/include/firefox/vpx/vp8dx.h
@@ -4673,17 +4724,14 @@ drwxr-xr-x	root/root	usr/lib/firefox/browser/components/
 -rw-r--r--	root/root	usr/lib/firefox/browser/components/components.manifest
 -rwxr-xr-x	root/root	usr/lib/firefox/browser/components/libbrowsercomps.so
 drwxr-xr-x	root/root	usr/lib/firefox/browser/extensions/
-drwxr-xr-x	root/root	usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/
--rw-r--r--	root/root	usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/chrome.manifest
--rw-r--r--	root/root	usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/icon.png
--rw-r--r--	root/root	usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf
+-rw-r--r--	root/root	usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+drwxr-xr-x	root/root	usr/lib/firefox/browser/features/
+-rw-r--r--	root/root	usr/lib/firefox/browser/features/e10srollout@mozilla.org.xpi
+-rw-r--r--	root/root	usr/lib/firefox/browser/features/firefox@getpocket.com.xpi
+-rw-r--r--	root/root	usr/lib/firefox/browser/features/loop@mozilla.org.xpi
 drwxr-xr-x	root/root	usr/lib/firefox/browser/icons/
 -rw-r--r--	root/root	usr/lib/firefox/browser/icons/mozicon128.png
 -rw-r--r--	root/root	usr/lib/firefox/browser/omni.ja
--rw-r--r--	root/root	usr/lib/firefox/chrome.manifest
-drwxr-xr-x	root/root	usr/lib/firefox/components/
--rw-r--r--	root/root	usr/lib/firefox/components/components.manifest
--rwxr-xr-x	root/root	usr/lib/firefox/components/libmozgnome.so
 drwxr-xr-x	root/root	usr/lib/firefox/defaults/
 drwxr-xr-x	root/root	usr/lib/firefox/defaults/pref/
 -rw-r--r--	root/root	usr/lib/firefox/defaults/pref/channel-prefs.js
@@ -4697,7 +4745,10 @@ drwxr-xr-x	root/root	usr/lib/firefox/gmp-clearkey/
 drwxr-xr-x	root/root	usr/lib/firefox/gmp-clearkey/0.1/
 -rw-r--r--	root/root	usr/lib/firefox/gmp-clearkey/0.1/clearkey.info
 -rwxr-xr-x	root/root	usr/lib/firefox/gmp-clearkey/0.1/libclearkey.so
+drwxr-xr-x	root/root	usr/lib/firefox/gtk2/
+-rwxr-xr-x	root/root	usr/lib/firefox/gtk2/libmozgtk.so
 -rwxr-xr-x	root/root	usr/lib/firefox/liblgpllibs.so
+-rwxr-xr-x	root/root	usr/lib/firefox/libmozgtk.so
 -rwxr-xr-x	root/root	usr/lib/firefox/libxul.so
 -rw-r--r--	root/root	usr/lib/firefox/omni.ja
 -rw-r--r--	root/root	usr/lib/firefox/platform.ini
@@ -4827,6 +4878,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIApplicationCacheChannel.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIApplicationCacheContainer.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIApplicationCacheService.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIApplicationChooser.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIApplicationReputation.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIAppsService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIArray.idl
@@ -4889,6 +4941,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICacheStorage.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICacheStorageService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICacheStorageVisitor.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsICacheTesting.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICacheVisitor.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICachingChannel.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICancelable.idl
@@ -4929,6 +4982,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICommandParams.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIComponentManager.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIComponentRegistrar.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsICompressConvStats.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIConsoleAPIStorage.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIConsoleListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIConsoleMessage.idl
@@ -4970,7 +5024,6 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICryptoFIPSInfo.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICryptoHMAC.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICryptoHash.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsICurrentCharsetListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsICycleCollectorListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDNSListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDNSRecord.idl
@@ -5032,7 +5085,6 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMEventListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMEventTarget.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMFileList.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMFileReader.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMFocusEvent.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMFontFace.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMFontFaceList.idl
@@ -5102,10 +5154,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMMozBrowserFrame.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMMozCSSKeyframeRule.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMMozCSSKeyframesRule.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMMozMmsMessage.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMMozMobileMessageThread.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMMozNamedAttrMap.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMMozSmsMessage.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMMutationEvent.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMNSEditableElement.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDOMNSEvent.idl
@@ -5205,7 +5254,6 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDragService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDragSession.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIDroppedLinkHandler.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIEdgeReadingListExtractor.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIEditActionListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIEditingSession.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIEditor.idl
@@ -5270,6 +5318,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIFxAccountsUIGlue.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIGConfService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIGIOService.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIGNOMEShellService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIGSettingsService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIGZFileWriter.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIGamepadServiceTest.idl
@@ -5320,6 +5369,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIImageDocument.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIImageLoadingContent.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIIncrementalDownload.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIIncrementalStreamLoader.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIInlineSpellChecker.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIInputListAutoComplete.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIInputPortService.idl
@@ -5370,15 +5420,18 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMenuBuilder.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMessageLoop.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMessageManager.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIMmsMessage.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMmsService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileCallForwardingOptions.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileCellInfo.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileConnectionInfo.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileConnectionService.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileDeviceIdentities.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileMessageCallback.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileMessageCursorCallback.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileMessageDatabaseService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileMessageService.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileMessageThread.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMobileNetworkInfo.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIModule.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIMozBrowserFrame.idl
@@ -5499,12 +5552,12 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIProxiedChannel.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIProxiedProtocolHandler.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIProxyInfo.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIPushClient.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIPushNotificationService.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIPushObserverNotification.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIPushNotifier.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIPushService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIQueryContentEventResult.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaManager.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaRequest.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaCallbacks.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaManagerService.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaRequests.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRDFCompositeDataSource.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRDFContainer.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRDFContainerUtils.idl
@@ -5536,6 +5589,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRemoteOpenFileListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRemoteService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRemoteTagService.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIRemoteWindowContext.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRequest.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRequestObserver.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRequestObserverProxy.idl
@@ -5611,6 +5665,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsISiteSpecificUserAgent.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsISliderListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsISlowScriptDebug.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsISmsMessage.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsISmsService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsISocketProvider.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsISocketProviderService.idl
@@ -5709,7 +5764,6 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIUDPSocketChild.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIUDPSocketFilter.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIURI.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIURIChecker.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIURIClassifier.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIURIContentListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIURIFixup.idl
@@ -5735,7 +5789,6 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIUrlClassifierStreamUpdater.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIUrlClassifierUtils.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIUrlListManager.idl
--rw-r--r--	root/root	usr/share/idl/firefox/nsIUsageCallback.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIUserCertPicker.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIUserInfo.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIVariant.idl
@@ -5778,6 +5831,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIWindowMediatorListener.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIWindowProvider.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIWindowWatcher.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIWindowlessBrowser.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIWorkerDebugger.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIWorkerDebuggerManager.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIWritablePropertyBag.idl
