@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	usr/lib/chromium/
 -rw-r--r--	root/root	usr/lib/chromium/chrome_material_200_percent.pak
 -rwxr-xr-x	root/root	usr/lib/chromium/chromium
 -rw-r--r--	root/root	usr/lib/chromium/content_resources.pak
+-rw-r--r--	root/root	usr/lib/chromium/icudtl.dat
 -rw-r--r--	root/root	usr/lib/chromium/keyboard_resources.pak
 drwxr-xr-x	root/root	usr/lib/chromium/locales/
 -rw-r--r--	root/root	usr/lib/chromium/locales/en-US.pak
