@@ -6,7 +6,7 @@
 # Depends on: ninja dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage yasm xorg-libxt gperf speech-dispatcher libdrm libexif pciutils
 
 name=chromium
-version=50.0.2661.86
+version=50.0.2661.94
 
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
@@ -94,6 +94,9 @@ build() {
     install -m 0644 -D chrome/app/theme/$name/product_logo_${size}.png \
       $PKG/usr/share/icons/hicolor/${size}x${size}/apps/$name.png
   done
+
+  # fix icu installation
+  cp -a out/Release/icudtl.dat $PKG/usr/lib/$name
 
   install -d $PKG/usr/share/pixmaps
   ln -sf /usr/share/icons/hicolor/48x48/apps/$name.png $PKG/usr/share/pixmaps/$name.png
