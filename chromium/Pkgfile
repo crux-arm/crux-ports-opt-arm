@@ -6,7 +6,7 @@
 # Depends on: ninja dbus-glib gtk libevent nss xorg-libxscrnsaver xorg-libxtst libgcrypt xorg-libxdamage yasm xorg-libxt gperf speech-dispatcher libdrm libexif pciutils
 
 name=chromium
-version=50.0.2661.94
+version=50.0.2661.102
 
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
