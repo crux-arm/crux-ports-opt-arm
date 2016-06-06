@@ -150,6 +150,7 @@ drwxr-xr-x	root/root	usr/lib/mysql/plugin/
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/qa_auth_server.so
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/semisync_master.so
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/semisync_slave.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/test_udf_services.so
 -rwxr-xr-x	root/root	usr/lib/mysql/plugin/validate_password.so
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
