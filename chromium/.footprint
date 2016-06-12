@@ -55,7 +55,6 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/Images/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/localStorage.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/navigationControls.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/navigationControls_2x.png
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/notifications.svg
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/paneAddButtons.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/paneFilterButtons.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/paneRefreshButtons.png
@@ -99,9 +98,9 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/Images/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/toolbarResizerVertical.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/touchCursor.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/touchCursor_2x.png
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Images/updateServiceWorker.svg
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/InspectorBackendCommands.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/SupportedCSSProperties.js
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/Tests.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/accessibility_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/animation_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/audits_module.js
@@ -139,17 +138,17 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/emulated_devices/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5x-vertical-navigation-1x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/google-nexus-5x-vertical-navigation-2x.png
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices_module.js (EMPTY)
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/es_tree_module.js
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/formatter_worker_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/heap_snapshot_worker_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/inspector.html
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/inspector.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/layers_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/network_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/profiler_module.js
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/promises_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/resources_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/sass_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/screencast_module.js
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/script_formatter_worker_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/security_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/settings_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/snippets_module.js
