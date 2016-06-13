@@ -2,10 +2,10 @@
 # URL: http://www.mozilla.com/firefox/
 # Maintainer: Fredrik Rinnestam, fredrik at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: nss, unzip, zip, libidl, gtk, gtk3, python, alsa-lib, xorg-libxt, yasm, mesa3d
+# Depends on: nss, unzip, autoconf-2.13, zip, libidl, gtk, gtk3, python, alsa-lib, xorg-libxt, yasm, mesa3d
 
 name=firefox
-version=46.0.1
+version=47.0
 release=1
 source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
         firefox-install-dir.patch firefox.desktop)
