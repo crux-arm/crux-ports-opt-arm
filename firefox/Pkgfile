@@ -5,7 +5,7 @@
 # Depends on: nss, unzip, autoconf-2.13, zip, libidl, gtk, gtk3, python, alsa-lib, xorg-libxt, yasm, mesa3d
 
 name=firefox
-version=47.0
+version=48.0
 release=1
 source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
         firefox-install-dir.patch firefox.desktop)
@@ -14,15 +14,17 @@ build() {
   cd $name-$version
 
   sed -i '/^ftfntfmt.h/ i freetype/ftfntfmt.h' config/system-headers
+  # stupid workaround
+  sed -i '2,7d' js/src/configure
   patch -p1 -i $SRC/firefox-install-dir.patch
 
   cat <<- EOF > .mozconfig
   mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-shared
   mk_add_options MOZ_MAKE_FLAGS="$MAKEFLAGS -s"
   ac_add_options --prefix=/usr
+  ac_add_options --enable-default-toolkit=cairo-gtk3
   ac_add_options --with-system-jpeg
   ac_add_options --with-system-zlib
-  ac_add_options --with-system-mng
   ac_add_options --with-system-png
   ac_add_options --with-system-nspr
   ac_add_options --with-system-nss
@@ -33,36 +35,17 @@ build() {
   ac_add_options --with-pthreads
   ac_add_options --enable-optimize="$CFLAGS"
   ac_add_options --enable-official-branding
-  ac_add_options --with-distribution-id=nu.crux
+  ac_add_options --with-distribution-id=nu.crux-arm
   ac_add_options --enable-extensions=default,-gnomevfs
-  ac_add_options --enable-shared
-  ac_add_options --enable-svg
-  ac_add_options --enable-canvas
-  ac_add_options --enable-crypto
-  ac_add_options --enable-single-profile
-  ac_add_options --enable-places
-  ac_add_options --enable-storage
-  ac_add_options --enable-places_bookmarks
-  ac_add_options --enable-image-encoder=all
-  ac_add_options --enable-xft
   #ac_add_options --enable-elf-hack
-  ac_add_options --disable-gstreamer
-  ac_add_options --enable-pic
   #ac_add_options --disable-static
   ac_add_options --disable-tests
-  ac_add_options --disable-mochitest
   ac_add_options --disable-dbus
   ac_add_options --disable-debug
-  ac_add_options --disable-installer
   ac_add_options --disable-updater
-  ac_add_options --disable-xprint
-  ac_add_options --disable-profilesharing
-  ac_add_options --disable-gnomevfs
   ac_add_options --disable-gnomeui
-  ac_add_options --disable-mailnews
   ac_add_options --disable-crashreporter
   ac_add_options --disable-necko-wifi
-  ac_add_options --disable-libnotify
   ac_add_options --disable-pulseaudio
   ac_add_options --disable-gconf
 EOF
@@ -74,4 +57,6 @@ EOF
   mkdir -p $PKG/usr/share/pixmaps
   ln -s /usr/lib/firefox/browser/chrome/icons/default/default48.png $PKG/usr/share/pixmaps/firefox_default48.png
   install -D -m 0644 $SRC/firefox.desktop $PKG/usr/share/applications/firefox.desktop
+  # Remove "Firefox Hello" and "Pocket"
+  rm $PKG/usr/lib/firefox/browser/features/{firefox@getpocket.com.xpi,loop@mozilla.org.xpi}
 }
