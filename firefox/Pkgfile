@@ -5,7 +5,7 @@
 # Depends on: nss, unzip, autoconf-2.13, zip, libidl, gtk, gtk3, python, alsa-lib, xorg-libxt, yasm, mesa3d
 
 name=firefox
-version=48.0
+version=49.0
 release=1
 source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
         firefox-install-dir.patch firefox.desktop)
@@ -31,7 +31,7 @@ build() {
   ac_add_options --enable-system-ffi
   ac_add_options --enable-system-pixman
   ac_add_options --enable-system-sqlite
-  #ac_add_options --enable-system-cairo
+  ac_add_options --enable-system-cairo
   ac_add_options --with-pthreads
   ac_add_options --enable-optimize="$CFLAGS"
   ac_add_options --enable-official-branding
@@ -57,6 +57,9 @@ EOF
   mkdir -p $PKG/usr/share/pixmaps
   ln -s /usr/lib/firefox/browser/chrome/icons/default/default48.png $PKG/usr/share/pixmaps/firefox_default48.png
   install -D -m 0644 $SRC/firefox.desktop $PKG/usr/share/applications/firefox.desktop
-  # Remove "Firefox Hello" and "Pocket"
-  rm $PKG/usr/lib/firefox/browser/features/{firefox@getpocket.com.xpi,loop@mozilla.org.xpi}
+  # Remove crap
+  rm $PKG/usr/lib/firefox/browser/features/{firefox@getpocket.com.xpi,webcompat@mozilla.org.xpi}
+
+  mkdir -p $PKG/etc/revdep.d
+  echo "/usr/lib/firefox" > $PKG/etc/revdep.d/firefox
 }
