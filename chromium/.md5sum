@@ -1,3 +1,5 @@
-fdc737af242421b2a9a0bb84f6b17040  chromium-53.0.2785.143.tar.xz
+07c7231180b9122d5389e77536a7271b  chromium-54.0.2840.100.tar.xz
+bce5db9dba2aec40a1a709797a907e2a  chromium-build-toolchain.patch
 b527005e021b14869a669e42c46b661d  chromium.desktop
 64968626706b07721983ac59fb3babbf  chromium.sh
+3354997dd0bfde3443499133a6e16a85  last-commit-position.patch
