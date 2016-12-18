@@ -6,7 +6,7 @@
 
 name=nss
 version=3.27.1
-release=1
+release=2
 source=(http://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_27_1_RTM/src/$name-$version.tar.gz \
         nss-config.in nss.pc.in)
 
@@ -24,7 +24,7 @@ build() {
     export NSS_USE_SYSTEM_SQLITE=1
     export NSS_ENABLE_ECC=1
     export BUILD_OPT=1
-    export XCFLAGS="${CFLAGS}"
+    export XCFLAGS="-Wno-error ${CFLAGS}"
     export NSS_DISABLE_GTESTS=1
 
     make -j1 -C nss all
