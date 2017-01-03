@@ -5,13 +5,23 @@
 # Packager: Younes Hafri, ycrux at club-internet dot fr
 
 name=icu
-version=56.1
+version=58.2
 release=1
-source=(http://download.icu-project.org/files/icu4c/$version/icu4c-${version//./_}-src.tgz)
+source=(http://download.icu-project.org/files/icu4c/$version/icu4c-${version//./_}-src.tgz
+        icu-58.1-remove-bashisms.patch icu-58.1-iterator.patch)
 
 build() {
   cd icu/source
+
+  patch -p1 -i $SRC/icu-58.1-remove-bashisms.patch
+  patch -p1 -i $SRC/icu-58.1-iterator.patch
+
+  # icu tries to use clang by default
+  [ "$CC" ] || export CC=gcc
+  [ "$CXX" ] || export CXX=g++
+
   sed -i -e "s:LDFLAGSICUDT=-nodefaultlibs -nostdlib:LDFLAGSICUDT=:" config/mh-linux
+
   ./configure \
     --prefix=/usr \
     --disable-samples \
@@ -19,6 +29,4 @@ build() {
 
   make
   make DESTDIR=$PKG install
-
-  rm $PKG/usr/share/icu/$version/license.html
 }
