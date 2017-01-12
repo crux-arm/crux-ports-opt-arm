@@ -151,14 +151,14 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/emulated_devices/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/iPhone6-portrait.svg
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/iPhone6Plus-landscape.svg
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/emulated_devices/iPhone6Plus-portrait.svg
-drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/es_tree/
--rw-r--r--	root/root	usr/lib/chromium/resources/inspector/es_tree/es_tree_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/formatter_worker.js
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/gonzales/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/gonzales/gonzales_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/heap_snapshot_worker.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/inspector.html
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/inspector.js
+drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/layer_viewer/
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/layer_viewer/layer_viewer_module.js
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/layers/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/layers/layers_module.js
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/network/
@@ -173,6 +173,8 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/screencast/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/screencast/screencast_module.js
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/security/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/security/security_module.js
+drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/services/
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/services/services_module.js
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/settings/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/settings/settings_module.js
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/snippets/
@@ -182,6 +184,10 @@ drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/source_frame/
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/sources/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/sources/sources_module.js
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/temp_storage_shared_worker.js
+drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/terminal/
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/terminal/terminal_module.js
+drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/text_editor/
+-rw-r--r--	root/root	usr/lib/chromium/resources/inspector/text_editor/text_editor_module.js
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/timeline/
 -rw-r--r--	root/root	usr/lib/chromium/resources/inspector/timeline/timeline_module.js
 drwxr-xr-x	root/root	usr/lib/chromium/resources/inspector/timeline_model/

@@ -6,7 +6,7 @@
 # Depends on: dbus-glib gperf gtk libevent libexif libgcrypt mesa3d ninja nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt xorg-libxtst yasm
 
 name=chromium
-version=54.0.2840.100
+version=55.0.2883.103
 
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
