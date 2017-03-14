@@ -5,9 +5,9 @@
 # Depends on: gdbm ncurses openssl readline zlib libffi libyaml
 
 name=ruby
-version=2.3.3
+version=2.4.0
 release=1
-source=(http://cache.ruby-lang.org/pub/$name/2.3/$name-$version.tar.xz
+source=(http://cache.ruby-lang.org/pub/$name/${version%.*}/$name-$version.tar.xz
         $name-arch.patch)
 
 build () {
