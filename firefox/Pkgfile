@@ -5,12 +5,16 @@
 # Depends on: nss, unzip, autoconf-2.13, zip, libidl, gtk, gtk3, python, alsa-lib, xorg-libxt, yasm, mesa3d
 
 name=firefox
-version=51.0.1
-release=2
+version=52.0.1
+release=1
 source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
         firefox-install-dir.patch firefox.desktop)
 
 build() {
+  # Fix to avoid gcc6 compilations error at install stage
+  export CFLAGS="$CFLAGS -fno-schedule-insns"
+  export CXXFLAGS="$CFLAGS"
+
   cd $name-$version
 
   sed -i '/^ftfntfmt.h/ i freetype/ftfntfmt.h' config/system-headers
@@ -32,8 +36,8 @@ build() {
   ac_add_options --enable-system-ffi
   ac_add_options --enable-system-pixman
   ac_add_options --enable-system-sqlite
+  ac_add_options --enable-alsa
   ac_add_options --with-pthreads
-  ac_add_options --enable-optimize="$CFLAGS"
   ac_add_options --enable-official-branding
   ac_add_options --with-distribution-id=nu.crux-arm
   ac_add_options --enable-extensions=default,-gnomevfs
@@ -46,9 +50,17 @@ build() {
   ac_add_options --disable-necko-wifi
   ac_add_options --disable-pulseaudio
   ac_add_options --disable-gconf
+  ac_add_options --disable-skia
 EOF
 
-  sed "s|\['-march=armv7-a', '-mthumb', '-mfloat-abi=softfp', '-mfpu=neon'\]|\[\]|g" -i media/libvpx/moz.build
+# mozonfig optimizations
+  for flag in $CFLAGS; do
+    case $flag in
+      -mfpu=neon*) echo "ac_add_options --with-fpu=neon" >> .mozconfig ;;
+      -march=armv7ve) echo "ac_add_options --with-arch=armv7ve" >> .mozconfig ;;
+    esac
+  done
+
   make -f client.mk build
   make -f client.mk DESTDIR=$PKG install
  
