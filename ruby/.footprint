@@ -41,9 +41,9 @@ drwxr-xr-x	root/root	usr/include/ruby-2.4/ruby/backward/
 -rw-r--r--	root/root	usr/include/ruby-2.4/ruby/version.h
 -rw-r--r--	root/root	usr/include/ruby-2.4/ruby/vm.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libruby.so -> libruby.so.2.4.0
-lrwxrwxrwx	root/root	usr/lib/libruby.so.2.4 -> libruby.so.2.4.0
--rwxr-xr-x	root/root	usr/lib/libruby.so.2.4.0
+lrwxrwxrwx	root/root	usr/lib/libruby.so -> libruby.so.2.4.1
+lrwxrwxrwx	root/root	usr/lib/libruby.so.2.4 -> libruby.so.2.4.1
+-rwxr-xr-x	root/root	usr/lib/libruby.so.2.4.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ruby-2.4.pc
 drwxr-xr-x	root/root	usr/lib/ruby/
@@ -994,13 +994,13 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/2.4/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/2.4/build_info/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/2.4/cache/
--rw-------	root/root	usr/lib/ruby/gems/2.4/cache/did_you_mean-1.1.0.gem
--rw-------	root/root	usr/lib/ruby/gems/2.4/cache/minitest-5.10.1.gem
--rw-------	root/root	usr/lib/ruby/gems/2.4/cache/net-telnet-0.1.1.gem
--rw-------	root/root	usr/lib/ruby/gems/2.4/cache/power_assert-0.4.1.gem
--rw-------	root/root	usr/lib/ruby/gems/2.4/cache/rake-12.0.0.gem
--rw-------	root/root	usr/lib/ruby/gems/2.4/cache/test-unit-3.2.3.gem
--rw-------	root/root	usr/lib/ruby/gems/2.4/cache/xmlrpc-0.2.1.gem
+-r--r--r--	root/root	usr/lib/ruby/gems/2.4/cache/did_you_mean-1.1.0.gem
+-r--r--r--	root/root	usr/lib/ruby/gems/2.4/cache/minitest-5.10.1.gem
+-r--r--r--	root/root	usr/lib/ruby/gems/2.4/cache/net-telnet-0.1.1.gem
+-r--r--r--	root/root	usr/lib/ruby/gems/2.4/cache/power_assert-0.4.1.gem
+-r--r--r--	root/root	usr/lib/ruby/gems/2.4/cache/rake-12.0.0.gem
+-r--r--r--	root/root	usr/lib/ruby/gems/2.4/cache/test-unit-3.2.3.gem
+-r--r--r--	root/root	usr/lib/ruby/gems/2.4/cache/xmlrpc-0.2.1.gem
 drwxr-xr-x	root/root	usr/lib/ruby/gems/2.4/doc/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/2.4/extensions/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/2.4/gems/
@@ -1352,7 +1352,7 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/2.4/specifications/default/
 -rw-r--r--	root/root	usr/lib/ruby/gems/2.4/specifications/default/bigdecimal-1.3.0.gemspec
 -rw-r--r--	root/root	usr/lib/ruby/gems/2.4/specifications/default/io-console-0.4.6.gemspec
 -rw-r--r--	root/root	usr/lib/ruby/gems/2.4/specifications/default/json-2.0.2.gemspec
--rw-r--r--	root/root	usr/lib/ruby/gems/2.4/specifications/default/openssl-2.0.2.gemspec
+-rw-r--r--	root/root	usr/lib/ruby/gems/2.4/specifications/default/openssl-2.0.3.gemspec
 -rw-r--r--	root/root	usr/lib/ruby/gems/2.4/specifications/default/psych-2.2.2.gemspec
 -rw-r--r--	root/root	usr/lib/ruby/gems/2.4/specifications/default/rdoc-5.0.0.gemspec
 -rw-r--r--	root/root	usr/lib/ruby/gems/2.4/specifications/did_you_mean-1.1.0.gemspec
