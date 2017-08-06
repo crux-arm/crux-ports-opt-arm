@@ -3,21 +3,26 @@
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: Tadeusz Sosnierz, tadzikes gmail com
-# Depends on: dbus-glib gperf gtk libevent libexif libgcrypt mesa3d ninja nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt xorg-libxtst yasm
+# Depends on: dbus-glib gperf gtk libevent libexif libgcrypt mesa3d ninja nodejs nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt xorg-libxtst yasm
 
 name=chromium
-version=55.0.2883.103
-
+version=60.0.3112.78
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
-        last-commit-position.patch $name-build-toolchain.patch $name.sh $name.desktop)
+        last-commit-position.patch $name-build-toolchain.patch $name-gn-bootstrap-r2.patch $name.sh $name.desktop
+        0001-Clip-FreeType-glyph-bitmap-to-mask.patch
+        chromium-blink-gcc7.patch
+        chromium-v8-gcc7.patch
+        chromium-gn-bootstrap-r8.patch)
 
 build() {
   cd $name-$version
 
+  export CFLAGS="-O2 -pipe -mfloat-abi=hard"
+
   export CFLAGS="$CFLAGS $(pkg-config --cflags nspr) -lpthread"
   export LDFLAGS="$LDFLAGS $(pkg-config --libs nspr)"
-
+  
   # determine some flags depending on SOC
   USE_ARMV7=0; USE_ARM_THUMB=0; USE_ARM_NEON=0
   case $(uname -m) in
@@ -33,15 +38,33 @@ build() {
   # we don't use git sources
   patch -p1 -i $SRC/last-commit-position.patch
 
+  # https://bugs.chromium.org/p/skia/issues/detail?id=6663
+  patch -p1 -d third_party/skia -i $SRC/0001-Clip-FreeType-glyph-bitmap-to-mask.patch
+
+  # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=853347
+  patch -p1 -i $SRC/chromium-blink-gcc7.patch
+
+  # https://bugs.chromium.org/p/chromium/issues/detail?id=614289
+  patch -p1 -i $SRC/chromium-v8-gcc7.patch
+
+  # Fixes from Gentoo
+  patch -p1 -i $SRC/chromium-gn-bootstrap-r8.patch
+
+  mkdir -p third_party/node/linux/node-linux-x64/bin
+  ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
+
   # Let's fix the toolchain
   patch -p0 -i $SRC/$name-build-toolchain.patch
+
+  # Gentoo patch
+  patch -p1 -i $SRC/$name-gn-bootstrap-r2.patch
 
   _gn_args=(
     'blink_gc_plugin=false'
     'clang_use_chrome_plugins=false'
     'enable_hangout_services_extension=true'
     'enable_nacl=false'
-    'enable_nacl_nonsfi=false'
+    'enable_swiftshader=false'
     'fatal_linker_warnings=false'
     'ffmpeg_branding="Chrome"'
     'is_clang=false'
@@ -62,11 +85,18 @@ build() {
     'use_system_libjpeg=true'
   )
 
+  export TMPDIR="${PKGMK_WORK_DIR}/temp"
+  mkdir -p -m 755 "${TMPDIR}" || die
+
   python2 tools/gn/bootstrap/bootstrap.py --gn-gen-args="${_gn_args[*]}"
   out/Release/gn gen out/Release --args="${_gn_args[*]}" --script-executable=/usr/bin/python2
 
-  ninja -C out/Release chrome chrome_sandbox
-
+  # Ninja, by default, sets the number of jobs to the number of availalble threads
+#  local JOBS=$(awk 'BEGIN{RS="-j|--jobs="} NR==2 {print $1}' <<< $MAKEFLAGS)
+#  test -n "$JOBS" && export JOBS="-j $JOBS"
+  JOBS="-j 2"
+  ninja $JOBS -C out/Release chrome chrome_sandbox
+ 
   install -m 0755 -D out/Release/chrome $PKG/usr/lib/$name/$name
   install -m 4755 -o root -g root -D out/Release/chrome_sandbox $PKG/usr/lib/$name/chrome-sandbox
   install -m 0644 -D out/Release/*.pak $PKG/usr/lib/$name
