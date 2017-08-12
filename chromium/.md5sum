@@ -1,5 +1,4 @@
-c8b274991cdd5064aed600add48a0bf6  0001-Clip-FreeType-glyph-bitmap-to-mask.patch
-e5f1c85bec4a50df09da6d4b17249826  chromium-60.0.3112.78.tar.xz
+75f9199e5e0b31e9fbfbaf1f3071b411  chromium-60.0.3112.90.tar.xz
 034bc28a6988f3d6d1e7f291ec95365c  chromium-blink-gcc7.patch
 bce5db9dba2aec40a1a709797a907e2a  chromium-build-toolchain.patch
 776649f56b8f7bcad7f23d496bba8042  chromium-gn-bootstrap-r2.patch
