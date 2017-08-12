@@ -6,11 +6,10 @@
 # Depends on: dbus-glib gperf gtk libevent libexif libgcrypt mesa3d ninja nodejs nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt xorg-libxtst yasm
 
 name=chromium
-version=60.0.3112.78
+version=60.0.3112.90
 release=1
 source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
         last-commit-position.patch $name-build-toolchain.patch $name-gn-bootstrap-r2.patch $name.sh $name.desktop
-        0001-Clip-FreeType-glyph-bitmap-to-mask.patch
         chromium-blink-gcc7.patch
         chromium-v8-gcc7.patch
         chromium-gn-bootstrap-r8.patch)
@@ -37,9 +36,6 @@ build() {
 
   # we don't use git sources
   patch -p1 -i $SRC/last-commit-position.patch
-
-  # https://bugs.chromium.org/p/skia/issues/detail?id=6663
-  patch -p1 -d third_party/skia -i $SRC/0001-Clip-FreeType-glyph-bitmap-to-mask.patch
 
   # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=853347
   patch -p1 -i $SRC/chromium-blink-gcc7.patch
