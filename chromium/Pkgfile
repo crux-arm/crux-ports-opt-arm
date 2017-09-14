@@ -6,13 +6,16 @@
 # Depends on: dbus-glib gperf gtk libevent libexif libgcrypt mesa3d ninja nodejs nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt xorg-libxtst yasm
 
 name=chromium
-version=60.0.3112.90
+version=61.0.3163.79
 release=1
-source=(http://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz \
-        last-commit-position.patch $name-build-toolchain.patch $name-gn-bootstrap-r2.patch $name.sh $name.desktop
-        chromium-blink-gcc7.patch
-        chromium-v8-gcc7.patch
-        chromium-gn-bootstrap-r8.patch)
+source=(https://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz
+  chromium-build-toolchain.patch
+  last-commit-position.patch $name.sh $name.desktop
+  breakpad-use-ucontext_t.patch
+  chromium-gcc-r1.patch
+  chromium-gn-bootstrap-r14.patch
+  chromium-atk-r1.patch
+  chromium-blink-gcc7.patch)
 
 build() {
   cd $name-$version
@@ -40,20 +43,19 @@ build() {
   # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=853347
   patch -p1 -i $SRC/chromium-blink-gcc7.patch
 
-  # https://bugs.chromium.org/p/chromium/issues/detail?id=614289
-  patch -p1 -i $SRC/chromium-v8-gcc7.patch
+  # Fix build with glibc 2.26
+  patch -p1 -i $SRC/breakpad-use-ucontext_t.patch
 
   # Fixes from Gentoo
-  patch -p1 -i $SRC/chromium-gn-bootstrap-r8.patch
+  patch -p1 -i $SRC/chromium-gcc-r1.patch
+  patch -p1 -i $SRC/chromium-gn-bootstrap-r14.patch
+  patch -p1 -i $SRC/chromium-atk-r1.patch
 
   mkdir -p third_party/node/linux/node-linux-x64/bin
   ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
 
   # Let's fix the toolchain
   patch -p0 -i $SRC/$name-build-toolchain.patch
-
-  # Gentoo patch
-  patch -p1 -i $SRC/$name-gn-bootstrap-r2.patch
 
   _gn_args=(
     'blink_gc_plugin=false'
@@ -66,6 +68,7 @@ build() {
     'is_clang=false'
     'is_debug=false'
     'linux_use_bundled_binutils=false'
+    'use_custom_libcxx=false'
     'proprietary_codecs=true'
     'remove_webcore_debug_symbols=true'
     'symbol_level=0'
