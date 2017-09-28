@@ -5,13 +5,16 @@
 # Depends on: db gdbm openssl bzip2 zlib sqlite3
 
 name=python
-version=2.7.13
+version=2.7.14
 release=1
 source=(http://www.python.org/ftp/$name/$version/Python-$version.tar.xz \
         pyconfig.h)
 
 build () {
   cd Python-$version
+
+  export CFLAGS="-O2 -pipe -mfloat-abi=hard"
+  export CXXFLAGS="$CFLAGS"
 
   # set OPT to the python default without -O3
   # our CFLAGS are used as well
