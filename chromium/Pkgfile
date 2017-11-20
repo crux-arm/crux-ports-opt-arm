@@ -3,19 +3,17 @@
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: Tadeusz Sosnierz, tadzikes gmail com
-# Depends on: dbus-glib gperf gtk libevent libexif libgcrypt mesa3d ninja nodejs nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt xorg-libxtst yasm
+# Depends on: dbus-glib gperf gtk gtk3 libevent libexif libgcrypt ninja nodejs nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt yasm
 
 name=chromium
-version=61.0.3163.100
+version=62.0.3202.75
 release=1
 source=(https://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz
   chromium-build-toolchain.patch
   last-commit-position.patch $name.sh $name.desktop
   breakpad-use-ucontext_t.patch
-  chromium-gcc-r1.patch
-  chromium-gn-bootstrap-r14.patch
-  chromium-atk-r1.patch
-  chromium-blink-gcc7.patch)
+  chromium-gn-bootstrap-r17.patch
+  crc32c-string-view-check.patch)
 
 build() {
   cd $name-$version
@@ -40,16 +38,14 @@ build() {
   # we don't use git sources
   patch -p1 -i $SRC/last-commit-position.patch
 
-  # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=853347
-  patch -p1 -i $SRC/chromium-blink-gcc7.patch
+  # Fix incorrect inclusion of <string_view> in modes other than >= C++17
+  patch -p1 -d third_party/crc32c/src -i $SRC/crc32c-string-view-check.patch
 
   # Fix build with glibc 2.26
   patch -p1 -i $SRC/breakpad-use-ucontext_t.patch
 
   # Fixes from Gentoo
-  patch -p1 -i $SRC/chromium-gcc-r1.patch
-  patch -p1 -i $SRC/chromium-gn-bootstrap-r14.patch
-  patch -p1 -i $SRC/chromium-atk-r1.patch
+  patch -p1 -i $SRC/chromium-gn-bootstrap-r17.patch
 
   mkdir -p third_party/node/linux/node-linux-x64/bin
   ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
@@ -84,17 +80,13 @@ build() {
     'use_system_libjpeg=true'
   )
 
-  export TMPDIR="${PKGMK_WORK_DIR}/temp"
-  mkdir -p -m 755 "${TMPDIR}" || die
+#  export TMPDIR="${PKGMK_WORK_DIR}/temp"
+#  mkdir -p -m 755 "${TMPDIR}" || die
 
   python2 tools/gn/bootstrap/bootstrap.py --gn-gen-args="${_gn_args[*]}"
   out/Release/gn gen out/Release --args="${_gn_args[*]}" --script-executable=/usr/bin/python2
 
-  # Ninja, by default, sets the number of jobs to the number of availalble threads
-#  local JOBS=$(awk 'BEGIN{RS="-j|--jobs="} NR==2 {print $1}' <<< $MAKEFLAGS)
-#  test -n "$JOBS" && export JOBS="-j $JOBS"
-  JOBS="-j 2"
-  ninja $JOBS -C out/Release chrome chrome_sandbox
+  ninja -j ${JOBS-1} -C out/Release chrome chrome_sandbox
  
   install -m 0755 -D out/Release/chrome $PKG/usr/lib/$name/$name
   install -m 4755 -o root -g root -D out/Release/chrome_sandbox $PKG/usr/lib/$name/chrome-sandbox
