@@ -1,21 +1,25 @@
 # Description: The Mozilla Firefox browser
-# URL: http://www.mozilla.com/firefox/
+# URL: https://www.mozilla.com/firefox/
 # Maintainer: Fredrik Rinnestam, fredrik at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: nss, unzip, autoconf-2.13, zip, libidl, gtk, gtk3, python, alsa-lib, xorg-libxt, yasm, mesa3d
 
 name=firefox
-version=52.0.2
+version=52.5.0esr
 release=1
-source=(http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
+source=(https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
         firefox-install-dir.patch firefox.desktop)
 
 build() {
+  cd $name-$version
+
   # Fix to avoid gcc6 compilations error at install stage
   export CFLAGS="$CFLAGS -fno-schedule-insns"
   export CXXFLAGS="$CFLAGS"
 
-  cd $name-$version
+  # Fix python
+  sed -i 's@PYTHON ?= $(shell which python2.7 > /dev/null 2>&1 && echo python2.7 || echo python)@PYTHON := python -B@' \
+    client.mk
 
   sed -i '/^ftfntfmt.h/ i freetype/ftfntfmt.h' config/system-headers
   # stupid workaround
@@ -50,20 +54,22 @@ build() {
   ac_add_options --disable-necko-wifi
   ac_add_options --disable-pulseaudio
   ac_add_options --disable-gconf
-  ac_add_options --disable-skia
+  ac_add_options --disable-rust
+  ac_add_options --disable-optimize 
 EOF
 
+  #ac_add_options --disable-startupcache
 # mozonfig optimizations
-  for flag in $CFLAGS; do
-    case $flag in
-      -mfpu=neon*) echo "ac_add_options --with-fpu=neon" >> .mozconfig ;;
-      -march=armv7ve) echo "ac_add_options --with-arch=armv7ve" >> .mozconfig ;;
-    esac
-  done
+#  for flag in $CFLAGS; do
+#    case $flag in
+#      -mfpu=neon*) echo "ac_add_options --with-fpu=neon" >> .mozconfig ;;
+#      -march=armv7ve) echo "ac_add_options --with-arch=armv7ve" >> .mozconfig ;;
+#    esac
+#  done
 
   make -f client.mk build
   make -f client.mk DESTDIR=$PKG install
- 
+
   mkdir -p $PKG/usr/share/pixmaps
   ln -s /usr/lib/firefox/browser/chrome/icons/default/default48.png $PKG/usr/share/pixmaps/firefox_default48.png
   install -D -m 0644 $SRC/firefox.desktop $PKG/usr/share/applications/firefox.desktop
