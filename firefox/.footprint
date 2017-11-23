@@ -76,8 +76,6 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/DecoderDoctorDiagnostics.h
 -rw-r--r--	root/root	usr/include/firefox/DecoderTraits.h
 -rw-r--r--	root/root	usr/include/firefox/DecomposeIntoNoRepeatTriangles.h
--rw-r--r--	root/root	usr/include/firefox/DeviceStorage.h
--rw-r--r--	root/root	usr/include/firefox/DeviceStorageFileDescriptor.h
 -rw-r--r--	root/root	usr/include/firefox/DiskSpaceWatcher.h
 -rw-r--r--	root/root	usr/include/firefox/DisplayItemClip.h
 -rw-r--r--	root/root	usr/include/firefox/DisplayItemScrollClip.h
@@ -248,6 +246,7 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/MediaResourceCallback.h
 -rw-r--r--	root/root	usr/include/firefox/MediaResult.h
 -rw-r--r--	root/root	usr/include/firefox/MediaSegment.h
+-rw-r--r--	root/root	usr/include/firefox/MediaShutdownManager.h
 -rw-r--r--	root/root	usr/include/firefox/MediaSourceDecoder.h
 -rw-r--r--	root/root	usr/include/firefox/MediaSourceDemuxer.h
 -rw-r--r--	root/root	usr/include/firefox/MediaStatistics.h
@@ -311,6 +310,7 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/SharedSurfaceGLX.h
 -rw-r--r--	root/root	usr/include/firefox/SignedCertificateTimestamp.h
 -rw-r--r--	root/root	usr/include/firefox/SignedTreeHead.h
+-rwxr-xr-x	root/root	usr/include/firefox/SkiaGLGlue.h
 -rw-r--r--	root/root	usr/include/firefox/SlicedInputStream.h
 -rw-r--r--	root/root	usr/include/firefox/SoftwareVsyncSource.h
 -rw-r--r--	root/root	usr/include/firefox/SourceBufferAttributes.h
@@ -345,6 +345,7 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/VRMessageUtils.h
 -rw-r--r--	root/root	usr/include/firefox/VariableLengthPrefixSet.h
 -rw-r--r--	root/root	usr/include/firefox/VideoFrameContainer.h
+-rw-r--r--	root/root	usr/include/firefox/VideoLimits.h
 -rw-r--r--	root/root	usr/include/firefox/VideoSegment.h
 -rw-r--r--	root/root	usr/include/firefox/VideoUtils.h
 -rw-r--r--	root/root	usr/include/firefox/Visibility.h
@@ -1335,14 +1336,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceOrientationEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceProximityEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceProximityEventBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceStorageAreaChangedEvent.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceStorageAreaChangedEventBinding.h
--rwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/DeviceStorageAreaListener.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceStorageAreaListenerBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceStorageBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceStorageChangeEvent.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceStorageChangeEventBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DeviceStorageFileSystem.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DirectionalityUtils.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/Directory.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/DirectoryBinding.h
@@ -1419,6 +1412,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileSystemFileEntry.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileSystemFileEntryBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileSystemRequestParent.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileSystemSecurity.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileSystemTaskBase.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FileSystemUtils.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/FlyWebDiscoveryManager.h
@@ -2477,10 +2471,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/cache/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/cache/StreamList.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/cache/TypeUtils.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/cache/Types.h
-drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/devicestorage/
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/devicestorage/DeviceStorageRequestChild.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/devicestorage/DeviceStorageRequestParent.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/devicestorage/DeviceStorageStatics.h
 drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/filehandle/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/filehandle/ActorsChild.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/filehandle/ActorsParent.h
@@ -2587,6 +2577,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/gfx/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/GPUProcessManager.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/Helpers.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/HelpersCairo.h
+-rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/HelpersSkia.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/IterableArena.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/JobScheduler.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/gfx/JobScheduler_posix.h
@@ -3110,7 +3101,6 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsDeviceContext.h
 -rw-r--r--	root/root	usr/include/firefox/nsDeviceContextSpecProxy.h
 -rw-r--r--	root/root	usr/include/firefox/nsDeviceSensors.h
--rw-r--r--	root/root	usr/include/firefox/nsDeviceStorage.h
 -rw-r--r--	root/root	usr/include/firefox/nsDirection.h
 -rw-r--r--	root/root	usr/include/firefox/nsDirectoryService.h
 -rw-r--r--	root/root	usr/include/firefox/nsDirectoryServiceAtomList.h
@@ -3993,6 +3983,7 @@ drwxr-xr-x	root/root	usr/include/firefox/nestegg/
 -rw-r--r--	root/root	usr/include/firefox/nsIQuotaCallbacks.h
 -rw-r--r--	root/root	usr/include/firefox/nsIQuotaManagerService.h
 -rw-r--r--	root/root	usr/include/firefox/nsIQuotaRequests.h
+-rw-r--r--	root/root	usr/include/firefox/nsIQuotaResults.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRDFCompositeDataSource.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRDFContainer.h
 -rw-r--r--	root/root	usr/include/firefox/nsIRDFContainerUtils.h
@@ -4927,7 +4918,6 @@ drwxr-xr-x	root/root	usr/lib/firefox/browser/extensions/
 -rw-r--r--	root/root	usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
 drwxr-xr-x	root/root	usr/lib/firefox/browser/features/
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/aushelper@mozilla.org.xpi
--rw-r--r--	root/root	usr/lib/firefox/browser/features/deployment-checker@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/e10srollout@mozilla.org.xpi
 drwxr-xr-x	root/root	usr/lib/firefox/browser/icons/
 -rw-r--r--	root/root	usr/lib/firefox/browser/icons/mozicon128.png
@@ -5732,6 +5722,7 @@ drwxr-xr-x	root/root	usr/share/idl/firefox/
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaCallbacks.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaManagerService.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaRequests.idl
+-rw-r--r--	root/root	usr/share/idl/firefox/nsIQuotaResults.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRDFCompositeDataSource.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRDFContainer.idl
 -rw-r--r--	root/root	usr/share/idl/firefox/nsIRDFContainerUtils.idl
