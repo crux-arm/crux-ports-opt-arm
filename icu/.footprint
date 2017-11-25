@@ -22,6 +22,8 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/bytestriebuilder.h
 -rw-r--r--	root/root	usr/include/unicode/calendar.h
 -rw-r--r--	root/root	usr/include/unicode/caniter.h
+-rw-r--r--	root/root	usr/include/unicode/casemap.h
+-rw-r--r--	root/root	usr/include/unicode/char16ptr.h
 -rw-r--r--	root/root	usr/include/unicode/chariter.h
 -rw-r--r--	root/root	usr/include/unicode/choicfmt.h
 -rw-r--r--	root/root	usr/include/unicode/coleitr.h
@@ -41,6 +43,7 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/dtitvinf.h
 -rw-r--r--	root/root	usr/include/unicode/dtptngen.h
 -rw-r--r--	root/root	usr/include/unicode/dtrule.h
+-rw-r--r--	root/root	usr/include/unicode/edits.h
 -rw-r--r--	root/root	usr/include/unicode/enumset.h
 -rw-r--r--	root/root	usr/include/unicode/errorcode.h
 -rw-r--r--	root/root	usr/include/unicode/fieldpos.h
@@ -64,6 +67,8 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/msgfmt.h
 -rw-r--r--	root/root	usr/include/unicode/normalizer2.h
 -rw-r--r--	root/root	usr/include/unicode/normlzr.h
+-rw-r--r--	root/root	usr/include/unicode/nounit.h
+-rw-r--r--	root/root	usr/include/unicode/numberformatter.h
 -rw-r--r--	root/root	usr/include/unicode/numfmt.h
 -rw-r--r--	root/root	usr/include/unicode/numsys.h
 -rw-r--r--	root/root	usr/include/unicode/parseerr.h
@@ -91,6 +96,7 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/sortkey.h
 -rw-r--r--	root/root	usr/include/unicode/std_string.h
 -rw-r--r--	root/root	usr/include/unicode/strenum.h
+-rw-r--r--	root/root	usr/include/unicode/stringoptions.h
 -rw-r--r--	root/root	usr/include/unicode/stringpiece.h
 -rw-r--r--	root/root	usr/include/unicode/stringtriebuilder.h
 -rw-r--r--	root/root	usr/include/unicode/stsearch.h
@@ -187,35 +193,36 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/vtzone.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/icu/
-drwxr-xr-x	root/root	usr/lib/icu/58.2/
--rw-r--r--	root/root	usr/lib/icu/58.2/Makefile.inc
--rw-r--r--	root/root	usr/lib/icu/58.2/pkgdata.inc
+drwxr-xr-x	root/root	usr/lib/icu/60.1/
+-rw-r--r--	root/root	usr/lib/icu/60.1/Makefile.inc
+-rw-r--r--	root/root	usr/lib/icu/60.1/pkgdata.inc
 lrwxrwxrwx	root/root	usr/lib/icu/Makefile.inc -> current/Makefile.inc
-lrwxrwxrwx	root/root	usr/lib/icu/current -> 58.2
+lrwxrwxrwx	root/root	usr/lib/icu/current -> 60.1
 lrwxrwxrwx	root/root	usr/lib/icu/pkgdata.inc -> current/pkgdata.inc
-lrwxrwxrwx	root/root	usr/lib/libicudata.so -> libicudata.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicudata.so.58 -> libicudata.so.58.2
--rwxr-xr-x	root/root	usr/lib/libicudata.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicui18n.so -> libicui18n.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicui18n.so.58 -> libicui18n.so.58.2
--rwxr-xr-x	root/root	usr/lib/libicui18n.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicuio.so -> libicuio.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicuio.so.58 -> libicuio.so.58.2
--rwxr-xr-x	root/root	usr/lib/libicuio.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicutest.so -> libicutest.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicutest.so.58 -> libicutest.so.58.2
--rwxr-xr-x	root/root	usr/lib/libicutest.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicutu.so -> libicutu.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicutu.so.58 -> libicutu.so.58.2
--rwxr-xr-x	root/root	usr/lib/libicutu.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicuuc.so -> libicuuc.so.58.2
-lrwxrwxrwx	root/root	usr/lib/libicuuc.so.58 -> libicuuc.so.58.2
--rwxr-xr-x	root/root	usr/lib/libicuuc.so.58.2
+lrwxrwxrwx	root/root	usr/lib/libicudata.so -> libicudata.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicudata.so.60 -> libicudata.so.60.1
+-rwxr-xr-x	root/root	usr/lib/libicudata.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicui18n.so -> libicui18n.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicui18n.so.60 -> libicui18n.so.60.1
+-rwxr-xr-x	root/root	usr/lib/libicui18n.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicuio.so -> libicuio.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicuio.so.60 -> libicuio.so.60.1
+-rwxr-xr-x	root/root	usr/lib/libicuio.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicutest.so -> libicutest.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicutest.so.60 -> libicutest.so.60.1
+-rwxr-xr-x	root/root	usr/lib/libicutest.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicutu.so -> libicutu.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicutu.so.60 -> libicutu.so.60.1
+-rwxr-xr-x	root/root	usr/lib/libicutu.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicuuc.so -> libicuuc.so.60.1
+lrwxrwxrwx	root/root	usr/lib/libicuuc.so.60 -> libicuuc.so.60.1
+-rwxr-xr-x	root/root	usr/lib/libicuuc.so.60.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/icu-i18n.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/icu-io.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/icu-uc.pc
 drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/escapesrc
 -rwxr-xr-x	root/root	usr/sbin/genccode
 -rwxr-xr-x	root/root	usr/sbin/gencmn
 -rwxr-xr-x	root/root	usr/sbin/gennorm2
@@ -223,12 +230,12 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/icupkg
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/icu/
-drwxr-xr-x	root/root	usr/share/icu/58.2/
--rw-r--r--	root/root	usr/share/icu/58.2/LICENSE
-drwxr-xr-x	root/root	usr/share/icu/58.2/config/
--rw-r--r--	root/root	usr/share/icu/58.2/config/mh-linux
--rwxr-xr-x	root/root	usr/share/icu/58.2/install-sh
--rwxr-xr-x	root/root	usr/share/icu/58.2/mkinstalldirs
+drwxr-xr-x	root/root	usr/share/icu/60.1/
+-rw-r--r--	root/root	usr/share/icu/60.1/LICENSE
+drwxr-xr-x	root/root	usr/share/icu/60.1/config/
+-rw-r--r--	root/root	usr/share/icu/60.1/config/mh-linux
+-rwxr-xr-x	root/root	usr/share/icu/60.1/install-sh
+-rwxr-xr-x	root/root	usr/share/icu/60.1/mkinstalldirs
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/derb.1.gz
