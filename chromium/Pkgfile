@@ -6,7 +6,7 @@
 # Depends on: dbus-glib gperf gtk gtk3 libevent libexif libgcrypt ninja nodejs nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt yasm
 
 name=chromium
-version=62.0.3202.75
+version=62.0.3202.94
 release=1
 source=(https://commondatastorage.googleapis.com/$name-browser-official/$name-$version.tar.xz
   chromium-build-toolchain.patch
