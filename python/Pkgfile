@@ -6,7 +6,7 @@
 
 name=python
 version=2.7.14
-release=1
+release=2
 source=(http://www.python.org/ftp/$name/$version/Python-$version.tar.xz \
         CVE-2018-1000030.patch
         pyconfig.h)
