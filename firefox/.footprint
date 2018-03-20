@@ -1017,6 +1017,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/TimelineConsumers.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/TimelineMarker.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/TimelineMarkerEnums.h
+-rwxr-xr-x	root/root	usr/include/firefox/mozilla/TimerClamping.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/TimestampTimelineMarker.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/TimingParams.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ToString.h
@@ -1362,7 +1363,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ErrorEvent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/ErrorEventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/Errors.msg
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/Event.h
+-rwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/Event.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/EventBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/EventHandlerBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/EventListenerBinding.h
@@ -1860,7 +1861,7 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PerformanceObserverEntryListBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PerformanceResourceTiming.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PerformanceResourceTimingBinding.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PerformanceTiming.h
+-rwxr-xr-x	root/root	usr/include/firefox/mozilla/dom/PerformanceTiming.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PerformanceTimingBinding.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PeriodicWave.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/dom/PeriodicWaveBinding.h
@@ -2626,8 +2627,6 @@ drwxr-xr-x	root/root	usr/include/firefox/mozilla/ipc/
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ipc/CrashReporterHost.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ipc/CrashReporterMetadataShmem.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ipc/CrossProcessMutex.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/ipc/DocumentRendererChild.h
--rw-r--r--	root/root	usr/include/firefox/mozilla/ipc/DocumentRendererParent.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ipc/FileDescriptor.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ipc/FileDescriptorSetChild.h
 -rw-r--r--	root/root	usr/include/firefox/mozilla/ipc/FileDescriptorSetParent.h
