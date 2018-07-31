@@ -7,7 +7,7 @@
 name=mysql
 version=5.7.23
 release=1
-source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.7/$name-$version.tar.gz \
+source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.7/$name-boost-$version.tar.gz \
         my.cnf mysqld valist.patch)
 
 build () {
@@ -24,7 +24,6 @@ build () {
         -DINSTALL_PLUGINDIR=lib/mysql/plugin \
         -DINSTALL_MANDIR=share/man \
         -DINSTALL_SECURE_PRIVDIR=/var/lib/mysql-files \
-        -DDOWNLOAD_BOOST=1 \
         -DWITH_BOOST=./boost \
         -DWITH_LIBWRAP=0 \
         -DWITH_SSL=system \
