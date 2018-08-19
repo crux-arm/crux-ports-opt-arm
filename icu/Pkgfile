@@ -5,9 +5,9 @@
 # Packager: Younes Hafri, ycrux at club-internet dot fr
 
 name=icu
-version=60.1
+version=62.1
 release=1
-source=(http://download.icu-project.org/files/icu4c/$version/icu4c-${version//./_}-src.tgz)
+source=(https://ssl.icu-project.org/files/icu4c/$version/icu4c-${version//./_}-src.tgz)
 
 build() {
   cd icu/source
