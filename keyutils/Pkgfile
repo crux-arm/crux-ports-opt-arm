@@ -2,9 +2,10 @@
 # URL: http://www.kernel.org/
 # Maintainer: Juergen Daubert, jue at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: krb5
 
 name=keyutils
-version=1.5.10
+version=1.5.11
 release=1
 source=(http://people.redhat.com/~dhowells/$name/$name-$version.tar.bz2)
 
