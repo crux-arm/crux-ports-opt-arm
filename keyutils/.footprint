@@ -4,8 +4,10 @@ drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/request-key.conf
 drwxr-xr-x	root/root	etc/request-key.d/
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libkeyutils.so.1 -> libkeyutils.so.1.7
--rwxr-xr-x	root/root	lib/libkeyutils.so.1.7
+lrwxrwxrwx	root/root	lib/libkeyutils.so.1 -> libkeyutils.so.1.8
+-rwxr-xr-x	root/root	lib/libkeyutils.so.1.8
+drwxr-xr-x	root/root	lib/pkgconfig/
+-rwxr-xr-x	root/root	lib/pkgconfig/libkeyutils.pc
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/key.dns_resolver
 -rwxr-xr-x	root/root	sbin/request-key
@@ -42,6 +44,11 @@ lrwxrwxrwx	root/root	usr/share/man/man3/keyctl_instantiate_iov.3.gz -> keyctl_in
 -rw-r--r--	root/root	usr/share/man/man3/keyctl_join_session_keyring.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/keyctl_link.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/keyctl_negate.3.gz -> keyctl_instantiate.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/keyctl_pkey_decrypt.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/keyctl_pkey_encrypt.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/keyctl_pkey_query.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/keyctl_pkey_sign.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/keyctl_pkey_verify.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/keyctl_read.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/keyctl_read_alloc.3.gz -> keyctl_read.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/keyctl_reject.3.gz -> keyctl_instantiate.3.gz
@@ -59,6 +66,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/recursive_session_key_scan.3.gz -> recur
 drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/request-key.conf.5.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
+-rw-r--r--	root/root	usr/share/man/man7/asymmetric-key.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/keyutils.7.gz
 drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/key.dns_resolver.8.gz
