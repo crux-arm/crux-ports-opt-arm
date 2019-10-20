@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauDfocJlRKiAMrqX8ijge2a8hVPbJNk1Rebz9ftGlgTs9o3U02LNJZLuHhMulfptpnwLmqyXJsN8X6DPlB3M4jAk=
-SHA256 (Pkgfile) = 58f15d0ee7aa521639eb49f79f6e54329ef72045812cfd73b26a21f47f90bade
-SHA256 (.footprint) = 70d0151fd115c225fb9e89c1758ff11fd7c0369a00dff4671d9c2765e3e7b881
-SHA256 (setuptools-41.2.0.zip) = 66b86bbae7cc7ac2e867f52dc08a6bd064d938bac59dfec71b9b565dd36d6012
+RWQh9Dk2FlLauKRvhP/IbCsZrHMVh6kceMx/vBs3t2NB05Zs/ImFoGaaxa4jYq7icFPqbHyBvBrYvgYn6wSE8RWMg5poC/Busg8=
+SHA256 (Pkgfile) = e907286fe7d897003e9b4d57b508b7c63851f8756c43f560baeb63feb149cfc4
+SHA256 (.footprint) = 588ab4544db4d67aad9b3e1e737f8ae871423cc22f7839d076a1bee8ee75babd
+SHA256 (setuptools-41.4.0.zip) = 7eae782ccf36b790c21bde7d86a4f303a441cd77036b25c559a602cf5186ce4d
