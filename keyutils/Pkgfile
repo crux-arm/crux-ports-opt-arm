@@ -5,9 +5,9 @@
 # Depends on: krb5
 
 name=keyutils
-version=1.6
-release=2
-source=(http://people.redhat.com/~dhowells/$name/$name-$version.tar.bz2)
+version=1.6.1
+release=1
+source=(https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/$name-$version.tar.gz)
 
 build () {
   cd $name-$version
