@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt-arm.pub
+RWQh9Dk2FlLauJjNuWdLnBqiua61gJrsgZGa2bBr2utPdZ9RQZpLfgT1jn+IDMMJB+c34rJGUhipU+MZnJEuzmPwjUfYsRzwsAI=
+SHA256 (Pkgfile) = 2a9f0da1f8109c3efefef2cf4dc46d02ce53445be7b53083898a9fe0865f6af7
+SHA256 (.footprint) = a169ed7bebe4bcca0b52757a90f55122bccf44abd4a9c9b9154d08442256e98c
+SHA256 (Mako-1.1.0.tar.gz) = a36919599a9b7dc5d86a7a8988f23a9a3a3d083070023bab23d64f7f1d1e0a4b
