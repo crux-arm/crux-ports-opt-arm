@@ -50,6 +50,7 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/filteredbrk.h
 -rw-r--r--	root/root	usr/include/unicode/fmtable.h
 -rw-r--r--	root/root	usr/include/unicode/format.h
+-rw-r--r--	root/root	usr/include/unicode/formattedvalue.h
 -rw-r--r--	root/root	usr/include/unicode/fpositer.h
 -rw-r--r--	root/root	usr/include/unicode/gender.h
 -rw-r--r--	root/root	usr/include/unicode/gregocal.h
@@ -57,6 +58,7 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/icuplug.h
 -rw-r--r--	root/root	usr/include/unicode/idna.h
 -rw-r--r--	root/root	usr/include/unicode/listformatter.h
+-rw-r--r--	root/root	usr/include/unicode/localebuilder.h
 -rw-r--r--	root/root	usr/include/unicode/localpointer.h
 -rw-r--r--	root/root	usr/include/unicode/locdspnm.h
 -rw-r--r--	root/root	usr/include/unicode/locid.h
@@ -142,6 +144,7 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/uenum.h
 -rw-r--r--	root/root	usr/include/unicode/ufieldpositer.h
 -rw-r--r--	root/root	usr/include/unicode/uformattable.h
+-rw-r--r--	root/root	usr/include/unicode/uformattedvalue.h
 -rw-r--r--	root/root	usr/include/unicode/ugender.h
 -rw-r--r--	root/root	usr/include/unicode/uidna.h
 -rw-r--r--	root/root	usr/include/unicode/uiter.h
@@ -198,30 +201,30 @@ drwxr-xr-x	root/root	usr/include/unicode/
 -rw-r--r--	root/root	usr/include/unicode/vtzone.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/icu/
-drwxr-xr-x	root/root	usr/lib/icu/63.1/
--rw-r--r--	root/root	usr/lib/icu/63.1/Makefile.inc
--rw-r--r--	root/root	usr/lib/icu/63.1/pkgdata.inc
+drwxr-xr-x	root/root	usr/lib/icu/64.2/
+-rw-r--r--	root/root	usr/lib/icu/64.2/Makefile.inc
+-rw-r--r--	root/root	usr/lib/icu/64.2/pkgdata.inc
 lrwxrwxrwx	root/root	usr/lib/icu/Makefile.inc -> current/Makefile.inc
-lrwxrwxrwx	root/root	usr/lib/icu/current -> 63.1
+lrwxrwxrwx	root/root	usr/lib/icu/current -> 64.2
 lrwxrwxrwx	root/root	usr/lib/icu/pkgdata.inc -> current/pkgdata.inc
-lrwxrwxrwx	root/root	usr/lib/libicudata.so -> libicudata.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicudata.so.63 -> libicudata.so.63.1
--rwxr-xr-x	root/root	usr/lib/libicudata.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicui18n.so -> libicui18n.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicui18n.so.63 -> libicui18n.so.63.1
--rwxr-xr-x	root/root	usr/lib/libicui18n.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicuio.so -> libicuio.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicuio.so.63 -> libicuio.so.63.1
--rwxr-xr-x	root/root	usr/lib/libicuio.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicutest.so -> libicutest.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicutest.so.63 -> libicutest.so.63.1
--rwxr-xr-x	root/root	usr/lib/libicutest.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicutu.so -> libicutu.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicutu.so.63 -> libicutu.so.63.1
--rwxr-xr-x	root/root	usr/lib/libicutu.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicuuc.so -> libicuuc.so.63.1
-lrwxrwxrwx	root/root	usr/lib/libicuuc.so.63 -> libicuuc.so.63.1
--rwxr-xr-x	root/root	usr/lib/libicuuc.so.63.1
+lrwxrwxrwx	root/root	usr/lib/libicudata.so -> libicudata.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicudata.so.64 -> libicudata.so.64.2
+-rwxr-xr-x	root/root	usr/lib/libicudata.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicui18n.so -> libicui18n.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicui18n.so.64 -> libicui18n.so.64.2
+-rwxr-xr-x	root/root	usr/lib/libicui18n.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicuio.so -> libicuio.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicuio.so.64 -> libicuio.so.64.2
+-rwxr-xr-x	root/root	usr/lib/libicuio.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicutest.so -> libicutest.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicutest.so.64 -> libicutest.so.64.2
+-rwxr-xr-x	root/root	usr/lib/libicutest.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicutu.so -> libicutu.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicutu.so.64 -> libicutu.so.64.2
+-rwxr-xr-x	root/root	usr/lib/libicutu.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicuuc.so -> libicuuc.so.64.2
+lrwxrwxrwx	root/root	usr/lib/libicuuc.so.64 -> libicuuc.so.64.2
+-rwxr-xr-x	root/root	usr/lib/libicuuc.so.64.2
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/icu-i18n.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/icu-io.pc
@@ -235,12 +238,12 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/icupkg
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/icu/
-drwxr-xr-x	root/root	usr/share/icu/63.1/
--rw-r--r--	root/root	usr/share/icu/63.1/LICENSE
-drwxr-xr-x	root/root	usr/share/icu/63.1/config/
--rw-r--r--	root/root	usr/share/icu/63.1/config/mh-linux
--rwxr-xr-x	root/root	usr/share/icu/63.1/install-sh
--rwxr-xr-x	root/root	usr/share/icu/63.1/mkinstalldirs
+drwxr-xr-x	root/root	usr/share/icu/64.2/
+-rw-r--r--	root/root	usr/share/icu/64.2/LICENSE
+drwxr-xr-x	root/root	usr/share/icu/64.2/config/
+-rw-r--r--	root/root	usr/share/icu/64.2/config/mh-linux
+-rwxr-xr-x	root/root	usr/share/icu/64.2/install-sh
+-rwxr-xr-x	root/root	usr/share/icu/64.2/mkinstalldirs
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/derb.1.gz
