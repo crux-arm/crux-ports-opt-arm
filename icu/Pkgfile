@@ -5,12 +5,16 @@
 # Packager: Younes Hafri, ycrux at club-internet dot fr
 
 name=icu
-version=64.2
+version=65.1
 release=1
-source=(https://ssl.icu-project.org/files/icu4c/$version/icu4c-${version//./_}-src.tgz)
+source=(https://github.com/unicode-org/icu/releases/download/release-${version//./-}/icu4c-${version/./_}-src.tgz
+        icu-65.1-initialized-buffer-uloc_getKeywordValue.patch)
 
 build() {
   cd icu/source
+
+  # https://unicode-org.atlassian.net/browse/ICU-20884
+  patch -p2 -d .. -i $SRC/icu-65.1-initialized-buffer-uloc_getKeywordValue.patch
 
   # icu tries to use clang by default
   [ "$CC" ] || export CC=gcc
