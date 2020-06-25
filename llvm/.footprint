@@ -1572,12 +1572,12 @@ drwxr-xr-x	root/root	usr/lib/cmake/llvm/
 lrwxrwxrwx	root/root	usr/lib/libLLVM-9.0.1.so -> libLLVM-9.so
 -rwxr-xr-x	root/root	usr/lib/libLLVM-9.so
 lrwxrwxrwx	root/root	usr/lib/libLLVM.so -> libLLVM-9.so
--rw-r--r--	root/root	usr/lib/libLLVMAArch64AsmParser.a
--rw-r--r--	root/root	usr/lib/libLLVMAArch64CodeGen.a
--rw-r--r--	root/root	usr/lib/libLLVMAArch64Desc.a
--rw-r--r--	root/root	usr/lib/libLLVMAArch64Disassembler.a
--rw-r--r--	root/root	usr/lib/libLLVMAArch64Info.a
--rw-r--r--	root/root	usr/lib/libLLVMAArch64Utils.a
+-rw-r--r--	root/root	usr/lib/libLLVMARMAsmParser.a
+-rw-r--r--	root/root	usr/lib/libLLVMARMCodeGen.a
+-rw-r--r--	root/root	usr/lib/libLLVMARMDesc.a
+-rw-r--r--	root/root	usr/lib/libLLVMARMDisassembler.a
+-rw-r--r--	root/root	usr/lib/libLLVMARMInfo.a
+-rw-r--r--	root/root	usr/lib/libLLVMARMUtils.a
 -rw-r--r--	root/root	usr/lib/libLLVMAggressiveInstCombine.a
 -rw-r--r--	root/root	usr/lib/libLLVMAnalysis.a
 -rw-r--r--	root/root	usr/lib/libLLVMAsmParser.a
