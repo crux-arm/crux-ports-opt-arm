@@ -1,11 +1,12 @@
 drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/keyctl
 drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/keyutils/
 -rw-r--r--	root/root	etc/request-key.conf
 drwxr-xr-x	root/root	etc/request-key.d/
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libkeyutils.so.1 -> libkeyutils.so.1.9
--rwxr-xr-x	root/root	lib/libkeyutils.so.1.9
+lrwxrwxrwx	root/root	lib/libkeyutils.so.1 -> libkeyutils.so.1.10
+-rwxr-xr-x	root/root	lib/libkeyutils.so.1.10
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/key.dns_resolver
 -rwxr-xr-x	root/root	sbin/request-key
@@ -63,9 +64,11 @@ lrwxrwxrwx	root/root	usr/share/man/man3/keyctl_reject.3.gz -> keyctl_instantiate
 -rw-r--r--	root/root	usr/share/man/man3/keyctl_setperm.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/keyctl_unlink.3.gz -> keyctl_link.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/keyctl_update.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/keyctl_watch_key.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/recursive_key_scan.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/recursive_session_key_scan.3.gz -> recursive_key_scan.3.gz
 drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/key.dns_resolver.conf.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/request-key.conf.5.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/asymmetric-key.7.gz
