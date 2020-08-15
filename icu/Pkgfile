@@ -5,25 +5,23 @@
 # Packager: Younes Hafri, ycrux at club-internet dot fr
 
 name=icu
-version=65.1
+version=67.1
 release=1
 source=(https://github.com/unicode-org/icu/releases/download/release-${version//./-}/icu4c-${version/./_}-src.tgz
-        icu-65.1-initialized-buffer-uloc_getKeywordValue.patch)
+        icudata-stdlibs.patch)
 
 build() {
   cd icu/source
 
-  # https://unicode-org.atlassian.net/browse/ICU-20884
-  patch -p2 -d .. -i $SRC/icu-65.1-initialized-buffer-uloc_getKeywordValue.patch
+  patch -p2 -i $SRC/icudata-stdlibs.patch
 
   # icu tries to use clang by default
   [ "$CC" ] || export CC=gcc
   [ "$CXX" ] || export CXX=g++
 
-  sed -i -e "s:LDFLAGSICUDT=-nodefaultlibs -nostdlib:LDFLAGSICUDT=:" config/mh-linux
-
   ./configure \
     --prefix=/usr \
+    --mandir=/usr/share/man \
     --disable-samples \
     --disable-tests
 
