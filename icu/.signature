@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauN6qHXVlYF8BXzNY4TDpZV2hXv3SFleuJM/MivSKLPcI3jc9iN6ckyKRNFVs0rW+yYVcwyI75ynZ8wFcOoQgNAc=
-SHA256 (Pkgfile) = c593e7dc0bc8c4e18da820ac7e0cd165ffe0621aa3c1fb3e471f15e61af6cc09
-SHA256 (.footprint) = 575e839241a9f7011af23ab46d8400cda2281acbdf7a3cd27af2e7682065015a
-SHA256 (icu4c-65_1-src.tgz) = 53e37466b3d6d6d01ead029e3567d873a43a5d1c668ed2278e253b683136d948
-SHA256 (icu-65.1-initialized-buffer-uloc_getKeywordValue.patch) = 2fafe710a69e0e81f38c8a36fcc17fa494ce27af63ea41d23815b36b1ee319c3
+RWQh9Dk2FlLauCg6IR6QHCptnsk98L0Tbfq6gUptACeqLtIHSOs8IDDtOAn6vcXIqmcos1r088x063mIXFJ9sJHfjtbk4x4zEQ8=
+SHA256 (Pkgfile) = 420e855bb58e4af593bdc13d79c9a47b8125899b637003e5f8bb4bf6b444a415
+SHA256 (.footprint) = 906027b72b5d9f23d428d66117274311b00fb81cfd91fb532d4f6b7292d65f98
+SHA256 (icu4c-67_1-src.tgz) = 94a80cd6f251a53bd2a997f6f1b5ac6653fe791dfab66e1eb0227740fb86d5dc
+SHA256 (icudata-stdlibs.patch) = 9633727d1875b90e87d0a6d8b727fb926a4f831e4c8f1e2c4f3eb24b08097153
