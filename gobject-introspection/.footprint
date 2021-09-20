@@ -52,7 +52,7 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 drwxr-xr-x	root/root	usr/lib/gobject-introspection/
 drwxr-xr-x	root/root	usr/lib/gobject-introspection/giscanner/
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/__init__.py
--rwxr-xr-x	root/root	usr/lib/gobject-introspection/giscanner/_giscanner.cpython-37m-arm-linux-gnueabihf.so
+-rwxr-xr-x	root/root	usr/lib/gobject-introspection/giscanner/_giscanner.cpython-39-arm-linux-gnueabihf.so
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/_version.py
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/annotationmain.py
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/annotationparser.py
@@ -136,7 +136,6 @@ drwxr-xr-x	root/root	usr/lib/gobject-introspection/giscanner/doctemplates/mallar
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/girparser.py
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/girwriter.py
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/introspectablepass.py
--rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/libtoolimporter.py
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/maintransformer.py
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/mdextensions.py
 -rw-r--r--	root/root	usr/lib/gobject-introspection/giscanner/message.py
@@ -203,5 +202,6 @@ drwxr-xr-x	root/root	usr/share/gobject-introspection-1.0/tests/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/g-ir-compiler.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/g-ir-doc-tool.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/g-ir-generate.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/g-ir-scanner.1.gz
