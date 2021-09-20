@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauGObcKrJnzpiaBqgPWuCxeQ1+YbvvNZuwAWuA9uqP4ZUKmB4VtrP7s3bICKw8XkEP7H4SlmJrUZCu7qyW4RYuwA=
-SHA256 (Pkgfile) = 5e1646cf795ba45115359781b55623634a7a0443099f5948a925bf51d3c47880
+RWQh9Dk2FlLauH45wglPyCLbQRwsnXqRRFwszuEWlbNdeyi3gmDKGpw6dWK+s8db/rFw2icP+VDl4eIr1NL5T7BEAot4rbY19Ag=
+SHA256 (Pkgfile) = ee66f3d08a77d9de01e9bb0458c786903dced1bf458b473ddd91a40fc7b5f3bb
 SHA256 (.footprint) = ca5a9f3ef9c25bbb9276ddaf58e30935286f63deee679e7268d602e09f9934af
-SHA256 (nspr-4.28.tar.gz) = 63defc8e19a80b6f98fcc7d5a89e84ea703c0b50aa6bc13bf7ad071adf433b56
+SHA256 (nspr-4.32.tar.gz) = bb6bf4f534b9559cf123dcdc6f9cd8167de950314a90a88b2a329c16836e7f6c
 SHA256 (nspr.pc.in) = 57a655d034221760ce10278d2050bbe040b1db55be3db6e3a30f04a570877b71
