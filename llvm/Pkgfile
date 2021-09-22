@@ -1,11 +1,12 @@
 # Description: LLVM compiler backend
-# URL:         http://llvm.org/
-# Maintainer:  Thomas Penteker, tek at serverop dot de
-# Depends on:  cmake libffi libxml2 ninja
+# URL: http://llvm.org/
+# Maintainer: Thomas Penteker, tek at serverop dot de
+# Depends on: cmake libffi libxml2 ninja
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 
 name=llvm
-version=10.0.1
-release=1
+version=12.0.1
+release=2
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/$name-$version.src.tar.xz)
 
 build() {
@@ -26,6 +27,7 @@ build() {
     -DLLVM_ENABLE_RTTI=1 \
     -DLLVM_ENABLE_OCAMLDOC=0 \
     -DLLVM_TARGETS_TO_BUILD='ARM' \
+    -DLLVM_BINUTILS_INCDIR=/usr/include \
     -DLLVM_BUILD_LLVM_DYLIB=1 \
     -DLLVM_LINK_LLVM_DYLIB=1 \
     -DLLVM_INSTALL_UTILS=1 \
