@@ -5,9 +5,9 @@
 # Depends on: python3
 
 name=python3-setuptools
-version=50.3.0
+version=57.4.0
 release=1
-source=(https://files.pythonhosted.org/packages/source/${name:8:1}/${name#*-}/${name#*-}-$version.zip)
+source=(https://files.pythonhosted.org/packages/source/${name:8:1}/${name#*-}/${name#*-}-$version.tar.gz)
 
 build() {
   cd ${name#*-}-$version
@@ -19,6 +19,4 @@ build() {
 
   /usr/bin/python3 setup.py install \
     --prefix=/usr --root=$PKG --optimize=1
-
-  rm $PKG/usr/bin/easy_install
 }
