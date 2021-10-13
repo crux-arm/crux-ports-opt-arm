@@ -5,7 +5,7 @@
 # Packager: Younes Hafri, ycrux at club-internet dot fr
 
 name=icu
-version=67.1
+version=68.2
 release=1
 source=(https://github.com/unicode-org/icu/releases/download/release-${version//./-}/icu4c-${version/./_}-src.tgz
         icudata-stdlibs.patch)
