@@ -7,7 +7,8 @@
 name=llvm
 version=13.0.0
 release=1
-source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/$name-$version.src.tar.xz)
+source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/$name-$version.src.tar.xz
+        llvm-config.h)
 
 build() {
   cmake -S $name-$version.src -B build -G Ninja \
@@ -35,7 +36,7 @@ build() {
 
   # multilib stub
   mv $PKG/usr/include/llvm/Config/llvm-config{,-32}.h
-  #install -m 0644 $SRC/llvm-config.h $PKG/usr/include/llvm/Config/
+  install -m 0644 $SRC/llvm-config.h $PKG/usr/include/llvm/Config/
 
   install -d $PKG/usr/lib/bfd-plugins
   ln -s ../LLVMgold.so $PKG/usr/lib/bfd-plugins/

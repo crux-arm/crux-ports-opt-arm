@@ -599,6 +599,7 @@ drwxr-xr-x	root/root	usr/include/llvm/Config/
 -rw-r--r--	root/root	usr/include/llvm/Config/Targets.def
 -rw-r--r--	root/root	usr/include/llvm/Config/abi-breaking.h
 -rw-r--r--	root/root	usr/include/llvm/Config/llvm-config-32.h
+-rw-r--r--	root/root	usr/include/llvm/Config/llvm-config.h
 drwxr-xr-x	root/root	usr/include/llvm/DWARFLinker/
 -rw-r--r--	root/root	usr/include/llvm/DWARFLinker/DWARFLinker.h
 -rw-r--r--	root/root	usr/include/llvm/DWARFLinker/DWARFLinkerCompileUnit.h
