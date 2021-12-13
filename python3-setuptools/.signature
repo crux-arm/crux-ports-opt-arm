@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauLymPggM3L4DZnT4FCireBlQu4zjBTIh+KLjSp3Tks7/24rY2s0J+4V+JbcoVEmVfifJc1cjTTrr+/wZ0lbc+w0=
-SHA256 (Pkgfile) = d2137b2dc24f18f3c5e4496470cc961ca62f3c877b1ec39b84bd1bf8689909ea
-SHA256 (.footprint) = 1916dee5e63b6f5191ed3f9148865368f3cd33d9c00db3d7b2ff3a7a5f2e00ae
-SHA256 (setuptools-58.5.3.tar.gz) = dae6b934a965c8a59d6d230d3867ec408bb95e73bd538ff77e71fedf1eaca729
+RWQh9Dk2FlLauAAGK+ThINs/8e9ApSXZllVMFs4Yk8xnYhRLcJn9eBSiF7+H8mJPpGHTUDuY/maalAtUVDuKCNX1I0xDPKP0CwY=
+SHA256 (Pkgfile) = 45bb40ec5768fe2caea00d40a983707c040047fa4f49d8b7bc250cc38beec661
+SHA256 (.footprint) = 32dabf853dadd8993243b4eca96fffdc1ac2c4b67955e336b2e8746337e13f65
+SHA256 (setuptools-59.5.0.tar.gz) = d144f85102f999444d06f9c0e8c737fd0194f10f2f7e5fdb77573f6e2fa4fad0
