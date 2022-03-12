@@ -1,0 +1,16 @@
+# Description: Python bindings for the XML library version 2
+# URL: http://xmlsoft.org/
+# Maintainer: Juergen Daubert, jue at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: python3-setuptools libxml2
+
+name=python3-libxml2
+version=2.9.13
+release=1
+source=(https://download.gnome.org/sources/libxml2/${version:0:3}/libxml2-$version.tar.xz)
+
+build() {
+  cd libxml2-$version/python
+  /usr/bin/python3 setup.py build
+  /usr/bin/python3 setup.py install --root=$PKG
+}
