@@ -5,7 +5,7 @@
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 
 name=llvm
-version=14.0.3
+version=14.0.4
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/$name-$version.src.tar.xz
         llvm-config.h)
