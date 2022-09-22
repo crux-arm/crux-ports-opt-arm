@@ -2,6 +2,7 @@ d:gobject-introspection
 d:nspr
 d:python3-libxml2
 d:icu
+d:go
 d:python
 d:firefox
 d:python3-mako
@@ -30,6 +31,11 @@ f:ac20804bf4a0a631bad9e53b5b025e60:icu/icudata-stdlibs.patch
 f:2c83dbc68c225daab962b19b1ff5caee:icu/Pkgfile
 f:35f0da7c105ae724c66c095d5ad2ae6c:icu/.footprint
 f:4e823ab5b99ad42d126a3be20ba6f231:icu/.signature
+f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
+f:7c7d9bb0e49fcd46734303cf38d03cc9:go/Pkgfile
+f:88dc0ed57d4d7bc8365ed10c5228baf6:go/.footprint
+f:e4fd0e4125bfd4f34c7da0ad0446a1c0:go/.md5sum
+f:01c899b302f8eff0cdddd41529f1e416:go/.signature
 f:ff653e9e002ca0e3d4a828988e52edd3:python/CVE-2018-1000030.patch
 f:387d5f6d00d2be01ecb87216cac0f88c:python/pyconfig.h
 f:cee85b8f198b5ade798bc64b3a3c2049:python/Pkgfile
