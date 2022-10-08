@@ -1,4 +1,3 @@
-d:python3-setuptools
 d:python3-markupsafe
 d:python
 d:firefox
@@ -15,9 +14,6 @@ d:python3-mako
 d:ruby
 d:gobject-introspection
 d:chromium
-f:25bd0363e2ad862ecc61ed282c4e07ad:python3-setuptools/Pkgfile
-f:e5cab13ff5ddacfe1827b08701d41b5b:python3-setuptools/.signature
-f:ae60eac0af765c3e7b428f918e7fc21b:python3-setuptools/.footprint
 f:876c4119bed3bee581c4fb002003e36c:python3-markupsafe/Pkgfile
 f:117e1d68e20ed4159ad0434c7478c369:python3-markupsafe/.signature
 f:69e30dba84e4f1d19a90ae28c0498875:python3-markupsafe/.footprint
