@@ -1,0 +1,56 @@
+# Description: The GNU Compiler Collection
+# URL: http://gcc.gnu.org
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: zlib libmpc
+
+name=gcc4
+version=4.8.5
+release=1
+source=(https://ftp.gnu.org/gnu/gcc/gcc-$version/gcc-$version.tar.bz2
+    gcc-nocheck-fixincludes.patch
+    gcc-$version-gnueabihf.patch
+    gcc-redeclared_inline.patch)
+_prefix=/usr/gcc-$version
+
+build() {
+  patch -d gcc-$version -p1 -i $SRC/gcc-redeclared_inline.patch
+  patch -d gcc-$version -p1 -i $SRC/gcc-nocheck-fixincludes.patch
+  patch -d gcc-$version -p1 -i $SRC/gcc-$version-gnueabihf.patch
+
+  mkdir build
+  cd build
+  ../gcc-$version/configure \
+    --prefix=$_prefix \
+    --build=arm-unknown-linux-gnueabihf \
+    --with-abi=aapcs-linux \
+    --with-mode=arm \
+    --with-float=hard \
+    --libexecdir=/usr/lib/gcc-$version \
+    --enable-languages=c,c++,objc \
+    --enable-threads=posix \
+    --enable-__cxa_atexit \
+    --enable-clocale=gnu \
+    --enable-shared \
+    --disable-nls \
+    --with-x=no \
+    --with-system-zlib \
+    --with-pkgversion="CRUX-ARM"
+
+  make
+  make -j1 DESTDIR=$PKG install
+
+  ln -sf ../bin/cpp $PKG/$_prefix/lib/cpp
+  ln -sf gcc $PKG/$_prefix/bin/cc
+  ln -sf g++ $PKG/$_prefix/bin/c++
+  ln -s gcc $PKG/$_prefix/gcc-$version
+
+  mv $PKG/$_prefix/lib/gcc/*/$version/include-fixed/{limits.h,syslimits.h} $PKG/$_prefix/lib/gcc/*/$version/include/
+  rm $PKG/$_prefix/lib/libstdc++.so.6.0.19-gdb.py
+
+  rm -r $PKG/$_prefix/share/{info,gcc-$version}
+  rm -r $PKG/$_prefix/bin/*-linux-gnu*
+  rm -r $PKG/$_prefix/lib/gcc/*/$version/{install-tools,include-fixed}
+
+  sed -i "s|-L$SRC[^ ]* ||g" $PKG/$_prefix/lib/{libstdc++.la,libsupc++.la}
+}
