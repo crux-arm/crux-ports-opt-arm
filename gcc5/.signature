@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/opt-arm.pub
+RWQh9Dk2FlLauMWh5Tn4PIgMjhM2F2/8RpoUPakHIglmHJyhXDQT6ti7WZHIFr8467Z9cP3oOrXprPef8YjrgE12rCAlCd2/QQo=
+SHA256 (Pkgfile) = d785ee90e97b5adb6e63a508f25b9a6c09f8753a22b637b626d62bee867f0651
+SHA256 (.footprint) = f63d4df33ecf872293c56a4ea2a4d09bdf28297e4fcffd18cd3be131982068f5
+SHA256 (gcc-5.4.0.tar.bz2) = 608df76dec2d34de6558249d8af4cbee21eceddbcb580d666f7a5a583ca3303a
+SHA256 (gcc-nocheck-fixincludes.patch) = 97f78d8c57e28cb8cc5c38f637783187b52ee66709c0cd22d083270aa7e5c05c
