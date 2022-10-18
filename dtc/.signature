@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/opt-arm.pub
+RWQh9Dk2FlLauLTqjvTwJQE0zcjT7z2D0NdebMyKVXvwPNrwv2SUu3NqpqyTdAw4Lh/1g7vj99T+Dz82pl2Oe7m5GBL5bLZ6Bgs=
+SHA256 (Pkgfile) = b18ebadc9d7ff17a75db832cd0508fd605b283c9c069c03cb3655bafab6441b6
+SHA256 (.footprint) = 42de8f22f682a38d428f2ca11e360e4f9cc5fe9abde8757898c9a3f1e543e71b
+SHA256 (dtc-1.6.1.tar.xz) = 65cec529893659a49a89740bb362f507a3b94fc8cd791e76a8d6a2b6f3203473
+SHA256 (python310.patch) = 79e35386111e3d43b475d19a7c6a38947752b08a53535bf93d17f439dc5e3b09

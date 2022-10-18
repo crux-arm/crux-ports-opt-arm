@@ -1,0 +1,20 @@
+# Description: Device Tree Compiler
+# URL: https://www.devicetree.org/
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on:
+
+name=dtc
+version=1.6.1
+release=1
+source=(https://www.kernel.org/pub/software/utils/dtc/$name-$version.tar.xz
+    python310.patch)
+
+build () {
+  cd $name-$version
+  patch -Np1 -i ../python310.patch
+  sed -i 's/-Werror//' Makefile
+
+  make
+  make DESTDIR=$PKG PREFIX="/usr" install 
+}
