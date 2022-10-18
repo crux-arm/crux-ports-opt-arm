@@ -1,0 +1,461 @@
+=======> Building '/mnt/pkgmk/pkg/kernel-chromeos-3.4#3.4.0-1.pkg.tar.xz'.
+cp config-3.4.0 /mnt/pkgmk/work/kernel-chromeos-3.4/src
+cp kernel.its /mnt/pkgmk/work/kernel-chromeos-3.4/src
+cp timeconst.patch /mnt/pkgmk/work/kernel-chromeos-3.4/src
+cp negative.patch /mnt/pkgmk/work/kernel-chromeos-3.4/src
+cp mac80211.patch /mnt/pkgmk/work/kernel-chromeos-3.4/src
+scripts/kconfig/conf --silentoldconfig Kconfig
+#
+# configuration written to .config
+#
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: 'include/generated/mach-types.h' is up to date.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  Kernel: arch/arm/boot/Image is ready
+  Kernel: arch/arm/boot/Image is ready
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  LD      arch/arm/boot/compressed/vmlinux
+  Kernel: arch/arm/boot/zImage is ready
+  UIMAGE  arch/arm/boot/uImage
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
+Image Name:   Linux-3.4.0
+Created:      Mon Oct 17 19:49:07 2022
+Image Type:   ARM Linux Kernel Image (uncompressed)
+Data Size:    3527888 Bytes = 3445.20 kB = 3.36 MB
+Load Address: 40008000
+Entry Point:  40008000
+  Image arch/arm/boot/uImage is ready
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: 'include/generated/mach-types.h' is up to date.
+  CALL    scripts/checksyscalls.sh
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  Building modules, stage 2.
+  MODPOST 155 modules
+  INSTALL crypto/crc32c.ko
+  INSTALL crypto/deflate.ko
+  INSTALL crypto/michael_mic.ko
+  INSTALL crypto/sha512_generic.ko
+  INSTALL drivers/bluetooth/bfusb.ko
+  INSTALL drivers/bluetooth/btmrvl.ko
+  INSTALL drivers/bluetooth/btmrvl_sdio.ko
+  INSTALL drivers/bluetooth/btsdio.ko
+  INSTALL drivers/bluetooth/btusb.ko
+  INSTALL drivers/bluetooth/hci_uart.ko
+  INSTALL drivers/bluetooth/hci_vhci.ko
+  INSTALL drivers/cdrom/cdrom.ko
+  INSTALL drivers/hid/hid-apple.ko
+  INSTALL drivers/hid/hid-cherry.ko
+  INSTALL drivers/hid/hid-logitech-dj.ko
+  INSTALL drivers/hid/hid-logitech-hidpp.ko
+  INSTALL drivers/hid/hid-logitech-wtp.ko
+  INSTALL drivers/hid/hid-logitech.ko
+  INSTALL drivers/hid/hid-magicmouse.ko
+  INSTALL drivers/hid/hid-microsoft.ko
+  INSTALL drivers/hid/hid-multitouch.ko
+  INSTALL drivers/hid/hid-plantronics.ko
+  INSTALL drivers/hid/hid-primax.ko
+  INSTALL drivers/hid/hid-sony.ko
+  INSTALL drivers/hid/hid-wiimote.ko
+  INSTALL drivers/i2c/busses/i2c-stub.ko
+  INSTALL drivers/i2c/i2c-dev.ko
+  INSTALL drivers/input/joydev.ko
+  INSTALL drivers/input/joystick/iforce/iforce.ko
+  INSTALL drivers/input/joystick/xpad.ko
+  INSTALL drivers/input/misc/uinput.ko
+  INSTALL drivers/input/serio/serport.ko
+  INSTALL drivers/input/touchscreen/usbtouchscreen.ko
+  INSTALL drivers/media/video/uvc/uvcvideo.ko
+  INSTALL drivers/media/video/videobuf2-vmalloc.ko
+  INSTALL drivers/media/video/vivi.ko
+  INSTALL drivers/net/ppp/ppp_async.ko
+  INSTALL drivers/net/ppp/ppp_generic.ko
+  INSTALL drivers/net/slip/slhc.ko
+  INSTALL drivers/net/tun.ko
+  INSTALL drivers/net/usb/asix.ko
+  INSTALL drivers/net/usb/ax88179_178a.ko
+  INSTALL drivers/net/usb/cdc_ether.ko
+  INSTALL drivers/net/usb/cdc_ncm.ko
+  INSTALL drivers/net/usb/dm9601.ko
+  INSTALL drivers/net/usb/mcs7830.ko
+  INSTALL drivers/net/usb/net1080.ko
+  INSTALL drivers/net/usb/pegasus.ko
+  INSTALL drivers/net/usb/rndis_host.ko
+  INSTALL drivers/net/usb/rtl8150.ko
+  INSTALL drivers/net/usb/smsc95xx.ko
+  INSTALL drivers/net/usb/smsc75xx.ko
+  INSTALL drivers/net/usb/usbnet.ko
+  INSTALL drivers/net/veth.ko
+  INSTALL drivers/net/wireless/ath/ath.ko
+  INSTALL drivers/net/wireless/hostap/hostap.ko
+  INSTALL drivers/net/wireless/libertas_tf/libertas_tf.ko
+  INSTALL drivers/net/wireless/libertas_tf/libertas_tf_usb.ko
+  INSTALL drivers/net/wireless/mac80211_hwsim.ko
+  INSTALL drivers/net/wireless/mwifiex/mwifiex.ko
+  INSTALL drivers/net/wireless/mwifiex/mwifiex_sdio.ko
+  INSTALL drivers/net/wireless/rndis_wlan.ko
+  INSTALL drivers/net/wireless/rt2x00/rt2500usb.ko
+  INSTALL drivers/net/wireless/rt2x00/rt2800lib.ko
+  INSTALL drivers/net/wireless/rt2x00/rt2800usb.ko
+  INSTALL drivers/net/wireless/rt2x00/rt2x00lib.ko
+  INSTALL drivers/net/wireless/rt2x00/rt2x00usb.ko
+  INSTALL drivers/power/sbs-battery.ko
+  INSTALL drivers/rtc/rtc-s3c.ko
+  INSTALL drivers/scsi/scsi_wait_scan.ko
+  INSTALL drivers/scsi/sr_mod.ko
+  INSTALL drivers/spi/spi-bitbang.ko
+  INSTALL drivers/staging/iio/industrialio.ko
+  INSTALL drivers/staging/iio/light/isl29018.ko
+  INSTALL drivers/staging/iio/light/tsl2563.ko
+  INSTALL drivers/staging/iio/light/tsl2583.ko
+  INSTALL drivers/staging/zram/zram.ko
+  INSTALL drivers/staging/zsmalloc/zsmalloc.ko
+  INSTALL drivers/usb/serial/cp210x.ko
+  INSTALL drivers/usb/serial/ftdi_sio.ko
+  INSTALL drivers/usb/serial/keyspan.ko
+  INSTALL drivers/usb/serial/option.ko
+  INSTALL drivers/usb/serial/oti6858.ko
+  INSTALL drivers/usb/serial/pl2303.ko
+  INSTALL drivers/usb/serial/qcserial.ko
+  INSTALL drivers/usb/serial/sierra.ko
+  INSTALL drivers/usb/serial/usb_wwan.ko
+  INSTALL fs/fat/fat.ko
+  INSTALL fs/fat/vfat.ko
+  INSTALL fs/fuse/fuse.ko
+  INSTALL fs/hfsplus/hfsplus.ko
+  INSTALL fs/nls/nls_ascii.ko
+  INSTALL fs/isofs/isofs.ko
+  INSTALL fs/nls/nls_cp437.ko
+  INSTALL fs/nls/nls_iso8859-1.ko
+  INSTALL fs/nls/nls_utf8.ko
+  INSTALL fs/udf/udf.ko
+  INSTALL kernel/configs.ko
+  INSTALL lib/crc-itu-t.ko
+  INSTALL kernel/test_module.ko
+  INSTALL lib/crc-t10dif.ko
+  INSTALL lib/crc7.ko
+  INSTALL lib/libcrc32c.ko
+  INSTALL lib/zlib_deflate/zlib_deflate.ko
+  INSTALL net/bluetooth/hidp/hidp.ko
+  INSTALL net/bluetooth/bluetooth.ko
+  INSTALL net/bluetooth/rfcomm/rfcomm.ko
+  INSTALL net/ipv4/ah4.ko
+  INSTALL net/ipv4/esp4.ko
+  INSTALL net/ipv4/ipcomp.ko
+  INSTALL net/ipv4/netfilter/ipt_MASQUERADE.ko
+  INSTALL net/ipv4/netfilter/iptable_nat.ko
+  INSTALL net/ipv4/netfilter/nf_nat.ko
+  INSTALL net/ipv4/tcp_lp.ko
+  INSTALL net/ipv4/tunnel4.ko
+  INSTALL net/ipv4/xfrm4_mode_beet.ko
+  INSTALL net/ipv4/xfrm4_mode_transport.ko
+  INSTALL net/ipv4/xfrm4_mode_tunnel.ko
+  INSTALL net/ipv4/xfrm4_tunnel.ko
+  INSTALL net/ipv6/ah6.ko
+  INSTALL net/ipv6/esp6.ko
+  INSTALL net/ipv6/netfilter/ip6_tables.ko
+  INSTALL net/ipv6/netfilter/ip6t_REJECT.ko
+  INSTALL net/ipv6/netfilter/ip6t_ipv6header.ko
+  INSTALL net/ipv6/netfilter/ip6table_mangle.ko
+  INSTALL net/ipv6/netfilter/ip6table_filter.ko
+  INSTALL net/ipv6/netfilter/nf_conntrack_ipv6.ko
+  INSTALL net/ipv6/netfilter/nf_defrag_ipv6.ko
+  INSTALL net/ipv6/sit.ko
+  INSTALL net/ipv6/xfrm6_mode_transport.ko
+  INSTALL net/ipv6/xfrm6_mode_beet.ko
+  INSTALL net/ipv6/xfrm6_mode_tunnel.ko
+  INSTALL net/key/af_key.ko
+  INSTALL net/mac80211/mac80211.ko
+  INSTALL net/netfilter/xt_TCPMSS.ko
+  INSTALL net/netfilter/xt_mark.ko
+  INSTALL net/sched/cls_u32.ko
+  INSTALL net/sched/sch_htb.ko
+  INSTALL net/wireless/cfg80211.ko
+  INSTALL net/wireless/lib80211.ko
+  INSTALL net/wireless/lib80211_crypt_ccmp.ko
+  INSTALL net/wireless/lib80211_crypt_tkip.ko
+  INSTALL net/wireless/lib80211_crypt_wep.ko
+  INSTALL net/xfrm/xfrm_ipcomp.ko
+  INSTALL net/xfrm/xfrm_user.ko
+  INSTALL sound/core/seq/snd-seq-device.ko
+  INSTALL sound/core/seq/snd-seq-dummy.ko
+  INSTALL sound/core/seq/snd-seq-midi-event.ko
+  INSTALL sound/core/seq/snd-seq-midi.ko
+  INSTALL sound/core/seq/snd-seq.ko
+  INSTALL sound/core/snd-hrtimer.ko
+  INSTALL sound/core/snd-hwdep.ko
+  INSTALL sound/core/snd-rawmidi.ko
+  INSTALL sound/usb/snd-usb-audio.ko
+  INSTALL sound/usb/snd-usbmidi-lib.ko
+  MKDIR   /mnt/pkgmk/work/kernel-chromeos-3.4/pkg/lib/firmware
+  INSTALL /mnt/pkgmk/work/kernel-chromeos-3.4/pkg/lib/firmware/rt2860.bin
+  DEPMOD  3.4.0
+make[1]: Nothing to be done for 'arch/arm/boot/dtbs'.
+FIT description: Chrome OS kernel image with one or more FDT blobs
+Created:         Mon Oct 17 19:49:40 2022
+ Image 0 (kernel@1)
+  Description:  kernel
+  Created:      Mon Oct 17 19:49:40 2022
+  Type:         Kernel Image (no loading done)
+  Compression:  uncompressed
+  Data Size:    3527888 Bytes = 3445.20 kB = 3.36 MB
+ Image 1 (fdt@1)
+  Description:  exynos5250-snow-rev4.dtb
+  Created:      Mon Oct 17 19:49:40 2022
+  Type:         Flat Device Tree
+  Compression:  uncompressed
+  Data Size:    27423 Bytes = 26.78 kB = 0.03 MB
+  Architecture: ARM
+  Hash algo:    sha1
+  Hash value:   a46690c0a9fb4e77b1dc9c6876fc93be4c707891
+ Default Configuration: 'conf@1'
+ Configuration 0 (conf@1)
+  Description:  unavailable
+  Kernel:       kernel@1
+  FDT:          fdt@1
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 boot/
+-rw-r--r--  0 root   root  3557028 Oct 17 19:49 boot/vmlinux.uimg
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/firmware/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/
+-rw-r--r--  0 root   root     9216 Oct 17 19:49 lib/modules/3.4.0/modules.dep
+-rw-r--r--  0 root   root    16399 Oct 17 19:49 lib/modules/3.4.0/modules.dep.bin
+-rw-r--r--  0 root   root     5496 Oct 17 19:49 lib/modules/3.4.0/modules.order
+-rw-r--r--  0 root   root       55 Oct 17 19:49 lib/modules/3.4.0/modules.softdep
+-rw-r--r--  0 root   root    32673 Oct 17 19:49 lib/modules/3.4.0/modules.symbols.bin
+-rw-r--r--  0 root   root      158 Oct 17 19:49 lib/modules/3.4.0/modules.devname
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/
+-rw-r--r--  0 root   root   146814 Oct 17 19:49 lib/modules/3.4.0/modules.alias.bin
+-rw-r--r--  0 root   root   146720 Oct 17 19:49 lib/modules/3.4.0/modules.alias
+-rw-r--r--  0 root   root     8002 Oct 17 19:49 lib/modules/3.4.0/modules.builtin
+-rw-r--r--  0 root   root    27271 Oct 17 19:49 lib/modules/3.4.0/modules.symbols
+-rw-r--r--  0 root   root    10304 Oct 17 19:49 lib/modules/3.4.0/modules.builtin.bin
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/kernel/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/lib/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/crypto/
+-rw-r--r--  0 root   root    67684 Oct 17 19:49 lib/modules/3.4.0/kernel/crypto/crc32c.ko
+-rw-r--r--  0 root   root    69396 Oct 17 19:49 lib/modules/3.4.0/kernel/crypto/michael_mic.ko
+-rw-r--r--  0 root   root    51156 Oct 17 19:49 lib/modules/3.4.0/kernel/crypto/deflate.ko
+-rw-r--r--  0 root   root    97476 Oct 17 19:49 lib/modules/3.4.0/kernel/crypto/sha512_generic.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/usb/
+-rw-r--r--  0 root   root  1319120 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/usb/snd-usb-audio.ko
+-rw-r--r--  0 root   root   185940 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/usb/snd-usbmidi-lib.ko
+-rw-r--r--  0 root   root    68772 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/snd-hrtimer.ko
+-rw-r--r--  0 root   root   125584 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/snd-hwdep.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/seq/
+-rw-r--r--  0 root   root   197040 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/snd-rawmidi.ko
+-rw-r--r--  0 root   root   991412 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/seq/snd-seq.ko
+-rw-r--r--  0 root   root    97852 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/seq/snd-seq-dummy.ko
+-rw-r--r--  0 root   root    78312 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/seq/snd-seq-midi-event.ko
+-rw-r--r--  0 root   root   111824 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/seq/snd-seq-device.ko
+-rw-r--r--  0 root   root    93076 Oct 17 19:49 lib/modules/3.4.0/kernel/sound/core/seq/snd-seq-midi.ko
+-rw-r--r--  0 root   root    27152 Oct 17 19:49 lib/modules/3.4.0/kernel/lib/crc-itu-t.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/lib/zlib_deflate/
+-rw-r--r--  0 root   root    26812 Oct 17 19:49 lib/modules/3.4.0/kernel/lib/crc7.ko
+-rw-r--r--  0 root   root    26560 Oct 17 19:49 lib/modules/3.4.0/kernel/lib/crc-t10dif.ko
+-rw-r--r--  0 root   root    42836 Oct 17 19:49 lib/modules/3.4.0/kernel/lib/libcrc32c.ko
+-rw-r--r--  0 root   root    90804 Oct 17 19:49 lib/modules/3.4.0/kernel/lib/zlib_deflate/zlib_deflate.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/netfilter/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/key/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/mac80211/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/sched/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/xfrm/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/wireless/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/bluetooth/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/bluetooth/hidp/
+-rw-r--r--  0 root   root  3266024 Oct 17 19:49 lib/modules/3.4.0/kernel/net/bluetooth/bluetooth.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/bluetooth/rfcomm/
+-rw-r--r--  0 root   root   476868 Oct 17 19:49 lib/modules/3.4.0/kernel/net/bluetooth/rfcomm/rfcomm.ko
+-rw-r--r--  0 root   root   412780 Oct 17 19:49 lib/modules/3.4.0/kernel/net/bluetooth/hidp/hidp.ko
+-rw-r--r--  0 root   root   195228 Oct 17 19:49 lib/modules/3.4.0/kernel/net/wireless/lib80211_crypt_tkip.ko
+-rw-r--r--  0 root   root  3294268 Oct 17 19:49 lib/modules/3.4.0/kernel/net/wireless/cfg80211.ko
+-rw-r--r--  0 root   root   174488 Oct 17 19:49 lib/modules/3.4.0/kernel/net/wireless/lib80211_crypt_ccmp.ko
+-rw-r--r--  0 root   root    78324 Oct 17 19:49 lib/modules/3.4.0/kernel/net/wireless/lib80211_crypt_wep.ko
+-rw-r--r--  0 root   root    76364 Oct 17 19:49 lib/modules/3.4.0/kernel/net/wireless/lib80211.ko
+-rw-r--r--  0 root   root   200948 Oct 17 19:49 lib/modules/3.4.0/kernel/net/xfrm/xfrm_ipcomp.ko
+-rw-r--r--  0 root   root   326656 Oct 17 19:49 lib/modules/3.4.0/kernel/net/xfrm/xfrm_user.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/netfilter/
+-rw-r--r--  0 root   root   255740 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/sit.ko
+-rw-r--r--  0 root   root   227056 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/esp6.ko
+-rw-r--r--  0 root   root   179268 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/xfrm6_mode_beet.ko
+-rw-r--r--  0 root   root   179800 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/xfrm6_mode_tunnel.ko
+-rw-r--r--  0 root   root   171780 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/xfrm6_mode_transport.ko
+-rw-r--r--  0 root   root   212428 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/ah6.ko
+-rw-r--r--  0 root   root   354016 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/netfilter/nf_conntrack_ipv6.ko
+-rw-r--r--  0 root   root   165644 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/netfilter/ip6t_ipv6header.ko
+-rw-r--r--  0 root   root   242892 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/netfilter/ip6_tables.ko
+-rw-r--r--  0 root   root   164540 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/netfilter/ip6table_mangle.ko
+-rw-r--r--  0 root   root   336936 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko
+-rw-r--r--  0 root   root   165040 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/netfilter/ip6table_filter.ko
+-rw-r--r--  0 root   root   180072 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv6/netfilter/ip6t_REJECT.ko
+-rw-r--r--  0 root   root   243508 Oct 17 19:49 lib/modules/3.4.0/kernel/net/sched/sch_htb.ko
+-rw-r--r--  0 root   root   189192 Oct 17 19:49 lib/modules/3.4.0/kernel/net/sched/cls_u32.ko
+-rw-r--r--  0 root   root   184132 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/xfrm4_mode_tunnel.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/netfilter/
+-rw-r--r--  0 root   root   229144 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/esp4.ko
+-rw-r--r--  0 root   root   171864 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/xfrm4_mode_transport.ko
+-rw-r--r--  0 root   root   177704 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/xfrm4_mode_beet.ko
+-rw-r--r--  0 root   root   210864 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/ah4.ko
+-rw-r--r--  0 root   root   178172 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/tunnel4.ko
+-rw-r--r--  0 root   root   178164 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/tcp_lp.ko
+-rw-r--r--  0 root   root   173916 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/xfrm4_tunnel.ko
+-rw-r--r--  0 root   root   177924 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/ipcomp.ko
+-rw-r--r--  0 root   root   175596 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/netfilter/ipt_MASQUERADE.ko
+-rw-r--r--  0 root   root   336932 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/netfilter/iptable_nat.ko
+-rw-r--r--  0 root   root  1050048 Oct 17 19:49 lib/modules/3.4.0/kernel/net/ipv4/netfilter/nf_nat.ko
+-rw-r--r--  0 root   root  8297448 Oct 17 19:49 lib/modules/3.4.0/kernel/net/mac80211/mac80211.ko
+-rw-r--r--  0 root   root   334872 Oct 17 19:49 lib/modules/3.4.0/kernel/net/key/af_key.ko
+-rw-r--r--  0 root   root   183908 Oct 17 19:49 lib/modules/3.4.0/kernel/net/netfilter/xt_TCPMSS.ko
+-rw-r--r--  0 root   root   144828 Oct 17 19:49 lib/modules/3.4.0/kernel/net/netfilter/xt_mark.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/scsi/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/power/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/media/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/rtc/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/cdrom/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/i2c/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/bluetooth/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/spi/
+-rw-r--r--  0 root   root    88236 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/spi/spi-bitbang.ko
+-rw-r--r--  0 root   root   184192 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/bluetooth/hci_vhci.ko
+-rw-r--r--  0 root   root   208916 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/bluetooth/bfusb.ko
+-rw-r--r--  0 root   root   176788 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/bluetooth/btsdio.ko
+-rw-r--r--  0 root   root   672036 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/bluetooth/hci_uart.ko
+-rw-r--r--  0 root   root   239120 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/bluetooth/btusb.ko
+-rw-r--r--  0 root   root   206472 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/bluetooth/btmrvl_sdio.ko
+-rw-r--r--  0 root   root   362508 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/bluetooth/btmrvl.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/i2c/busses/
+-rw-r--r--  0 root   root   132484 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/i2c/i2c-dev.ko
+-rw-r--r--  0 root   root    78124 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/i2c/busses/i2c-stub.ko
+-rw-r--r--  0 root   root   286340 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/cdrom/cdrom.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/slip/
+-rw-r--r--  0 root   root   252264 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/tun.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/
+-rw-r--r--  0 root   root   195420 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/veth.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/ppp/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/rt2x00/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/ath/
+-rw-r--r--  0 root   root   331448 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/rndis_wlan.ko
+-rw-r--r--  0 root   root   311704 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/mac80211_hwsim.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/mwifiex/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/libertas_tf/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/hostap/
+-rw-r--r--  0 root   root  1371212 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/hostap/hostap.ko
+-rw-r--r--  0 root   root   204088 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/libertas_tf/libertas_tf_usb.ko
+-rw-r--r--  0 root   root   356496 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/libertas_tf/libertas_tf.ko
+-rw-r--r--  0 root   root  3864836 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/mwifiex/mwifiex.ko
+-rw-r--r--  0 root   root   239576 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/mwifiex/mwifiex_sdio.ko
+-rw-r--r--  0 root   root   661704 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/ath/ath.ko
+-rw-r--r--  0 root   root   481320 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/rt2x00/rt2800lib.ko
+-rw-r--r--  0 root   root   266280 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/rt2x00/rt2800usb.ko
+-rw-r--r--  0 root   root   318100 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/rt2x00/rt2500usb.ko
+-rw-r--r--  0 root   root  1381584 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko
+-rw-r--r--  0 root   root   231148 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko
+-rw-r--r--  0 root   root   196516 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/ppp/ppp_async.ko
+-rw-r--r--  0 root   root   290624 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/ppp/ppp_generic.ko
+-rw-r--r--  0 root   root   206416 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/rtl8150.ko
+-rw-r--r--  0 root   root   277872 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/usbnet.ko
+-rw-r--r--  0 root   root   218580 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/smsc75xx.ko
+-rw-r--r--  0 root   root   213424 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/smsc95xx.ko
+-rw-r--r--  0 root   root   172516 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/net1080.ko
+-rw-r--r--  0 root   root   184792 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/mcs7830.ko
+-rw-r--r--  0 root   root   172604 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/cdc_ether.ko
+-rw-r--r--  0 root   root   191780 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/dm9601.ko
+-rw-r--r--  0 root   root   199732 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/cdc_ncm.ko
+-rw-r--r--  0 root   root   212788 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/ax88179_178a.ko
+-rw-r--r--  0 root   root   222364 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/asix.ko
+-rw-r--r--  0 root   root   184636 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/rndis_host.ko
+-rw-r--r--  0 root   root   257284 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/usb/pegasus.ko
+-rw-r--r--  0 root   root   187852 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/net/slip/slhc.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/
+-rw-r--r--  0 root   root   309784 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/ftdi_sio.ko
+-rw-r--r--  0 root   root   162508 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/usb_wwan.ko
+-rw-r--r--  0 root   root   161100 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/cp210x.ko
+-rw-r--r--  0 root   root   239868 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/option.ko
+-rw-r--r--  0 root   root   249908 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/keyspan.ko
+-rw-r--r--  0 root   root   136304 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/qcserial.ko
+-rw-r--r--  0 root   root   172264 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/oti6858.ko
+-rw-r--r--  0 root   root   172188 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/pl2303.ko
+-rw-r--r--  0 root   root   180300 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/usb/serial/sierra.ko
+-rw-r--r--  0 root   root   109068 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/rtc/rtc-s3c.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/media/video/
+-rw-r--r--  0 root   root   211492 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/media/video/vivi.ko
+-rw-r--r--  0 root   root   112212 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/media/video/videobuf2-vmalloc.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/media/video/uvc/
+-rw-r--r--  0 root   root  1322708 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/media/video/uvc/uvcvideo.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/zram/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/iio/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/zsmalloc/
+-rw-r--r--  0 root   root   132580 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/zsmalloc/zsmalloc.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/iio/light/
+-rw-r--r--  0 root   root   293000 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/iio/industrialio.ko
+-rw-r--r--  0 root   root   114132 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/iio/light/isl29018.ko
+-rw-r--r--  0 root   root   115564 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/iio/light/tsl2583.ko
+-rw-r--r--  0 root   root   108624 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/iio/light/tsl2563.ko
+-rw-r--r--  0 root   root   217300 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/staging/zram/zram.ko
+-rw-r--r--  0 root   root   118764 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/power/sbs-battery.ko
+-rw-r--r--  0 root   root    90096 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-plantronics.ko
+-rw-r--r--  0 root   root   100764 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-microsoft.ko
+-rw-r--r--  0 root   root   134408 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-logitech-hidpp.ko
+-rw-r--r--  0 root   root   127656 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-sony.ko
+-rw-r--r--  0 root   root   142372 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-logitech-wtp.ko
+-rw-r--r--  0 root   root    87496 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-primax.ko
+-rw-r--r--  0 root   root    88700 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-cherry.ko
+-rw-r--r--  0 root   root   143976 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-magicmouse.ko
+-rw-r--r--  0 root   root   343700 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-wiimote.ko
+-rw-r--r--  0 root   root   173912 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-logitech-dj.ko
+-rw-r--r--  0 root   root   134884 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-apple.ko
+-rw-r--r--  0 root   root   148080 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-multitouch.ko
+-rw-r--r--  0 root   root   168024 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/hid/hid-logitech.ko
+-rw-r--r--  0 root   root   165472 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/joydev.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/touchscreen/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/joystick/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/serio/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/misc/
+-rw-r--r--  0 root   root   147484 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/misc/uinput.ko
+-rw-r--r--  0 root   root   117696 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/serio/serport.ko
+-rw-r--r--  0 root   root   166888 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/joystick/xpad.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/joystick/iforce/
+-rw-r--r--  0 root   root   441208 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/joystick/iforce/iforce.ko
+-rw-r--r--  0 root   root   171624 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/input/touchscreen/usbtouchscreen.ko
+-rw-r--r--  0 root   root   393092 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/scsi/sr_mod.ko
+-rw-r--r--  0 root   root    26512 Oct 17 19:49 lib/modules/3.4.0/kernel/drivers/scsi/scsi_wait_scan.ko
+-rw-r--r--  0 root   root    26200 Oct 17 19:49 lib/modules/3.4.0/kernel/kernel/test_module.ko
+-rw-r--r--  0 root   root    81816 Oct 17 19:49 lib/modules/3.4.0/kernel/kernel/configs.ko
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/udf/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/fuse/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/isofs/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/hfsplus/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/fat/
+drwxr-xr-x  0 root   root        0 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/nls/
+-rw-r--r--  0 root   root    40464 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/nls/nls_cp437.ko
+-rw-r--r--  0 root   root    36124 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/nls/nls_utf8.ko
+-rw-r--r--  0 root   root    38440 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/nls/nls_ascii.ko
+-rw-r--r--  0 root   root    38500 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/nls/nls_iso8859-1.ko
+-rw-r--r--  0 root   root   131824 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/fat/vfat.ko
+-rw-r--r--  0 root   root   681196 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/fat/fat.ko
+-rw-r--r--  0 root   root  1719352 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/hfsplus/hfsplus.ko
+-rw-r--r--  0 root   root   517228 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/isofs/isofs.ko
+-rw-r--r--  0 root   root   856980 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/fuse/fuse.ko
+-rw-r--r--  0 root   root  1195448 Oct 17 19:49 lib/modules/3.4.0/kernel/fs/udf/udf.ko
+-rw-r--r--  0 root   root     8192 Oct 17 19:49 lib/firmware/rt2860.bin
+=======> Building '/mnt/pkgmk/pkg/kernel-chromeos-3.4#3.4.0-1.pkg.tar.xz' succeeded.
