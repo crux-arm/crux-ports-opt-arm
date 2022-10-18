@@ -1,0 +1,43 @@
+# Description: Linux Kernel binaries for Samsung Chromebook
+# URL: https://chromium.googlesource.com/chromiumos/
+# Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: gcc5 dtc u-boot-tools
+
+name=kernel-chromeos-3.8
+version=3.8.11
+release=1
+
+source=(config-$version \
+    kernel.its)
+
+build() {
+  # Get sources
+  if [ ! -d $PKGMK_SOURCE_DIR/chromeos-3.8 ]; then
+    git clone https://chromium.googlesource.com/chromiumos/third_party/kernel.git -b chromeos-3.8 --depth 1 $PKGMK_SOURCE_DIR/chromeos-3.8
+  fi
+
+  cd $PKGMK_SOURCE_DIR/chromeos-3.8
+  cp $SRC/config-$version .config
+  cp $SRC/kernel.its .
+
+  # Fix bad include
+  sed -i "s|#include <udl_connector.h>|#include \"udl_connector.h\"|g" drivers/gpu/drm/udl/udl_connector.c
+
+  # uImage
+  make CC=/usr/gcc-5.4.0/bin/gcc -j$(cat /proc/cpuinfo|grep processor | wc -l) uImage zImage
+
+  # Modules
+  make CC=/usr/gcc-5.4.0/bin/gcc -j$(cat /proc/cpuinfo|grep processor | wc -l) modules
+  make CC=/usr/gcc-5.4.0/bin/gcc modules_install INSTALL_MOD_PATH=$PKG
+  rm -f $PKG/lib/modules/$version/{source,build}
+
+  # DBTs
+  make CC=/usr/gcc-5.4.0/bin/gcc dtbs
+
+  # FIT image
+  mkimage -f kernel.its vmlinux.uimg
+
+  # Place it at /boot
+  install -d -m 0755 $PKG/boot
+  cp vmlinux.uimg $PKG/boot/vmlinux.uimg
+}

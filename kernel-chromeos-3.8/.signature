@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/opt-arm.pub
+RWQh9Dk2FlLauBrCCFK2BU+aRc9P9sDNEfSBGiHhFBBD9F9h/HPeyZxRNsvIaDwYbQVUu2i7X7BysxEzwnAQG1QwNvSxiOT90gU=
+SHA256 (Pkgfile) = cac2ac02069ef4029bbbb4bcf0a6f9c463782dca167142d9bb3202315d960346
+SHA256 (.footprint) = 0ce723783cd09cb04ee8abdc50719bfe3ac420f1d3bdac265228ac595c073bfc
+SHA256 (config-3.8.11) = bf36e04ed0ad0682fd57affac2def75efe4639d356583faa5ff503164b3778ff
+SHA256 (kernel.its) = 48c741cf2aa59b6746cbabbb13162fc8020704e80e98a5a09285f17b994ef01a
