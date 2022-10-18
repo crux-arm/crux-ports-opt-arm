@@ -22,7 +22,7 @@ build() {
     patch -p1 < $SRC/mac80211.patch
     patch -p1 < $SRC/timeconst.patch
     # Fix bad include
-    #sed -i "s|#include <udl_connector.h>|#include \"udl_connector.h\"|g" drivers/gpu/drm/udl/udl_connector.c
+    sed -i "s|#include <udl_connector.h>|#include \"udl_connector.h\"|g" drivers/gpu/drm/udl/udl_connector.c
   fi
 
   cd $PKGMK_SOURCE_DIR/chromeos-3.4
