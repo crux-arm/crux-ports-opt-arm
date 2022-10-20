@@ -17,7 +17,7 @@ d:ruby
 d:gobject-introspection
 d:chromium
 f:287059a1516b2da90f03322632ea8872:dtc/Pkgfile
-f:50f34b5eed9cae338db7d2440c2256f6:dtc/.md5sum
+f:b43b0c0bc58700e9575a25ab5b9a7671:dtc/.signature
 f:e682d6861699a1422eb784aa90df64f1:dtc/.footprint
 f:25bd0363e2ad862ecc61ed282c4e07ad:python3-setuptools/Pkgfile
 f:e5cab13ff5ddacfe1827b08701d41b5b:python3-setuptools/.signature
