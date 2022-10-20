@@ -1,0 +1,17 @@
+# Description: Device Tree Compiler
+# URL: https://www.devicetree.org/
+# Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on:
+
+name=dtc
+version=1.6.1
+release=1
+
+source=(https://www.kernel.org/pub/software/utils/dtc/dtc-$version.tar.xz )
+
+build() {
+  cd dtc-$version
+
+  make NO_PYTHON=1
+  make install DESTDIR="$PKG" PREFIX="/usr"
+}
