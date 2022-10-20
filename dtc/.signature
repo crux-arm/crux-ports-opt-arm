@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt-arm.pub
+RWQh9Dk2FlLauALyIP1MbtIejIlBF2ZbqgWUsvWA35SuBz8rFtNUjP6naMkQ+O+ZT1gU6AV3qMBumtnpVmDt2m2WTMUGMDV6YwE=
+SHA256 (Pkgfile) = d9a7b97439e8d92ca9b47b1fbed5083e5c51a0cff80cf8de80a26d199f2a5fde
+SHA256 (.footprint) = 42de8f22f682a38d428f2ca11e360e4f9cc5fe9abde8757898c9a3f1e543e71b
+SHA256 (dtc-1.6.1.tar.xz) = 65cec529893659a49a89740bb362f507a3b94fc8cd791e76a8d6a2b6f3203473
