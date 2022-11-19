@@ -17,7 +17,7 @@ jobs:
 
       # Prepare git log message to avoid extra blank lines
       - name: Set env message
-        run: echo "MESSAGE=$(echo "git log -1 --pretty=format:"[`git remote show origin -n | grep h.URL | sed 's/.*://;s/.git$//' | sed "s|^crux-arm\/||g"`]%s"" >> $GITHUB_ENV      
+        run: echo "MESSAGE=$(echo "git log -1 --pretty=format:"[`git remote show origin -n | grep h.URL | sed 's/.*://;s/.git$//' | sed "s|^crux-arm\/||g"`]%s")" >> $GITHUB_ENV      
       
       # Send IRC message by bot
       - name: irc push
