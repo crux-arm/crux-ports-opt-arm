@@ -18,7 +18,7 @@ jobs:
       # Prepare git log message to avoid extra blank lines
       - name: Set env message
         run: |
-          GITREPO=`git remote show origin -n | grep h.URL | sed 's/.*://;s/.git$//' | sed "s|^crux-arm\/||g"`
+          GITREPO=`git remote show origin -n | grep h.URL | sed "s|^.*com:.*crux-arm/||g" | sed "s|.git||g"`
           GITMSG=`git log -1 --pretty=format:"%s"`
           echo "MESSAGE=$(echo "[$GITREPO]: $GITMSG")" >> $GITHUB_ENV 
       
