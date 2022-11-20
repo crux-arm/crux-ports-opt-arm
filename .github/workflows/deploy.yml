@@ -18,7 +18,7 @@ jobs:
       # Prepare git log message to avoid extra blank lines
       - name: Set env message
         run: |
-          bash -c "GITREPO=`git remote show origin -n | grep h.URL | sed 's|^.*com:.*crux-arm/||g' | sed 's|.git||g'`"
+          GITREPO=`git remote show origin -n | grep h.URL | sed 's|^.*com:.*crux-arm/||g' | sed 's|.git||g'`"
           GITMSG=`git log -1 --pretty=format:"%s"`
           echo "MESSAGE=$(echo "[$GITREPO]: $GITMSG")" >> $GITHUB_ENV 
       
@@ -27,7 +27,7 @@ jobs:
         uses: rectalogic/notify-irc@v1
         if: github.event_name == 'push' && !contains(github.event.head_commit.message, 'REPO')
         with:
-          channel: "#crux-arm"
+          channel: "#crux-arm2"
           server: "irc.libera.chat"
           nickname: crux-arm-bot
           message: ${{ env.MESSAGE }}
