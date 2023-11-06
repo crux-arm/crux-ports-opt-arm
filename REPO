@@ -85,9 +85,9 @@ f:117e1d68e20ed4159ad0434c7478c369:python3-markupsafe/.signature
 f:69e30dba84e4f1d19a90ae28c0498875:python3-markupsafe/.footprint
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
-f:b8c8634fc1e22e8e541d0fc6fb7b87be:nss/Pkgfile
+f:c8b48e988e34ca06d3b9e3a0e78c6f42:nss/Pkgfile
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
-f:71bda53091649fa87812d124713886a8:nss/.signature
+f:d9ab88c9e21045fbf1b46b2bb28067af:nss/.signature
 f:59cba0d7bda9c78bb32466be103ff12c:nss/.footprint
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
