@@ -9,7 +9,6 @@ d:firefox
 d:icu
 d:go
 d:gobject-introspection
-d:python3-mako
 d:python3-markupsafe
 d:nss
 d:keyutils
@@ -77,9 +76,6 @@ f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1
 f:1f437f39ecf1fbfa33683b20d24d5200:gobject-introspection/Pkgfile
 f:faa5ad5c249b280a4e05f76e4018fbed:gobject-introspection/.signature
 f:c000f9914d3bc4fcc10ea0da38856288:gobject-introspection/.footprint
-f:668413500b8783512024697baab8b713:python3-mako/Pkgfile
-f:fae0e6ca4e25cdcf71ddd5c592f27bac:python3-mako/.signature
-f:9769fd254214e0636f3c8500b082184a:python3-mako/.footprint
 f:876c4119bed3bee581c4fb002003e36c:python3-markupsafe/Pkgfile
 f:117e1d68e20ed4159ad0434c7478c369:python3-markupsafe/.signature
 f:69e30dba84e4f1d19a90ae28c0498875:python3-markupsafe/.footprint
