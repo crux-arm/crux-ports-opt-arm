@@ -73,9 +73,9 @@ f:7c7d9bb0e49fcd46734303cf38d03cc9:go/Pkgfile
 f:01c899b302f8eff0cdddd41529f1e416:go/.signature
 f:88dc0ed57d4d7bc8365ed10c5228baf6:go/.footprint
 f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1.70.0-meson-0.61.patch
-f:1f437f39ecf1fbfa33683b20d24d5200:gobject-introspection/Pkgfile
-f:faa5ad5c249b280a4e05f76e4018fbed:gobject-introspection/.signature
-f:c000f9914d3bc4fcc10ea0da38856288:gobject-introspection/.footprint
+f:ce36d985b416cc2341d92812be817cda:gobject-introspection/Pkgfile
+f:117175b3832fbffb0d3ed0df7880bdf8:gobject-introspection/.signature
+f:2e9c452cd99e6ca0ab894ceaf83b3d6a:gobject-introspection/.footprint
 f:876c4119bed3bee581c4fb002003e36c:python3-markupsafe/Pkgfile
 f:117e1d68e20ed4159ad0434c7478c369:python3-markupsafe/.signature
 f:69e30dba84e4f1d19a90ae28c0498875:python3-markupsafe/.footprint
