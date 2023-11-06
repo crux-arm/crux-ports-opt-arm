@@ -63,9 +63,9 @@ f:8e737cc6f24a81c6e357e7d42dea8f68:firefox/Pkgfile
 f:f80d3af472d2405720801697f5a95eb1:firefox/.signature
 f:8ce5740342e7a7306df7847c077bdb7d:firefox/.footprint
 f:e2cd3d27a466e2736ac552d3e3b69672:icu/icu-65.1-initialized-buffer-uloc_getKeywordValue.patch
-f:2c83dbc68c225daab962b19b1ff5caee:icu/Pkgfile
-f:4e823ab5b99ad42d126a3be20ba6f231:icu/.signature
-f:35f0da7c105ae724c66c095d5ad2ae6c:icu/.footprint
+f:a2304c8c087cbc67e576f8484bba1826:icu/Pkgfile
+f:40a8ea7f486a19290d84895636e25673:icu/.signature
+f:8796446bc547b909ecc55340aa9e79aa:icu/.footprint
 f:ac20804bf4a0a631bad9e53b5b025e60:icu/icudata-stdlibs.patch
 f:e4fd0e4125bfd4f34c7da0ad0446a1c0:go/.md5sum
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
