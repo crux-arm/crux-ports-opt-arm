@@ -76,9 +76,8 @@ f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1
 f:ce36d985b416cc2341d92812be817cda:gobject-introspection/Pkgfile
 f:117175b3832fbffb0d3ed0df7880bdf8:gobject-introspection/.signature
 f:2e9c452cd99e6ca0ab894ceaf83b3d6a:gobject-introspection/.footprint
-f:876c4119bed3bee581c4fb002003e36c:python3-markupsafe/Pkgfile
-f:117e1d68e20ed4159ad0434c7478c369:python3-markupsafe/.signature
-f:69e30dba84e4f1d19a90ae28c0498875:python3-markupsafe/.footprint
+f:dc42354d561b12701600f46d13501443:python3-markupsafe/Pkgfile
+f:3747b66ad71c7792a91953628d3a25e0:python3-markupsafe/.footprint
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
 f:c8b48e988e34ca06d3b9e3a0e78c6f42:nss/Pkgfile
