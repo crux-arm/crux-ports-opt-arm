@@ -15,8 +15,8 @@ d:nss
 d:keyutils
 d:llvm
 f:2083f33e11dfe15feb7bf9bca0f6c44b:nspr/nspr.pc.in
-f:4a26ae2c50b831fe9e060b920b62f848:nspr/Pkgfile
-f:676c001a261e00ae3c58547e2a98b6dc:nspr/.signature
+f:acae01887e8b35e4d4303d7ea92c674b:nspr/Pkgfile
+f:caedeff563b78cb6d922d74fd184cc2d:nspr/.signature
 f:6564cbcadceb398176d3cef4b884f3f6:nspr/.footprint
 f:6eaf1901ce2241e376440c2c2b3437bb:python3-libxml2/Pkgfile
 f:79bd6c69d00e3ab93317cb8d0b766297:python3-libxml2/.signature
