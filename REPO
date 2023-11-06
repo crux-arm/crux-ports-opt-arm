@@ -52,9 +52,9 @@ f:74c028319288aeb6990a18094336fada:jdk/README
 f:931e0e525a0e2e524d8feb8e86f78c2f:jdk/Pkgfile
 f:84f92f6e7867ea0d1a0e210669cc78ab:jdk/.footprint
 f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
-f:2ef65d1a7925a9b3d4e5166e9dc002e7:ruby/Pkgfile
-f:94678d109bae4b6c78807d740cad90f6:ruby/.signature
-f:b9ef35db55a4ee3e02fba06b93b5ed5d:ruby/.footprint
+f:bb4b38e6f11eda75fc2b2762daf5d0c2:ruby/Pkgfile
+f:c1ceb9f0a45a7135093497cb1ba2f1c2:ruby/.signature
+f:59027c5b40a6b476373e5e6aea409dfd:ruby/.footprint
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
 f:afe61c7760e835bd12d5dfd40af4ec84:firefox/firefox-install-dir.patch
 f:ae3b27580281b512ee187bcf6fe92155:firefox/.md5sum
