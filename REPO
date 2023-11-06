@@ -20,11 +20,14 @@ f:6564cbcadceb398176d3cef4b884f3f6:nspr/.footprint
 f:6eaf1901ce2241e376440c2c2b3437bb:python3-libxml2/Pkgfile
 f:79bd6c69d00e3ab93317cb8d0b766297:python3-libxml2/.signature
 f:f18cb3fb4829b99996c808167caf0520:python3-libxml2/.footprint
+f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
 f:ff653e9e002ca0e3d4a828988e52edd3:python/CVE-2018-1000030.patch
-f:cee85b8f198b5ade798bc64b3a3c2049:python/Pkgfile
-f:b5cbbc980421c812b19d67538c22816b:python/.signature
+f:ebbe2c197d4cf6fbce10a17e09d2a609:python/CVE-2019-20907.patch
+f:39591043d250828d33298970b90e58a8:python/Pkgfile
+f:c3bddf432418f0dc5d1a943ccf3dc046:python/.signature
 f:387d5f6d00d2be01ecb87216cac0f88c:python/pyconfig.h
-f:9dbf060f34ace9e5b39771925ab1b117:python/.footprint
+f:7294f16e2cba954088e697b8018d41ae:python/.footprint
+f:59562d92ee153e7501f73be4ebd9e636:python/CVE-2020-26116.patch
 f:65dbf51e0b2d7bf29a0f1aa1c2a1db83:chromium/chromium-omnibox-unescape-fragment.patch
 f:65dbf51e0b2d7bf29a0f1aa1c2a1db83:chromium/chromium-memcpy-r0.patch
 f:3fbaf655439dd44e74302eeb779f5b96:chromium/.md5sum
