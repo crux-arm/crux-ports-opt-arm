@@ -1,6 +1,7 @@
 d:nspr
 d:python3-libxml2
 d:python
+d:compiler-rt
 d:chromium
 d:qt4
 d:jdk
@@ -28,6 +29,9 @@ f:c3bddf432418f0dc5d1a943ccf3dc046:python/.signature
 f:387d5f6d00d2be01ecb87216cac0f88c:python/pyconfig.h
 f:7294f16e2cba954088e697b8018d41ae:python/.footprint
 f:59562d92ee153e7501f73be4ebd9e636:python/CVE-2020-26116.patch
+f:3971c9900a7c9f563f1310c59b1cb59a:compiler-rt/Pkgfile
+f:2dbd5dd08ae2d51637bef00f82351864:compiler-rt/.signature
+f:e1a740a8dce0bfca53887d6509f1cdcf:compiler-rt/.footprint
 f:65dbf51e0b2d7bf29a0f1aa1c2a1db83:chromium/chromium-omnibox-unescape-fragment.patch
 f:65dbf51e0b2d7bf29a0f1aa1c2a1db83:chromium/chromium-memcpy-r0.patch
 f:3fbaf655439dd44e74302eeb779f5b96:chromium/.md5sum
