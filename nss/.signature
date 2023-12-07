@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauMLOP+ewtGKmbiwqKQufqBQY9R1nBRRaSOWzC+c2HJix194z3VV+iVafUUv/5EDWJ+qtS3YFLuRGyycuqS9wigM=
-SHA256 (Pkgfile) = b257a1e1a66989989d7bb6e51acb4c5e62b62f8b04cfd598e86dd115ef0f62a0
+RWQh9Dk2FlLauDp1jXU7SfwuhIphCkChPiutWK/+lenhec2uL5KjuTZhcQaUM+5ByH9xaNIXDPjint1YkeUWZ8VftqCfVntQkwA=
+SHA256 (Pkgfile) = c8d630a334f7314a98519d525f2dc0f124a0c6755d04554b0e224b4212e69f64
 SHA256 (.footprint) = a2cf52cf3c82009e9368d2669cdb01e3cb50d549f0e2d39a86bb04400ea3bee0
-SHA256 (nss-3.94.tar.gz) = 463ae180ee9e5ee9e3ad4f629326657e236780cc865572a930a16520abad9dd8
+SHA256 (nss-3.95.tar.gz) = 469888e41e8a780051ce00edcd914e8a6bd38da88a82cfb84898dd388635822a
 SHA256 (nss-config.in) = 08dbc1202186308e86125b5c5e7e2d0e1bd1bd5ed65eab011b9af210f656aff5
 SHA256 (nss.pc.in) = 135fbde6866e422b7a436e18d5b8e0defbb67dde6b8e1dc9e84de14b5c645626
 SHA256 (nss-3.54-standalone-2.patch) = 607a29650c767f9451eaec1e35a48a3c8c9ce6a7099234417eb521a44653a371
