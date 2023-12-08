@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauPA/gTWTTTx/99y/iPYXj5OCrkmTTuZUS/mGI6WHbRnCjwZNcHFP52xa9EJbvGP/TTAA4OeCXnmdMDNacVGMzQs=
-SHA256 (Pkgfile) = 787037e2b21b67f834205574cfad63d2567fbda1991fc0824e9499e5e012542c
+RWQh9Dk2FlLauCqsFfStXDIQyxjbZWxvlt3hLZcAWcStj3+53ioo+LRaDSaZw89ubO3MQWtZD2MtDs4ZypKjgvMYDokOv/jYegU=
+SHA256 (Pkgfile) = 95b678cc28f8fa965e9db074a0fb0dd73cca00e89078f7fbf5748cf5891c6d04
 SHA256 (.footprint) = 37f949de0f74b17de9a4cd9af6e785622952c8cef41e5126dbcf8149c70c6bbd
-SHA256 (compiler-rt-17.0.5.src.tar.xz) = 4e3b4a05780baf04a11e80efbe5039ff3ef17af617233f326f073e7af2cdab89
-SHA256 (llvm-17.0.5.src.tar.xz) = 569526fd017478eee51518a79c064442c0499269c6a6de586e409d91282afd04
-SHA256 (cmake-17.0.5.src.tar.xz) = 734ea7767ebda642d22c878024c9fb14ae0521d048bdba54e463bb73260adaef
+SHA256 (compiler-rt-17.0.6.src.tar.xz) = 11b8d09dcf92a0f91c5c82defb5ad9ff4acf5cf073a80c317204baa922d136b4
+SHA256 (llvm-17.0.6.src.tar.xz) = b638167da139126ca11917b6880207cc6e8f9d1cbb1a48d87d017f697ef78188
+SHA256 (cmake-17.0.6.src.tar.xz) = 807f069c54dc20cb47b21c1f6acafdd9c649f3ae015609040d6182cab01140f4
