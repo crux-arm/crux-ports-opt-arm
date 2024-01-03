@@ -41,10 +41,10 @@ f:ff653e9e002ca0e3d4a828988e52edd3:python/CVE-2018-1000030.patch
 f:ebbe2c197d4cf6fbce10a17e09d2a609:python/CVE-2019-20907.patch
 f:387d5f6d00d2be01ecb87216cac0f88c:python/pyconfig.h
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
-f:63945f7d783c51ffe33a3a10c1dfe0b3:nss/Pkgfile
+f:6aa45ba6285370a700a5ef1c7fd9f57a:nss/Pkgfile
 f:59cba0d7bda9c78bb32466be103ff12c:nss/.footprint
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
-f:974264b1f50c3d76339e40ae0c6ba07e:nss/.signature
+f:244f88a4f13e1459a9c4ba46f1448bf1:nss/.signature
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
