@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauLHPDbBY4f0u4ZosXJwZ6o9jUuAfIr5HmqjfInvYw/GRUr+C6kB8cTPpXNmfKcZjjZwhgi9ukyHWPdl7houj2gM=
-SHA256 (Pkgfile) = 0c378bcfd8753f40f957a9371e7c7b13c01f60e92746eee7080f9bed7acf0a79
-SHA256 (.footprint) = 81486d66dd80ef1347f504fc11ad31c013574a6456e34cca246eebd8ae85da7c
-SHA256 (icu4c-73_2-src.tgz) = 818a80712ed3caacd9b652305e01afc7fa167e6f2e94996da44b90c2ab604ce1
+RWQh9Dk2FlLauDfYzP8xPi8653U4vDoEXsmHgetBOQGxbIAo61/iUcC81ljRA+jD+Lxc2fF01tgQprDSx/YWuRNJqYFpNvj6qAY=
+SHA256 (Pkgfile) = 217669fe9fce1fe430d8ef716031894ee4bf75d9747774ef86447238092df32d
+SHA256 (.footprint) = b9197cec990e76886d5396856989bc9c327c82277d21c1f70a9a03c569869a9a
+SHA256 (icu4c-74_2-src.tgz) = 5e4fb11d6a3e6b85afb55de8da8a71538f1d8fd64fce893986b37d60e5bb0091
 SHA256 (icudata-stdlibs.patch) = 9633727d1875b90e87d0a6d8b727fb926a4f831e4c8f1e2c4f3eb24b08097153
