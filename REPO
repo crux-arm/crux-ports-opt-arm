@@ -59,9 +59,9 @@ f:4326a9ff7a15f8362792ebde33cd9ec7:llvm/.signature
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:fcd6954a7fbd05687990e59e87131c3e:llvm/llvm-config.h
-f:a2304c8c087cbc67e576f8484bba1826:icu/Pkgfile
-f:8796446bc547b909ecc55340aa9e79aa:icu/.footprint
-f:40a8ea7f486a19290d84895636e25673:icu/.signature
+f:22613e69c774a41ea6ef7f8919a40be6:icu/Pkgfile
+f:d68c3a80b6bcf29f430acfbf8dfd66a3:icu/.footprint
+f:6e4321c585e6705e61b172fbd0e34365:icu/.signature
 f:ac20804bf4a0a631bad9e53b5b025e60:icu/icudata-stdlibs.patch
 f:e2cd3d27a466e2736ac552d3e3b69672:icu/icu-65.1-initialized-buffer-uloc_getKeywordValue.patch
 f:dc42354d561b12701600f46d13501443:python3-markupsafe/Pkgfile
