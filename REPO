@@ -48,10 +48,10 @@ f:244f88a4f13e1459a9c4ba46f1448bf1:nss/.signature
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
-f:bb4b38e6f11eda75fc2b2762daf5d0c2:ruby/Pkgfile
-f:59027c5b40a6b476373e5e6aea409dfd:ruby/.footprint
+f:a444033d49080b9f326f719819338c2f:ruby/Pkgfile
+f:0861bf59f1a6cc7c92993faadca5b819:ruby/.footprint
 f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
-f:c1ceb9f0a45a7135093497cb1ba2f1c2:ruby/.signature
+f:036efaad1682bcef783e23d850f7e8f2:ruby/.signature
 f:ac2b0872ede4a765f5665e8d2904b439:llvm/Pkgfile
 f:fc7fb24bdabcc83351a4688690997dd1:llvm/.footprint
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
