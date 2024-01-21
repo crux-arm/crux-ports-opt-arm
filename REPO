@@ -64,8 +64,9 @@ f:d68c3a80b6bcf29f430acfbf8dfd66a3:icu/.footprint
 f:6e4321c585e6705e61b172fbd0e34365:icu/.signature
 f:ac20804bf4a0a631bad9e53b5b025e60:icu/icudata-stdlibs.patch
 f:e2cd3d27a466e2736ac552d3e3b69672:icu/icu-65.1-initialized-buffer-uloc_getKeywordValue.patch
-f:dc42354d561b12701600f46d13501443:python3-markupsafe/Pkgfile
-f:3747b66ad71c7792a91953628d3a25e0:python3-markupsafe/.footprint
+f:d97a3594e7740a8a535fd9ad3a1088a3:python3-markupsafe/Pkgfile
+f:3a90e6fd82d49f7de6c0f2d2938c120c:python3-markupsafe/.footprint
+f:a70456970d58767685cbe1d00a0eb8f0:python3-markupsafe/.signature
 f:7c7d9bb0e49fcd46734303cf38d03cc9:go/Pkgfile
 f:88dc0ed57d4d7bc8365ed10c5228baf6:go/.footprint
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
