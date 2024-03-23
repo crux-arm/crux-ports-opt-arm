@@ -32,8 +32,8 @@ f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:5d5ee618edc854a831a1faa7781bd884:llvm/.footprint
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
-f:191b0e123fbd41bc1f9913466b0682a9:llvm/.signature
-f:b826cb67c74f3b124f6f5d7e70868f86:llvm/Pkgfile
+f:1a0e37e6bff8609e345096a3ef6d91f5:llvm/.signature
+f:cf342a128bdffc7f91efc367e3574a38:llvm/Pkgfile
 f:f18cb3fb4829b99996c808167caf0520:python3-libxml2/.footprint
 f:79bd6c69d00e3ab93317cb8d0b766297:python3-libxml2/.signature
 f:6eaf1901ce2241e376440c2c2b3437bb:python3-libxml2/Pkgfile
