@@ -39,9 +39,9 @@ f:ce36d985b416cc2341d92812be817cda:gobject-introspection/Pkgfile
 f:117175b3832fbffb0d3ed0df7880bdf8:gobject-introspection/.signature
 f:ac20804bf4a0a631bad9e53b5b025e60:icu/icudata-stdlibs.patch
 f:d68c3a80b6bcf29f430acfbf8dfd66a3:icu/.footprint
-f:22613e69c774a41ea6ef7f8919a40be6:icu/Pkgfile
+f:11c33fac938ff401accfddfdc1868422:icu/Pkgfile
 f:e2cd3d27a466e2736ac552d3e3b69672:icu/icu-65.1-initialized-buffer-uloc_getKeywordValue.patch
-f:6e4321c585e6705e61b172fbd0e34365:icu/.signature
+f:503eecbc93a0f2cdbfdc4a91afa68648:icu/.signature
 f:8c26745aaa2c85c9643aa631138ce6cd:qt4/.footprint
 f:989af1e9919a3a287a5e583eca628118:qt4/.md5sum
 f:45bb57f9c12651a4dee92e31069c1b1d:qt4/Pkgfile
