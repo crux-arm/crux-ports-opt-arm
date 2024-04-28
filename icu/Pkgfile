@@ -6,7 +6,7 @@
 
 name=icu
 version=74.2
-release=1
+release=2
 source=(https://github.com/unicode-org/icu/releases/download/release-${version//./-}/icu4c-${version/./_}-src.tgz
         icudata-stdlibs.patch)
 
