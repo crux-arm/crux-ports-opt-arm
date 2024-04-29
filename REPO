@@ -27,9 +27,9 @@ f:7c7d9bb0e49fcd46734303cf38d03cc9:go/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
 f:01c899b302f8eff0cdddd41529f1e416:go/.signature
 f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
-f:0861bf59f1a6cc7c92993faadca5b819:ruby/.footprint
-f:a444033d49080b9f326f719819338c2f:ruby/Pkgfile
-f:036efaad1682bcef783e23d850f7e8f2:ruby/.signature
+f:e07c2c46e424bbec67ffefb8c7dfa4cd:ruby/.footprint
+f:d6360bd4445c8fca3f007fca45f26706:ruby/Pkgfile
+f:de1ef7c0598e4a42917192d3ad523787:ruby/.signature
 f:fc3f188fd9d00248c5004bd2efbf7462:compiler-rt/.footprint
 f:09eb5cecc39c28d694dcd0121d40a394:compiler-rt/Pkgfile
 f:90ab97789f878878dbb7b4bfcddf6b89:compiler-rt/.signature
