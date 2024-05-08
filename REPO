@@ -16,10 +16,10 @@ d:jdk
 d:python3-markupsafe
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
-f:94fda673c2314a21d9ffe20d063c4192:llvm/.footprint
-f:e950844b12538cb207039232d0fb3ca1:llvm/Pkgfile
+f:92c8dac83b825285dcfc28c6d779e33f:llvm/.footprint
+f:d22a9047a337c25a82f0d359d87bc4d4:llvm/Pkgfile
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
-f:fcc159f3dd64cdd9ed1b695796c113d8:llvm/.signature
+f:44a489a56dbc12575b320f84dbad3fda:llvm/.signature
 f:fcd6954a7fbd05687990e59e87131c3e:llvm/llvm-config.h
 f:a026070c8956ec7afb38926bfca80746:go/.footprint
 f:e4fd0e4125bfd4f34c7da0ad0446a1c0:go/.md5sum
