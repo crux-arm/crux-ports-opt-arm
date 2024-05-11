@@ -30,9 +30,9 @@ f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
 f:e07c2c46e424bbec67ffefb8c7dfa4cd:ruby/.footprint
 f:d6360bd4445c8fca3f007fca45f26706:ruby/Pkgfile
 f:de1ef7c0598e4a42917192d3ad523787:ruby/.signature
-f:fc3f188fd9d00248c5004bd2efbf7462:compiler-rt/.footprint
-f:09eb5cecc39c28d694dcd0121d40a394:compiler-rt/Pkgfile
-f:90ab97789f878878dbb7b4bfcddf6b89:compiler-rt/.signature
+f:c8958e453c755548dd3d6d220b3d242b:compiler-rt/.footprint
+f:1c249852d237fa2b5fb469b501e110a6:compiler-rt/Pkgfile
+f:da44804704d33e2d46d529399452d9d2:compiler-rt/.signature
 f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1.70.0-meson-0.61.patch
 f:2e9c452cd99e6ca0ab894ceaf83b3d6a:gobject-introspection/.footprint
 f:ce36d985b416cc2341d92812be817cda:gobject-introspection/Pkgfile
