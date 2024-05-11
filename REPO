@@ -90,8 +90,8 @@ f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
 f:3561c0d03c903ce4a60fde33ff004b35:nss/.footprint
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
-f:e0e31958e9b90d3d6e7b53ad97384352:nss/Pkgfile
-f:e99d794b6daf3b16840b474253448a26:nss/.signature
+f:a11e0fd66e15f76aee687bb2e0d92d63:nss/Pkgfile
+f:90d26b7c8fc1691f48263a6cc341cab9:nss/.signature
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
 f:84f92f6e7867ea0d1a0e210669cc78ab:jdk/.footprint
