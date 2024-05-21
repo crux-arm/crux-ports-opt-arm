@@ -29,8 +29,8 @@ f:caedeff563b78cb6d922d74fd184cc2d:nspr/.signature
 f:acae01887e8b35e4d4303d7ea92c674b:nspr/Pkgfile
 f:2083f33e11dfe15feb7bf9bca0f6c44b:nspr/nspr.pc.in
 f:6564cbcadceb398176d3cef4b884f3f6:nspr/.footprint
-f:da44804704d33e2d46d529399452d9d2:compiler-rt/.signature
-f:1c249852d237fa2b5fb469b501e110a6:compiler-rt/Pkgfile
+f:3b40418e3ae4bc10321e622eb93f21ae:compiler-rt/.signature
+f:af29a07f32767ba25bfe5467e23be55d:compiler-rt/Pkgfile
 f:c8958e453c755548dd3d6d220b3d242b:compiler-rt/.footprint
 f:afe61c7760e835bd12d5dfd40af4ec84:firefox/firefox-install-dir.patch
 f:f80d3af472d2405720801697f5a95eb1:firefox/.signature
