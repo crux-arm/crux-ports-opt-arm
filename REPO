@@ -75,10 +75,10 @@ f:39591043d250828d33298970b90e58a8:python/Pkgfile
 f:ff653e9e002ca0e3d4a828988e52edd3:python/CVE-2018-1000030.patch
 f:59562d92ee153e7501f73be4ebd9e636:python/CVE-2020-26116.patch
 f:7294f16e2cba954088e697b8018d41ae:python/.footprint
-f:36fe82f510bccec0825e04b6415ea277:ruby/.signature
-f:cc495b14945e013e98a2737df338b4bb:ruby/Pkgfile
+f:09a0d6dfec841ce30f2699cf1e69133a:ruby/.signature
+f:58653ffbc3d530ab3b3247b59168306b:ruby/Pkgfile
 f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
-f:c476d7c6ecbf76eda733f81f04fba84e:ruby/.footprint
+f:20133cdb74a1497681e10806b5c26cdb:ruby/.footprint
 f:254061cb349cff714230b7cca83b0a4c:chromium/chromium-skia-harmony.patch
 f:40ff364c3a581e5f7ec4a84d785ab6a4:chromium/chromium-use-fromUTF8-for-UnicodeString-construction.patch
 f:393557123cf80261a6faa819ed89e5a0:chromium/.signature
