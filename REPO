@@ -62,11 +62,11 @@ f:79bd6c69d00e3ab93317cb8d0b766297:python3-libxml2/.signature
 f:6eaf1901ce2241e376440c2c2b3437bb:python3-libxml2/Pkgfile
 f:f18cb3fb4829b99996c808167caf0520:python3-libxml2/.footprint
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
-f:90d26b7c8fc1691f48263a6cc341cab9:nss/.signature
-f:a11e0fd66e15f76aee687bb2e0d92d63:nss/Pkgfile
+f:0e3333b28506458384b86e2fcefe9ac1:nss/.signature
+f:969469d1132cf84b1332f673c1d94aad:nss/Pkgfile
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
-f:3561c0d03c903ce4a60fde33ff004b35:nss/.footprint
+f:c59afff1412ecf27f9376d91281e8137:nss/.footprint
 f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
 f:c3bddf432418f0dc5d1a943ccf3dc046:python/.signature
 f:387d5f6d00d2be01ecb87216cac0f88c:python/pyconfig.h
