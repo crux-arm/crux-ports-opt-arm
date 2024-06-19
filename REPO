@@ -18,12 +18,12 @@ f:74c028319288aeb6990a18094336fada:jdk/README
 f:931e0e525a0e2e524d8feb8e86f78c2f:jdk/Pkgfile
 f:84f92f6e7867ea0d1a0e210669cc78ab:jdk/.footprint
 f:60f2abaa446e277b34df0ccd7b9d3fde:jdk/.md5sum
-f:303139279912f12669932f42e8a3b00b:llvm/.signature
+f:0e3f1e9ce7068e177fc95635289a8498:llvm/.signature
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
-f:764b309b002557e32b72fc449e90a677:llvm/Pkgfile
-f:8a46137a11643c6b64d675032d840ee5:llvm/.footprint
+f:4cf4b23d79c6546b6bd6e1a906b718b8:llvm/Pkgfile
+f:29b29acca3cb9877597c5539f514f7f7:llvm/.footprint
 f:fcd6954a7fbd05687990e59e87131c3e:llvm/llvm-config.h
 f:caedeff563b78cb6d922d74fd184cc2d:nspr/.signature
 f:acae01887e8b35e4d4303d7ea92c674b:nspr/Pkgfile
