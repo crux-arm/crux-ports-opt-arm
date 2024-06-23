@@ -15,10 +15,10 @@ d:gobject-introspection
 d:compiler-rt
 d:python
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
-f:29b29acca3cb9877597c5539f514f7f7:llvm/.footprint
-f:0e3f1e9ce7068e177fc95635289a8498:llvm/.signature
+f:9eafc6d720a118aabf898d9241ae902f:llvm/.footprint
+f:589695b9d90e09359b53f71a59347e78:llvm/.signature
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
-f:4cf4b23d79c6546b6bd6e1a906b718b8:llvm/Pkgfile
+f:925d8ffb3a25aa4e086c4fbe696e0b64:llvm/Pkgfile
 f:fcd6954a7fbd05687990e59e87131c3e:llvm/llvm-config.h
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:c59afff1412ecf27f9376d91281e8137:nss/.footprint
