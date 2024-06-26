@@ -1,6 +1,7 @@
-untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauMtBeddCEOucyQvZMinhbOnWFTRzO+8IbDhYf48cuG9jGen3dpINYNJG65N1spECDcu0XrJlCp1jLmso91KWrQA=
+untrusted comment: verify with /etc/ports/xorg-arm.pub
+RWSYHFoJug2wQqnhyHG27MVWFBzPS72hiH81D3qXxG3lyr+0pDQbD3Kj/7XX7mERyU7bA5ehkoOeiq24lnxvs+g0NOBuhIeU0AU=
 SHA256 (Pkgfile) = 45ed65b794acff1722839325f9c6d64bacdb2404ec9b664b86f5d2f127be288e
+SHA256 (.footprint) = 90e6abd73a41c5779721bea3da42e1965f810dcb3bf0ab30547b9a101d5dacc8
 SHA256 (compiler-rt-18.1.8.src.tar.xz) = e054e99a9c9240720616e927cb52363abbc8b4f1ef0286bad3df79ec8fdf892f
 SHA256 (llvm-18.1.8.src.tar.xz) = f68cf90f369bc7d0158ba70d860b0cb34dbc163d6ff0ebc6cfa5e515b9b2e28d
 SHA256 (cmake-18.1.8.src.tar.xz) = 59badef592dd34893cd319d42b323aaa990b452d05c7180ff20f23ab1b41e837
