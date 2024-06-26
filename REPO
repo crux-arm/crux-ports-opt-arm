@@ -91,7 +91,7 @@ f:117175b3832fbffb0d3ed0df7880bdf8:gobject-introspection/.signature
 f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1.70.0-meson-0.61.patch
 f:ce36d985b416cc2341d92812be817cda:gobject-introspection/Pkgfile
 f:c8958e453c755548dd3d6d220b3d242b:compiler-rt/.footprint
-f:7211026c9bd7911dd428c4719c4a4c1b:compiler-rt/.signature
+f:14118c0f3db3f754c623737f8fc348ef:compiler-rt/.signature
 f:557d797359ddba345cb4dc1c71dd05f4:compiler-rt/Pkgfile
 f:387d5f6d00d2be01ecb87216cac0f88c:python/pyconfig.h
 f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
