@@ -39,8 +39,8 @@ f:acae01887e8b35e4d4303d7ea92c674b:nspr/Pkgfile
 f:caedeff563b78cb6d922d74fd184cc2d:nspr/.signature
 f:2083f33e11dfe15feb7bf9bca0f6c44b:nspr/nspr.pc.in
 f:6564cbcadceb398176d3cef4b884f3f6:nspr/.footprint
-f:969469d1132cf84b1332f673c1d94aad:nss/Pkgfile
-f:0e3333b28506458384b86e2fcefe9ac1:nss/.signature
+f:d60bd792339ae7e47c83c3f42f19208f:nss/Pkgfile
+f:24f0f415a76aac0b8f74e021b771f417:nss/.signature
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:c59afff1412ecf27f9376d91281e8137:nss/.footprint
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
