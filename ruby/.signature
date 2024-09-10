@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauNLTHvfBT59NLhBgot4EjSXHgagl5pnI4qvM9PyMLlpP/aKaCd3StZKUiGY4gybIkxue2x0Iy8z8vuF5ZYcqhgk=
-SHA256 (Pkgfile) = c2c16d670a30106ae6b2f6c0087d2d7aaa4f12589e55250f52af50eaa536c113
-SHA256 (.footprint) = 60426b387d201543437651e8bfa51d5648d06b342a077c1f1603d86ad5e63631
-SHA256 (ruby-3.3.4.tar.xz) = 1caaee9a5a6befef54bab67da68ace8d985e4fb59cd17ce23c28d9ab04f4ddad
+RWQh9Dk2FlLauJJdeqWW5nBO+0jm8muSnEuZftAEpx5hvf+24MC/gf0GKdtLnDUpa1iJGUCiJhXcab4aR0QJxMn8Kjxoz9hOjwE=
+SHA256 (Pkgfile) = af9abbb8331ea51212588b9286b31182a2bb2820898fa53770faec83ae9ec795
+SHA256 (.footprint) = 7d9c1183083f163cb28d3b0e51e124f6e1268ff9434545214e99bf03d45bcf6b
+SHA256 (ruby-3.3.5.tar.xz) = 51aec7ea89b46125a2c9adc6f36766b65023d47952b916b1aed300ddcc042359
