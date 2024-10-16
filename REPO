@@ -1,5 +1,6 @@
 d:nspr
 d:gobject-introspection
+d:talloc
 d:tdb
 d:ruby
 d:python
@@ -25,6 +26,10 @@ f:2e9c452cd99e6ca0ab894ceaf83b3d6a:gobject-introspection/.footprint
 f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1.70.0-meson-0.61.patch
 f:117175b3832fbffb0d3ed0df7880bdf8:gobject-introspection/.signature
 f:ce36d985b416cc2341d92812be817cda:gobject-introspection/Pkgfile
+f:4df1f734a862a093e97244e98538c4d1:talloc/.footprint
+f:92888135611dc2bdc5f85deba741b686:talloc/.signature
+f:41f789446e5c2e0a0cb317678a7f1740:talloc/Pkgfile
+f:365edd7d92b98bb9790ed0eeb3c4d2b3:talloc/talloc-man-pages.tar.xz
 f:366a26381ebcf7d1857707216c509269:tdb/.footprint
 f:6be3618a7d4d0cbdce4737f26d8618dc:tdb/.signature
 f:b882e16c3dd8cc587517fbbd967cb6e7:tdb/Pkgfile
