@@ -18,6 +18,7 @@ d:python3-libxml2
 d:jdk
 d:icu
 d:qt4
+d:tevent
 f:6564cbcadceb398176d3cef4b884f3f6:nspr/.footprint
 f:caedeff563b78cb6d922d74fd184cc2d:nspr/.signature
 f:acae01887e8b35e4d4303d7ea92c674b:nspr/Pkgfile
@@ -120,3 +121,6 @@ f:8c26745aaa2c85c9643aa631138ce6cd:qt4/.footprint
 f:40e0ef421159074a3255e8f738fde8e5:qt4/.signature
 f:45bb57f9c12651a4dee92e31069c1b1d:qt4/Pkgfile
 f:989af1e9919a3a287a5e583eca628118:qt4/.md5sum
+f:ab48e325e43dd1833909771905eba400:tevent/.footprint
+f:b3cd1ea4d859e0c74d08397c34d3786b:tevent/.signature
+f:7d51663331b80bdb32cd079d527a4ac4:tevent/Pkgfile
