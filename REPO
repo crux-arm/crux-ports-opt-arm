@@ -100,8 +100,8 @@ f:cfdff22fac42a312cfc790c80ba0bbaa:compiler-rt/.signature
 f:557d797359ddba345cb4dc1c71dd05f4:compiler-rt/Pkgfile
 f:bba955ae8aba48f62d10f05f6c23e984:compiler-rt/libsanitizer-timebits.diff
 f:c59afff1412ecf27f9376d91281e8137:nss/.footprint
-f:8327070c9397588eb5fde7906fa7e669:nss/.signature
-f:91b922018e6e078c4133cf9bd82047b8:nss/Pkgfile
+f:2e5bef3c3b5685d3ce2b3f15fe2cf9db:nss/.signature
+f:33c50d8052e261c813b56cf580efca2e:nss/Pkgfile
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
