@@ -19,9 +19,9 @@ d:jdk
 d:icu
 d:qt4
 d:tevent
-f:6564cbcadceb398176d3cef4b884f3f6:nspr/.footprint
-f:caedeff563b78cb6d922d74fd184cc2d:nspr/.signature
-f:acae01887e8b35e4d4303d7ea92c674b:nspr/Pkgfile
+f:8e45cce454d2e1d43caa9514c0367bd4:nspr/.footprint
+f:29312c0c10c87451371f08dccd0d53c2:nspr/.signature
+f:281abad171c1ef292df68248d75095c6:nspr/Pkgfile
 f:2083f33e11dfe15feb7bf9bca0f6c44b:nspr/nspr.pc.in
 f:2e9c452cd99e6ca0ab894ceaf83b3d6a:gobject-introspection/.footprint
 f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1.70.0-meson-0.61.patch
