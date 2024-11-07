@@ -90,9 +90,9 @@ f:139fe8d58d2d8e5e5896affc54215385:python3-pyyaml/Pkgfile
 f:ab6f71802e3d558cf4fa859b01639f0d:python3-cython/.footprint
 f:285c4c62aec47da7ee805963225380dc:python3-cython/.signature
 f:d926480a0094b97743f4f17dee4ae0f1:python3-cython/Pkgfile
-f:815fad735e6ecc343e4f3510b1c110ad:python3-markupsafe/.footprint
-f:52e2c6d65320409f56edd1feabec88d7:python3-markupsafe/.signature
-f:e482338984d2debd45b9cb557ae7c9c8:python3-markupsafe/Pkgfile
+f:ac3b1ce7ca181c848df9979449609326:python3-markupsafe/.footprint
+f:a77b56c910e0fa2abbb02041cb92b21e:python3-markupsafe/.signature
+f:f8f65f7999ff402a919e0646c57d9aa1:python3-markupsafe/Pkgfile
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
 f:c8958e453c755548dd3d6d220b3d242b:compiler-rt/.footprint
