@@ -95,10 +95,9 @@ f:a77b56c910e0fa2abbb02041cb92b21e:python3-markupsafe/.signature
 f:f8f65f7999ff402a919e0646c57d9aa1:python3-markupsafe/Pkgfile
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
-f:c8958e453c755548dd3d6d220b3d242b:compiler-rt/.footprint
-f:cfdff22fac42a312cfc790c80ba0bbaa:compiler-rt/.signature
-f:557d797359ddba345cb4dc1c71dd05f4:compiler-rt/Pkgfile
-f:bba955ae8aba48f62d10f05f6c23e984:compiler-rt/libsanitizer-timebits.diff
+f:fdcb4f916ed1effe2258e647cb8eb08e:compiler-rt/.footprint
+f:3f8b9249592dc351b5d9ca382efa405b:compiler-rt/.signature
+f:bf37e579f7e79c4f06b4dfd60c4d5d16:compiler-rt/Pkgfile
 f:c59afff1412ecf27f9376d91281e8137:nss/.footprint
 f:20716a1cc049839fe287b2a33e2a71f2:nss/.signature
 f:de786f76c61b86a6eeee5d0339d1443d:nss/Pkgfile
