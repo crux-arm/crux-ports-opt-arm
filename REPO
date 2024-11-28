@@ -79,8 +79,8 @@ f:ae3b27580281b512ee187bcf6fe92155:firefox/.md5sum
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
 f:5f18f74059113ba2641e0f6cafc40c94:llvm/.footprint
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
-f:43d3c28785ac67f4a6ac271e6dca8245:llvm/.signature
-f:3ff5c4b54386f46324b246c85005ad95:llvm/Pkgfile
+f:a6c29f6b18e6fcae9ac086b73821cc0e:llvm/.signature
+f:cafd6a6d55b4056c16919f092a2b68ca:llvm/Pkgfile
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:fcd6954a7fbd05687990e59e87131c3e:llvm/llvm-config.h
