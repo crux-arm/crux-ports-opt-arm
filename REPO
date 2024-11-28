@@ -111,10 +111,10 @@ f:84f92f6e7867ea0d1a0e210669cc78ab:jdk/.footprint
 f:74c028319288aeb6990a18094336fada:jdk/README
 f:931e0e525a0e2e524d8feb8e86f78c2f:jdk/Pkgfile
 f:60f2abaa446e277b34df0ccd7b9d3fde:jdk/.md5sum
-f:e2cd3d27a466e2736ac552d3e3b69672:icu/icu-65.1-initialized-buffer-uloc_getKeywordValue.patch
-f:d68c3a80b6bcf29f430acfbf8dfd66a3:icu/.footprint
-f:503eecbc93a0f2cdbfdc4a91afa68648:icu/.signature
-f:11c33fac938ff401accfddfdc1868422:icu/Pkgfile
+f:ce89371ae130ad05a712b7ea4e064bea:icu/.footprint
+f:c8816ad2392a170ae90b4913f1ce2524:icu/.signature
+f:56d4bf98462cfd2ade0a9b11fd9fa356:icu/Pkgfile
+f:7e501a2e7d14ce94b843e6853d96e4c2:icu/ICU-22132.patch
 f:ac20804bf4a0a631bad9e53b5b025e60:icu/icudata-stdlibs.patch
 f:8c26745aaa2c85c9643aa631138ce6cd:qt4/.footprint
 f:40e0ef421159074a3255e8f738fde8e5:qt4/.signature
