@@ -3,12 +3,14 @@
 # Maintainer: Danny Rawlins, crux at romster dot me
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Packager: Younes Hafri, ycrux at club-internet dot fr
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Optional: clang lld
 
 name=icu
-version=74.2
-release=2
+version=75.1
+release=1
 source=(https://github.com/unicode-org/icu/releases/download/release-${version//./-}/icu4c-${version/./_}-src.tgz
-        icudata-stdlibs.patch)
+  icudata-stdlibs.patch ICU-22132.patch)
 
 build() {
   cd icu/source
@@ -19,15 +21,17 @@ build() {
     export CC=gcc CXX=g++
 
   patch -p2 -i $SRC/icudata-stdlibs.patch
+  patch -Np1 -i $SRC/ICU-22132.patch
+  export CFLAGS="$CFLAGS -fno-strict-aliasing"
+  export CXXFLAGS="$CFLAGS"
+  echo $CFLAGS $CXXFLAGS
 
+  CONFIG_SHELL=/bin/bash \
   ./configure \
     --prefix=/usr \
     --mandir=/usr/share/man \
     --disable-samples \
     --disable-tests
-
-  # https://github.com/unicode-org/icu/blob/main/icu4c/LICENSE does not seem to work
-  touch ../LICENSE
 
   make
   make -j1 DESTDIR=$PKG install
