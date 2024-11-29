@@ -1,8 +1,7 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauDe1DZA56DIHEnj0+Rym5jalOdTUpm2T7akTsIkZ8N/o9Aoi4cYPnoF0fLLk3Uc2YUjocuCkIBpKNu06yycUXgw=
-SHA256 (Pkgfile) = 45ed65b794acff1722839325f9c6d64bacdb2404ec9b664b86f5d2f127be288e
-SHA256 (.footprint) = 90e6abd73a41c5779721bea3da42e1965f810dcb3bf0ab30547b9a101d5dacc8
-SHA256 (compiler-rt-18.1.8.src.tar.xz) = e054e99a9c9240720616e927cb52363abbc8b4f1ef0286bad3df79ec8fdf892f
-SHA256 (llvm-18.1.8.src.tar.xz) = f68cf90f369bc7d0158ba70d860b0cb34dbc163d6ff0ebc6cfa5e515b9b2e28d
-SHA256 (cmake-18.1.8.src.tar.xz) = 59badef592dd34893cd319d42b323aaa990b452d05c7180ff20f23ab1b41e837
-SHA256 (libsanitizer-timebits.diff) = f88d5c03b835d411cc1b244ea52a5621b089ccd540efb46631b86ef8781e6262
+RWQh9Dk2FlLauMXRQcVKQidqOoLMGPak7pHJE+DnyEzIRNuyxEJooEx2etPRiV+KHlL7HnpWRPFM70o1NYua7cP/zSvtOpsqEwU=
+SHA256 (Pkgfile) = 745fd97d077e00a50cc46c2872bcf42d4a7a6689c41fe75e569af5e86ea981d2
+SHA256 (.footprint) = e8297b219328b1b645a7573e54a2c566247cdabf7dfe8a963a66811efdcec14a
+SHA256 (compiler-rt-19.1.4.src.tar.xz) = 433f9f513313b6e34626fab516e92a97ea087484fce40218e928b9538910cd27
+SHA256 (llvm-19.1.4.src.tar.xz) = 4fe1bc197ff13f33af6179f836ce1cf2ae9886b822974a736f3a20c8aed0c1b2
+SHA256 (cmake-19.1.4.src.tar.xz) = dd13ce8eba6ece85cad567f028b8e16d72f3e142cdcbbd693ac23a88b4013803

@@ -6,12 +6,11 @@
 # Optional: clang
 
 name=compiler-rt
-version=18.1.8
+version=19.1.4
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/compiler-rt-$version.src.tar.xz
   https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz
-  https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-$version.src.tar.xz
-  libsanitizer-timebits.diff)
+  https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-$version.src.tar.xz)
 
 build() {
   mv llvm-$version.src llvm
@@ -24,8 +23,6 @@ build() {
     fi
   fi
 
-  patch -Np2 -d $name-$version.src -i $SRC/libsanitizer-timebits.diff
-
   cmake -S $name-$version.src -B build -G Ninja \
     -D CMAKE_INSTALL_PREFIX=/usr \
     -D CMAKE_BUILD_TYPE=Release \
@@ -33,9 +30,8 @@ build() {
     -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
     -D COMPILER_RT_INSTALL_PATH=/usr/lib/clang/${version:0:2} \
     -D Python3_EXECUTABLE=/usr/bin/python3 \
-    -D COMPILER_RT_INCLUDE_TESTS=OFF \
-    -Wno-dev
+    -D COMPILER_RT_INCLUDE_TESTS=OFF
 
-  cmake --build build
+  cmake --build build -j ${JOBS:-1}
   DESTDIR=$PKG cmake --install build
 }
