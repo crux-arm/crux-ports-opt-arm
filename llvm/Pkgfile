@@ -52,6 +52,7 @@ build() {
     -D LLVM_ENABLE_LLD="$(prt-get isinst lld >/dev/null && echo ON || echo OFF)" \
     -D LLVM_INCLUDE_BENCHMARKS=OFF \
     -D LLVM_APPEND_VC_REV=OFF \
+    -D LLVM_DEFAULT_TARGET_TRIPLE=arm-unknown-linux-gnueabihf \
     -Wno-dev
 
   cmake --build build --target LLVM -j ${JOBS:-1}

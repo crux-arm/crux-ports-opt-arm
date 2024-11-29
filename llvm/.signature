@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauNQfUSeEppjE7JGcu9AF5c4CcuWYDHgBCBPMC92PDKopvE6UCCqKg8NXxDmujEThlZ2JLv+VaK1SKBGdyk3ztgE=
-SHA256 (Pkgfile) = ab4d3dbc440b87c2e6b8e8f8475946e6c3af338d3981244ebd158234b04a8041
+RWQh9Dk2FlLauJ83Zpra/zpbatsNauMGKBqZ/p12N6X98mtzqn3ERXXh5SBCtnwx0VPeKu7qwucWrAnSY91LHh8D+ppTJdLRqA0=
+SHA256 (Pkgfile) = a0000b7b09876a06aa67df1eb519ec217bbc2cba6f69ef011614d81900190b81
 SHA256 (.footprint) = a9c710d9182b62a0d53da4ad25d7b93e68d4193cbe488da96e1cefe024cbe96b
 SHA256 (llvm-19.1.4.src.tar.xz) = 4fe1bc197ff13f33af6179f836ce1cf2ae9886b822974a736f3a20c8aed0c1b2
 SHA256 (cmake-19.1.4.src.tar.xz) = dd13ce8eba6ece85cad567f028b8e16d72f3e142cdcbbd693ac23a88b4013803
