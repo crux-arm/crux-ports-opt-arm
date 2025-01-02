@@ -82,9 +82,9 @@ f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1
 f:2e9c452cd99e6ca0ab894ceaf83b3d6a:gobject-introspection/.footprint
 f:ce36d985b416cc2341d92812be817cda:gobject-introspection/Pkgfile
 f:117175b3832fbffb0d3ed0df7880bdf8:gobject-introspection/.signature
-f:f209105833dd7386c59eee9b77ee74e5:ruby/.footprint
-f:d417136bc3100e546a285d70400be1e7:ruby/Pkgfile
-f:4c555c719d7d50f3442509a1818af296:ruby/.signature
+f:0922f13577fbb8561e3e918c39ff4034:ruby/.footprint
+f:8a4cd34df511f2430297b9296570c35b:ruby/Pkgfile
+f:2621883a5d0f7d383aa466ad58723c5d:ruby/.signature
 f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
 f:e4fd0e4125bfd4f34c7da0ad0446a1c0:go/.md5sum
 f:a026070c8956ec7afb38926bfca80746:go/.footprint
