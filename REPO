@@ -21,7 +21,7 @@ d:python3-pyyaml
 d:keyutils
 f:fdcb4f916ed1effe2258e647cb8eb08e:compiler-rt/.footprint
 f:a25f1f7088906daaee60f3bf958ce90f:compiler-rt/Pkgfile
-f:e1c943c9e0813481b3e3d48601d848b1:compiler-rt/.signature
+f:a3f5f9bfffc54fc4b217583675dd25c4:compiler-rt/.signature
 f:d144ace1ee63acdf7dd149b013c83088:chromium/chromium-64.0.3282.119-constexpr-1.patch
 f:3354997dd0bfde3443499133a6e16a85:chromium/last-commit-position.patch
 f:64968626706b07721983ac59fb3babbf:chromium/chromium.sh
