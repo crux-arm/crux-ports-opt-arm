@@ -5,6 +5,7 @@ d:python3-libxml2
 d:icu
 d:llvm
 d:keyutils
+d:gpgme
 d:ruby
 d:talloc
 d:gobject-introspection
@@ -51,6 +52,9 @@ f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
+f:b5d4707d11b6bd85ae1bf5fcfd37b984:gpgme/.footprint
+f:d99bd0b93f75173ff53e7928b8ebb6c6:gpgme/.signature
+f:e92886104e07a08ad9871892a6f8d1fa:gpgme/Pkgfile
 f:fb60a5a6226bb40dd07e91c81e86e399:ruby/.footprint
 f:677f53dfe568dfb33dbdecad550f7f24:ruby/.signature
 f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
