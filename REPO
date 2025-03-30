@@ -1,4 +1,5 @@
 d:python3-cython
+d:rust
 d:compiler-rt
 d:python3-libxml2
 d:icu
@@ -22,6 +23,14 @@ d:chromium
 f:8b1dabd1080f766790395130c4dd4034:python3-cython/.footprint
 f:a01736bd65736d879deda62c8111aea0:python3-cython/.signature
 f:065979efd311e138ef41dba04173ea2e:python3-cython/Pkgfile
+f:ad80c008eaad276a5e9595180bbee1fa:rust/.footprint
+f:b12f29b0d6e99138fad2884e0f55656c:rust/.signature
+f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
+f:aec1d1c628fd738e72fb772ddf204118:rust/maintainer_clean_footprint
+f:01956b9d425973216f86a808784d82a6:rust/0002-bootstrap-Change-bash-completion-dir.patch
+f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
+f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
+f:05680d4b0ba442595cb1c3d7f3aa1eb0:rust/Pkgfile
 f:fdcb4f916ed1effe2258e647cb8eb08e:compiler-rt/.footprint
 f:1f8c6623810fae73f0e2a0c95cbfef3d:compiler-rt/.signature
 f:449cbabd5581fec9856a32b9173e977c:compiler-rt/Pkgfile
