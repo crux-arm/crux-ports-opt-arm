@@ -1,0 +1,33 @@
+# Description: Utilities to checkpoint and restore processes in userspace
+# URL: https://criu.org/
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: asciidoc gnutls libbpf libbsd libdrm libnet libnl nftables protobuf-c xmlto
+# Optional: python3-protobuf
+
+name=criu
+version=4.1
+release=1
+source=(https://github.com/checkpoint-restore/criu/archive/v$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  make criu crit docs
+  make \
+    DESTDIR=$PKG \
+    PREFIX=/usr \
+    SBINDIR=/usr/bin \
+    LIBDIR=/usr/lib \
+    LIBEXECDIR=/usr/lib \
+    install
+
+  # TODO: Create python3-protobuf port
+  if prt-get isinst python3-protobuf; then
+    /usr/bin/python3 -m build --wheel --no-isolation crit
+    /usr/bin/python3 -m build --wheel --no-isolation --skip-dependency-check lib
+    /usr/bin/python3 -m installer --destdir=$PKG crit/dist/*.whl
+    /usr/bin/python3 -m installer --destdir=$PKG lib/dist/*.whl
+  fi
+
+  rm -r $PKG/usr/include/compel/common/asm
+}
