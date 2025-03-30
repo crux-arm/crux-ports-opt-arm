@@ -9,6 +9,7 @@ d:gpgme
 d:ruby
 d:talloc
 d:gobject-introspection
+d:criu
 d:firefox
 d:tdb
 d:jdk
@@ -67,6 +68,11 @@ f:2e9c452cd99e6ca0ab894ceaf83b3d6a:gobject-introspection/.footprint
 f:117175b3832fbffb0d3ed0df7880bdf8:gobject-introspection/.signature
 f:ce36d985b416cc2341d92812be817cda:gobject-introspection/Pkgfile
 f:87819bcdc7a1c2ef1ce884c1eeefb831:gobject-introspection/gobject-introspection-1.70.0-meson-0.61.patch
+f:9d71b23a716a9bbefcd952ea168ca25a:criu/.footprint
+f:8d47c0396c66e6bb16c43a5f64914249:criu/.signature
+f:c404d3f8dfe5a6e40a0a7c7eba84d6bd:criu/maintainer_clean_footprint
+f:667195d3c3fef044a12ab6a99dc3b352:criu/Pkgfile
+f:d38dae04e986208890b4807588aeae16:criu/README
 f:8ce5740342e7a7306df7847c077bdb7d:firefox/.footprint
 f:ae3b27580281b512ee187bcf6fe92155:firefox/.md5sum
 f:f80d3af472d2405720801697f5a95eb1:firefox/.signature
