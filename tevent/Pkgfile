@@ -1,0 +1,21 @@
+# Description: Event library based on talloc
+# URL: https://tevent.samba.org/
+# Maintainer: Juergen Daubert, jue at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team. devel at crux-arm dot nu
+# Depends on: cmocka talloc
+
+name=tevent
+version=0.16.2
+release=1
+source=(https://www.samba.org/ftp/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --bundled-libraries=NONE
+
+  make
+  make DESTDIR=$PKG install
+}

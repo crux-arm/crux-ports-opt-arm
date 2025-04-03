@@ -3,22 +3,30 @@
 # Maintainer: Danny Rawlins, crux at romster dot me
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Packager: Younes Hafri, ycrux at club-internet dot fr
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Optional: clang lld
 
 name=icu
-version=71.1
+version=75.1
 release=1
 source=(https://github.com/unicode-org/icu/releases/download/release-${version//./-}/icu4c-${version/./_}-src.tgz
-        icudata-stdlibs.patch)
+  icudata-stdlibs.patch ICU-22132.patch)
 
 build() {
   cd icu/source
 
+  # icu tries to use clang by default, only do so if installed
+  prt-get isinst clang lld && LDFLAGS+=' -fuse-ld=lld -flto=thin'
+  prt-get isinst clang && export CC=clang CXX=clang++ AR=llvm-ar NM=llvm-nm RANLIB=llvm-ranlib || \
+    export CC=gcc CXX=g++
+
   patch -p2 -i $SRC/icudata-stdlibs.patch
+  patch -Np1 -i $SRC/ICU-22132.patch
+  export CFLAGS="$CFLAGS -fno-strict-aliasing"
+  export CXXFLAGS="$CFLAGS"
+  echo $CFLAGS $CXXFLAGS
 
-  # icu tries to use clang by default
-  [ "$CC" ] || export CC=gcc
-  [ "$CXX" ] || export CXX=g++
-
+  CONFIG_SHELL=/bin/bash \
   ./configure \
     --prefix=/usr \
     --mandir=/usr/share/man \
