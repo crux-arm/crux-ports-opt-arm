@@ -82,9 +82,9 @@ f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:463cd1f212e7621d9eea6fbd897ce50b:llvm/.footprint
 f:fcd6954a7fbd05687990e59e87131c3e:llvm/llvm-config.h
-f:065979efd311e138ef41dba04173ea2e:python3-cython/Pkgfile
-f:2bb6ec1abec858d0caac4ea188677f0b:python3-cython/.signature
-f:8b1dabd1080f766790395130c4dd4034:python3-cython/.footprint
+f:d463dbb641dee6513d643d7f9020bf44:python3-cython/Pkgfile
+f:93bcc6fd92f20ab1a1004c5ec626b07f:python3-cython/.signature
+f:45a976e806a0c06af88ac6155f0bca4e:python3-cython/.footprint
 f:9d6eab4a8302b23a991ddc8682ecaaab:chromium/chromium-stdint.patch
 f:3a38dd066ae7dd9f4c6e70c065c944eb:chromium/Pkgfile
 f:40ff364c3a581e5f7ec4a84d785ab6a4:chromium/chromium-use-fromUTF8-for-UnicodeString-construction.patch
