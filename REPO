@@ -36,9 +36,9 @@ f:f8f65f7999ff402a919e0646c57d9aa1:python3-markupsafe/Pkgfile
 f:a77b56c910e0fa2abbb02041cb92b21e:python3-markupsafe/.signature
 f:ac3b1ce7ca181c848df9979449609326:python3-markupsafe/.footprint
 f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
-f:7a7983a812226baaf408245b212fb470:ruby/Pkgfile
-f:677f53dfe568dfb33dbdecad550f7f24:ruby/.signature
-f:fb60a5a6226bb40dd07e91c81e86e399:ruby/.footprint
+f:663bbfc3bd95bfb9370e8549732b5975:ruby/Pkgfile
+f:51d6a47021c5f0bdf2f63b8e9a13ad49:ruby/.signature
+f:af7e4f202d8a3d7c9af8cfce8d6b49dd:ruby/.footprint
 f:01956b9d425973216f86a808784d82a6:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:05680d4b0ba442595cb1c3d7f3aa1eb0:rust/Pkgfile
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
