@@ -2,10 +2,10 @@
 # URL: http://www.ruby-lang.org
 # Maintainer: Juergen Daubert, jue at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: gdbm ncurses openssl readline zlib libffi libyaml
+# Depends on: gdbm libffi libyaml openssl zlib
 
 name=ruby
-version=3.4.2
+version=3.4.3
 release=1
 source=(http://cache.ruby-lang.org/pub/$name/${version%.*}/$name-$version.tar.xz)
 
