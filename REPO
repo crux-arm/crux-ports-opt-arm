@@ -77,10 +77,10 @@ f:ec09fb7a110770e47b5a3f47430550ba:tdb/.footprint
 f:a6f415b079066085d840951654428b77:tdb/Pkgfile
 f:577eac319436d73e2fe6e20ae5731bdc:tdb/tdb-man-pages.tar.xz
 f:134f92662c7ba3e2efec57ef9078d5b0:tdb/.signature
-f:fb60a5a6226bb40dd07e91c81e86e399:ruby/.footprint
+f:8f594ba8259b893abae88f68a632e8cb:ruby/.footprint
 f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
-f:7a7983a812226baaf408245b212fb470:ruby/Pkgfile
-f:677f53dfe568dfb33dbdecad550f7f24:ruby/.signature
+f:294b06f0a4e019ec74e3fe756f07c385:ruby/Pkgfile
+f:926e678aada454cf62311c09471a3342:ruby/.signature
 f:9d71b23a716a9bbefcd952ea168ca25a:criu/.footprint
 f:c404d3f8dfe5a6e40a0a7c7eba84d6bd:criu/maintainer_clean_footprint
 f:d38dae04e986208890b4807588aeae16:criu/README
