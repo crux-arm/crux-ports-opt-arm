@@ -101,9 +101,9 @@ f:6eaf1901ce2241e376440c2c2b3437bb:python3-libxml2/Pkgfile
 f:79bd6c69d00e3ab93317cb8d0b766297:python3-libxml2/.signature
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
-f:cc8bc864972ee6004a840e293e537a56:python3-cython/.footprint
-f:796945d788ce7ca8f6fbc3683fa50c00:python3-cython/Pkgfile
-f:8f7fd1db0d91dc757c46fe3fd9813cfe:python3-cython/.signature
+f:5b02b7ec84131b80ae829583fecae6ad:python3-cython/.footprint
+f:b4fa2aeb2ff2d616fbb3c337f4f98002:python3-cython/Pkgfile
+f:8fc8e8e74666218f87aacc66bdfa19ca:python3-cython/.signature
 f:01f7422efc71c1dd9255b5d9f72a36ec:chromium/chromium-math.h-r0.patch
 f:65dbf51e0b2d7bf29a0f1aa1c2a1db83:chromium/chromium-cups-r0.patch
 f:3e30a8e6629c931a640d65d4ab02b939:chromium/chromium-exclude_unwind_tables.patch
