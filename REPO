@@ -128,12 +128,12 @@ f:a026070c8956ec7afb38926bfca80746:go/.footprint
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
 f:e4fd0e4125bfd4f34c7da0ad0446a1c0:go/.md5sum
 f:1d7bf560743397c38e8e2d2cc45fe38e:go/Pkgfile
-f:0a2f418db21f1d7113e32907aef87d97:nss/.signature
+f:72bbe562abdbec190736c62d2ec82946:nss/.signature
 f:c59afff1412ecf27f9376d91281e8137:nss/.footprint
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
-f:446d1cb8f4e071f868148e114a86bacd:nss/Pkgfile
+f:9147f361261c0500661d5b1cd0951023:nss/Pkgfile
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:dafda2715f711e23a5de659effe8c218:llvm/.signature
