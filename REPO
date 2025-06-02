@@ -43,6 +43,7 @@ f:387d5f6d00d2be01ecb87216cac0f88c:python/pyconfig.h
 f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
 f:ebbe2c197d4cf6fbce10a17e09d2a609:python/CVE-2019-20907.patch
 f:39591043d250828d33298970b90e58a8:python/Pkgfile
+f:8b40ae985a8a1c57ea89491339fa0bdd:rust/0003-bootstrap-Use-lld-mode-only-for-host-linked-targets.patch
 f:c98813e99d9adeecc1708f78df8041da:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:258ab9a01a7c755ed2cd7c84489fd2f0:rust/0001-bootstrap-Change-libexec-dir.patch
 f:69848e123cec3841f5074aeecbbe94eb:rust/.signature
