@@ -79,9 +79,9 @@ f:65dbf51e0b2d7bf29a0f1aa1c2a1db83:chromium/chromium-cups-r0.patch
 f:3354997dd0bfde3443499133a6e16a85:chromium/last-commit-position.patch
 f:254061cb349cff714230b7cca83b0a4c:chromium/chromium-skia-harmony.patch
 f:3a38dd066ae7dd9f4c6e70c065c944eb:chromium/Pkgfile
-f:1f8c6623810fae73f0e2a0c95cbfef3d:compiler-rt/.signature
-f:fdcb4f916ed1effe2258e647cb8eb08e:compiler-rt/.footprint
-f:449cbabd5581fec9856a32b9173e977c:compiler-rt/Pkgfile
+f:ef75ea8fd43b44e3cc29b76c89a4a016:compiler-rt/.signature
+f:967adb43eb349bfcccf8db45e05bea92:compiler-rt/.footprint
+f:cc3b0c6fac346a180e98a03f70d479bb:compiler-rt/Pkgfile
 f:577eac319436d73e2fe6e20ae5731bdc:tdb/tdb-man-pages.tar.xz
 f:134f92662c7ba3e2efec57ef9078d5b0:tdb/.signature
 f:ec09fb7a110770e47b5a3f47430550ba:tdb/.footprint
