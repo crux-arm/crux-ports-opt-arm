@@ -88,9 +88,9 @@ f:ec09fb7a110770e47b5a3f47430550ba:tdb/.footprint
 f:a6f415b079066085d840951654428b77:tdb/Pkgfile
 f:7e501a2e7d14ce94b843e6853d96e4c2:icu/ICU-22132.patch
 f:ac20804bf4a0a631bad9e53b5b025e60:icu/icudata-stdlibs.patch
-f:c8816ad2392a170ae90b4913f1ce2524:icu/.signature
-f:ce89371ae130ad05a712b7ea4e064bea:icu/.footprint
-f:56d4bf98462cfd2ade0a9b11fd9fa356:icu/Pkgfile
+f:96e5e88dc03af548eb072929d7dc027f:icu/.signature
+f:3d24d91fd8d7970ca94d088b5a60fc50:icu/.footprint
+f:5c481cfc81a55e57d74c4a124af28045:icu/Pkgfile
 f:1fa21c7146eddfcc9ef6a2e5050ebe6e:gobject-introspection/.signature
 f:70981ce69e34f38773d261ac217f7279:gobject-introspection/.footprint
 f:d537830214e50961702e7165ff317979:gobject-introspection/Pkgfile
