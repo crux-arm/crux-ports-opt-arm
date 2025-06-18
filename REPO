@@ -119,9 +119,9 @@ f:d38dae04e986208890b4807588aeae16:criu/README
 f:c404d3f8dfe5a6e40a0a7c7eba84d6bd:criu/maintainer_clean_footprint
 f:9d71b23a716a9bbefcd952ea168ca25a:criu/.footprint
 f:8d47c0396c66e6bb16c43a5f64914249:criu/.signature
-f:cc3b0c6fac346a180e98a03f70d479bb:compiler-rt/Pkgfile
+f:4205763d2161d052f602cb4e8d93ba83:compiler-rt/Pkgfile
 f:967adb43eb349bfcccf8db45e05bea92:compiler-rt/.footprint
-f:ef75ea8fd43b44e3cc29b76c89a4a016:compiler-rt/.signature
+f:a85ad5eea8912a989bc4967a59a3b444:compiler-rt/.signature
 f:afe61c7760e835bd12d5dfd40af4ec84:firefox/firefox-install-dir.patch
 f:8e737cc6f24a81c6e357e7d42dea8f68:firefox/Pkgfile
 f:fbf803771f43e8b4f7d384171aa7a7f3:firefox/README
