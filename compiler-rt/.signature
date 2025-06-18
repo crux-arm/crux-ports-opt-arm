@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauNtoyokJ1DVnryH/+9xH+7auSvMY4u7+DyVRkI0EzkBF8ITU+6nPfLZE7B5VM5hmPTmUSFr3fOMbLjzRbUBsFws=
-SHA256 (Pkgfile) = 3339e6360e3c9ef3de50d2e6250fee6c6d7c7aa456160a77689f0a0fe9cf5912
+RWQh9Dk2FlLauHexMybSVWwMDXy3h3hUlBDY03h42QLsC7GIcixQJow7tTTS/0ziQKcDKiRqxzSoAKlnk1UcEyP19LkUGo34xwQ=
+SHA256 (Pkgfile) = d962ca716bb7335b74965ce0b9b23fd1b05510cd6dc8ae6e90fee993a298a4a4
 SHA256 (.footprint) = ddb8b84921175586ffb0e58386f166d4550bc85e0378deecbf6f308cd203cc22
-SHA256 (compiler-rt-20.1.6.src.tar.xz) = 34ff389ce2c34ac1fe8badcf842265295daa91fd1149d69a7ebaf131edf01e4d
-SHA256 (llvm-20.1.6.src.tar.xz) = f09e304ca98bb809f492ec34f94f587361b4b0d06ed783fb3a41e7fb218e47a1
-SHA256 (cmake-20.1.6.src.tar.xz) = b4b3efa5d5b01b3f211f1ba326bb6f0c318331f828202d332c95b7f30fca5f8c
+SHA256 (compiler-rt-20.1.7.src.tar.xz) = 326d6deb8eaf60bc4a66a1cbab20409f328bdddcafe77207c6bcd88d768076e3
+SHA256 (llvm-20.1.7.src.tar.xz) = 10b62d003f16afbd1a5ee0aa6397704c13d9a12a2562103998a8c1eff4a0f1ea
+SHA256 (cmake-20.1.7.src.tar.xz) = afdab526c9b337a4eacbb401685beb98a18fb576037ecfaa93171d4c644fe791
