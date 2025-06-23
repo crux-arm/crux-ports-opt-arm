@@ -64,8 +64,8 @@ f:a6f415b079066085d840951654428b77:tdb/Pkgfile
 f:ec09fb7a110770e47b5a3f47430550ba:tdb/.footprint
 f:134f92662c7ba3e2efec57ef9078d5b0:tdb/.signature
 f:69803b539d76acadcd5c538fb3c6f627:talloc/Pkgfile
-f:6e8733e3b8a874c5364da15449a5c0d7:talloc/.footprint
-f:506567247b1e60ed0786d844f06a4038:talloc/.signature
+f:953dbb06841d881dc548905da69ae3fc:talloc/.footprint
+f:7b318dca63159ba5739f5c6acb68fc1e:talloc/.signature
 f:365edd7d92b98bb9790ed0eeb3c4d2b3:talloc/talloc-man-pages.tar.xz
 f:8b40ae985a8a1c57ea89491339fa0bdd:rust/0003-bootstrap-Use-lld-mode-only-for-host-linked-targets.patch
 f:94fdc5476e393e7da977b38f405b1937:rust/Pkgfile
