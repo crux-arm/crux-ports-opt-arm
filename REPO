@@ -135,8 +135,8 @@ f:a026070c8956ec7afb38926bfca80746:go/.footprint
 f:07eb5f6925074ea8028e3e43dbdeeb51:go/.signature
 f:e4fd0e4125bfd4f34c7da0ad0446a1c0:go/.md5sum
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
-f:9147f361261c0500661d5b1cd0951023:nss/Pkgfile
+f:9c30bca5f5317ce2190aa86eb65154cf:nss/Pkgfile
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:c59afff1412ecf27f9376d91281e8137:nss/.footprint
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
-f:72bbe562abdbec190736c62d2ec82946:nss/.signature
+f:9ea0daf3318995eab3bfa89d7bf9f57c:nss/.signature
