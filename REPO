@@ -98,9 +98,9 @@ f:96e5e88dc03af548eb072929d7dc027f:icu/.signature
 f:e92886104e07a08ad9871892a6f8d1fa:gpgme/Pkgfile
 f:b5d4707d11b6bd85ae1bf5fcfd37b984:gpgme/.footprint
 f:d99bd0b93f75173ff53e7928b8ebb6c6:gpgme/.signature
-f:e05d3357aba9a82af22120330ca5a5e1:tevent/Pkgfile
-f:fd6002b054019840dcc20292af348365:tevent/.footprint
-f:4c63df4908f349c31d634903f16d8349:tevent/.signature
+f:e7a9dc418931b5fbbbac27ec627588de:tevent/Pkgfile
+f:b0676439bd895af1f894d5a14bad778f:tevent/.footprint
+f:30bd6c0e3880b4f508c254e9428361fa:tevent/.signature
 f:d537830214e50961702e7165ff317979:gobject-introspection/Pkgfile
 f:70981ce69e34f38773d261ac217f7279:gobject-introspection/.footprint
 f:1fa21c7146eddfcc9ef6a2e5050ebe6e:gobject-introspection/.signature
