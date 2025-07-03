@@ -1,0 +1,25 @@
+# Description: Protocol Buffers are a way of encoding structured data in an efficient yet extensible format.
+# URL: https://developers.google.com/protocol-buffers/
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: abseil-cpp
+
+name=protobuf
+version=29.4
+release=1
+source=(https://github.com/protocolbuffers/protobuf/archive/v$version/$name-$version.tar.gz)
+
+build() {
+  cmake -S $name-$version -B build -G Ninja \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D CMAKE_INSTALL_LIBDIR=lib \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -latomic" \
+    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+    -D protobuf_BUILD_SHARED_LIBS=ON \
+    -D protobuf_BUILD_TESTS=OFF \
+    -D protobuf_ABSL_PROVIDER=package \
+    -Wno-dev
+
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}
