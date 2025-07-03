@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauHZAdMZarxwcpD1E9gzWHNH4QOM2mwOiKGuIExdHNx3Vb38xS5IyihSDo1iOPfLSZ4vkhLmB2O9kchSFS0po0wg=
-SHA256 (Pkgfile) = 01602ef41e3427ab6ba08430cea981beb4f7dc763ad16e9d8af44d0deb49d0ca
-SHA256 (.footprint) = 4441b51bf95aba6df7bd93e4541d5e6b291cd72766dcc3f817c36a30cf24e62a
+RWQh9Dk2FlLauKDd2o75ftHVUj1Ev+c9cBd3TENu8YSoeysZBo3ksvmbGwcqJyAf1cxR9pnnETKdojEiwu8GIBsO0nvT4te8TwI=
+SHA256 (Pkgfile) = cc2563807e01e23c2c7ff82ce19babe008bfea2eb70cfc78174fbd63cba6a7af
+SHA256 (.footprint) = 364add4c1e88dbabb7ff302b1498f1e81cfdd35b13f71f50d0e3a69492428986
 SHA256 (gpgme-1.24.2.tar.bz2) = e11b1a0e361777e9e55f48a03d89096e2abf08c63d84b7017cfe1dce06639581
