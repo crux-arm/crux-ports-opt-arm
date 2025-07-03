@@ -1,6 +1,7 @@
 d:keyutils
 d:python
 d:python3-markupsafe
+d:p11-kit
 d:chromium
 d:llvm
 d:tdb
@@ -36,6 +37,10 @@ f:ff653e9e002ca0e3d4a828988e52edd3:python/CVE-2018-1000030.patch
 f:f8f65f7999ff402a919e0646c57d9aa1:python3-markupsafe/Pkgfile
 f:ac3b1ce7ca181c848df9979449609326:python3-markupsafe/.footprint
 f:a77b56c910e0fa2abbb02041cb92b21e:python3-markupsafe/.signature
+f:a9abc8cd7186050090aee089cf050053:p11-kit/post-install
+f:b0ab2bcda2273d0ebbac1f78e7303e56:p11-kit/Pkgfile
+f:8d6a8548c7257e61e30184fb6e319370:p11-kit/.footprint
+f:5249b3abfa6263de906d25b1eeb52a08:p11-kit/.signature
 f:3e30a8e6629c931a640d65d4ab02b939:chromium/chromium-exclude_unwind_tables.patch
 f:254061cb349cff714230b7cca83b0a4c:chromium/chromium-skia-harmony.patch
 f:27dbd1479d469346d1ffe27c7e7c0011:chromium/chromium-clang-r2.patch
