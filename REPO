@@ -102,9 +102,9 @@ f:7e501a2e7d14ce94b843e6853d96e4c2:icu/ICU-22132.patch
 f:56d4bf98462cfd2ade0a9b11fd9fa356:icu/Pkgfile
 f:ce89371ae130ad05a712b7ea4e064bea:icu/.footprint
 f:c8816ad2392a170ae90b4913f1ce2524:icu/.signature
-f:e92886104e07a08ad9871892a6f8d1fa:gpgme/Pkgfile
-f:b5d4707d11b6bd85ae1bf5fcfd37b984:gpgme/.footprint
-f:d99bd0b93f75173ff53e7928b8ebb6c6:gpgme/.signature
+f:dca3b518e02fa9cd789ab740959225c0:gpgme/Pkgfile
+f:1ab696ab376144ee46325757fa49de30:gpgme/.footprint
+f:18d73696d460435de358a6614746de6e:gpgme/.signature
 f:34fa1d6d6f9b6beeff8b3e4c0c483700:protobuf/Pkgfile
 f:05b68d264f4fdad87dfc409fa01f31ce:protobuf/.footprint
 f:7d5366920b47c95d8a296b134e1877b5:protobuf/.signature
