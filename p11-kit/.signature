@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt-arm.pub
+RWQh9Dk2FlLauPAUPLZa6csxaeVzXHR6PBOY2691PbA3UK0tWvMZuUoVeMomr9AZrq6FXFdM1Jsl5JkS8aMoZfSb/faq673s7Ag=
+SHA256 (Pkgfile) = 5a2fc5eaa5b25d09b6069428f47f15dd329d754e21364c47a6ef74fbd99d6a27
+SHA256 (.footprint) = d7235fad93bfb472351c9746704adf65410cf46cada0bd2f27ce8f7073800652
+SHA256 (p11-kit-0.25.5.tar.xz) = 04d0a86450cdb1be018f26af6699857171a188ac6d5b8c90786a60854e1198e5
