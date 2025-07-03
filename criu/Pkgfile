@@ -12,6 +12,7 @@ source=(https://github.com/checkpoint-restore/criu/archive/v$version/$name-$vers
 build() {
   cd $name-$version
 
+  # amdgpu removed. To avoid building it remove libdrm package before building
   make criu crit docs
   make \
     DESTDIR=$PKG \
