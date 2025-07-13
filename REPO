@@ -105,7 +105,6 @@ f:fbf803771f43e8b4f7d384171aa7a7f3:firefox/README
 f:f80d3af472d2405720801697f5a95eb1:firefox/.signature
 f:afe61c7760e835bd12d5dfd40af4ec84:firefox/firefox-install-dir.patch
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
-f:e4fd0e4125bfd4f34c7da0ad0446a1c0:go/.md5sum
 f:1c1c58329db60575d10fdb100b101ddc:go/.footprint
 f:d08fa22a4ae9e71a6f6d959de6d2baba:go/Pkgfile
 f:ff9c9305f2c5dd2552775689576f75ea:go/.signature
