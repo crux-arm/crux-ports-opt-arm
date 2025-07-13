@@ -1,6 +1,7 @@
 d:rust
 d:nss
 d:tdb
+d:brotli
 d:compiler-rt
 d:qt4
 d:gpgme
@@ -43,6 +44,9 @@ f:577eac319436d73e2fe6e20ae5731bdc:tdb/tdb-man-pages.tar.xz
 f:ec09fb7a110770e47b5a3f47430550ba:tdb/.footprint
 f:a6f415b079066085d840951654428b77:tdb/Pkgfile
 f:134f92662c7ba3e2efec57ef9078d5b0:tdb/.signature
+f:5e9ccddb3ce8cf98ecb8e63f053e83da:brotli/.footprint
+f:7aaf0b89a7971ad6515ce6b2764e054b:brotli/Pkgfile
+f:adcd66c7f2d5c7b4ce0336a49da0c9bb:brotli/.signature
 f:bad91c1c73ec6e43e3a75c288b56a2cd:compiler-rt/.footprint
 f:db9194cbfb1b07066addde2aabbc5b4e:compiler-rt/Pkgfile
 f:6d52532fe3076103be642dff59321069:compiler-rt/.signature
