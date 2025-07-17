@@ -120,10 +120,9 @@ f:6b374822ad9be4d85d11b89aa88aae89:python3-markupsafe/.signature
 f:57f220e7ded57e899ef864a7b0ba3d34:python3-pyyaml/.footprint
 f:33c8ba688faa1f9ab6d54531f00b5768:python3-pyyaml/Pkgfile
 f:4f3a96ebd531b56060a44a590bd4f084:python3-pyyaml/.signature
-f:c869de5702ea7f35b8565a93bfa2de21:ruby/ruby-arch.patch
-f:8f594ba8259b893abae88f68a632e8cb:ruby/.footprint
-f:294b06f0a4e019ec74e3fe756f07c385:ruby/Pkgfile
-f:926e678aada454cf62311c09471a3342:ruby/.signature
+f:e3abf9cc326a6f16f6ea28f44d9b1e03:ruby/.footprint
+f:b2c6121236740868cb5c3bc644660e13:ruby/Pkgfile
+f:e15548d8aa684308c25bba0d019f869a:ruby/.signature
 f:f5e2586beffb9ff860f04f5bf21db0cd:python3-cython/.footprint
 f:967bab8c571e337e6adff3967fd4b19a:python3-cython/Pkgfile
 f:4c85d4942aa9f095bf8d273213c983b6:python3-cython/.signature
