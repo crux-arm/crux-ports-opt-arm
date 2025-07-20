@@ -3,7 +3,6 @@ d:nss
 d:tdb
 d:compiler-rt
 d:qt4
-d:gpgme
 d:python
 d:python3-libxml2
 d:criu
@@ -47,9 +46,6 @@ f:989af1e9919a3a287a5e583eca628118:qt4/.md5sum
 f:8c26745aaa2c85c9643aa631138ce6cd:qt4/.footprint
 f:45bb57f9c12651a4dee92e31069c1b1d:qt4/Pkgfile
 f:40e0ef421159074a3255e8f738fde8e5:qt4/.signature
-f:b5d4707d11b6bd85ae1bf5fcfd37b984:gpgme/.footprint
-f:e92886104e07a08ad9871892a6f8d1fa:gpgme/Pkgfile
-f:d99bd0b93f75173ff53e7928b8ebb6c6:gpgme/.signature
 f:7294f16e2cba954088e697b8018d41ae:python/.footprint
 f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
 f:39591043d250828d33298970b90e58a8:python/Pkgfile
