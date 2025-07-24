@@ -126,9 +126,9 @@ f:e15548d8aa684308c25bba0d019f869a:ruby/.signature
 f:f5e2586beffb9ff860f04f5bf21db0cd:python3-cython/.footprint
 f:967bab8c571e337e6adff3967fd4b19a:python3-cython/Pkgfile
 f:4c85d4942aa9f095bf8d273213c983b6:python3-cython/.signature
-f:8e45cce454d2e1d43caa9514c0367bd4:nspr/.footprint
-f:281abad171c1ef292df68248d75095c6:nspr/Pkgfile
-f:29312c0c10c87451371f08dccd0d53c2:nspr/.signature
+f:4b64a529f1e236c39adc96eb3eef33a0:nspr/.footprint
+f:1b18300dbb982a081991f6672b01db07:nspr/Pkgfile
+f:cb4a0260f873785bd54ce0b69a6a6dcd:nspr/.signature
 f:2083f33e11dfe15feb7bf9bca0f6c44b:nspr/nspr.pc.in
 f:70981ce69e34f38773d261ac217f7279:gobject-introspection/.footprint
 f:d537830214e50961702e7165ff317979:gobject-introspection/Pkgfile
