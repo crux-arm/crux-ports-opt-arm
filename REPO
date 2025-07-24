@@ -32,8 +32,8 @@ f:c98813e99d9adeecc1708f78df8041da:rust/0002-bootstrap-Change-bash-completion-di
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:17226659298a9d9bb3f323186d220f6f:nss/nss-config.in
 f:c59afff1412ecf27f9376d91281e8137:nss/.footprint
-f:a79153f1f37da0abd73cccdf022437ba:nss/Pkgfile
-f:1b514d0feec425776386eb14c5d62029:nss/.signature
+f:a09f5ac113d1e4376d260f043ad3999f:nss/Pkgfile
+f:f59c6bab88a92115df837c9dfbb8954a:nss/.signature
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
 f:577eac319436d73e2fe6e20ae5731bdc:tdb/tdb-man-pages.tar.xz
