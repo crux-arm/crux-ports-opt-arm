@@ -1,5 +1,6 @@
 d:rust
 d:nss
+d:libtheora
 d:tdb
 d:compiler-rt
 d:aom
@@ -36,6 +37,9 @@ f:a09f5ac113d1e4376d260f043ad3999f:nss/Pkgfile
 f:f59c6bab88a92115df837c9dfbb8954a:nss/.signature
 f:26b8bbcbe2665487c4fe8401de0a2daf:nss/nss-3.54-standalone-2.patch
 f:a796e6ab6c87573ffb649ce8769bc07a:nss/nss.pc.in
+f:4a221ec06a0395ea023b7d3db4e486eb:libtheora/.footprint
+f:fe240e2c8aac0975a53b983084e5b174:libtheora/Pkgfile
+f:46441bec26f7c2b29c604033b742626d:libtheora/.signature
 f:577eac319436d73e2fe6e20ae5731bdc:tdb/tdb-man-pages.tar.xz
 f:ec09fb7a110770e47b5a3f47430550ba:tdb/.footprint
 f:a6f415b079066085d840951654428b77:tdb/Pkgfile
