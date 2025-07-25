@@ -14,6 +14,7 @@ d:tevent
 d:chromium
 d:firefox
 d:go
+d:ghostscript
 d:keyutils
 d:llvm
 d:python3-markupsafe
@@ -110,6 +111,9 @@ f:6c4b19f46895fc7ae2eba2807b4b79c8:go/.footprint
 f:04f837406991307c48644aaec3a11331:go/Pkgfile
 f:d51e98f67e6e5341c6f22d2f5e3a418c:go/.signature
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
+f:5a50765c74608f49394fa70786fced46:ghostscript/.footprint
+f:694c701bf0b2d908f2cc54d4821c63dc:ghostscript/Pkgfile
+f:2197e2cf9b0f789e30b30e51624250e3:ghostscript/.signature
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
 f:96133fa5c7e21ee3473324866d1ec117:keyutils/Pkgfile
 f:54a5c6ba067cf52c078ebf79b2f0b118:llvm/.footprint
