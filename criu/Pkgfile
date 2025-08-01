@@ -1,11 +1,11 @@
 # Description: Utilities to checkpoint and restore processes in userspace
 # URL: https://criu.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: asciidoc gnutls libbpf libbsd libdrm libnet libnl nftables protobuf-c xmlto
+# Depends on: asciidoc gnutls libbpf libbsd libnet libnl nftables protobuf-c xmlto
 # Optional: python3-protobuf
 
 name=criu
-version=4.1
+version=4.1.1
 release=1
 source=(https://github.com/checkpoint-restore/criu/archive/v$version/$name-$version.tar.gz)
 
